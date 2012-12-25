@@ -16,6 +16,7 @@
 @property(nonatomic, strong) UILabel *placeholder;
 #pragma mark - user defined runtime attributes
 
+// http://www.zero4racer.com/blog/727
 // Those Property would only work with Storyboard - iOS5
 @property(nonatomic, strong) UIColor *borderColor; // Color
 @property(nonatomic, strong) UIColor *shadowColor; // Color
