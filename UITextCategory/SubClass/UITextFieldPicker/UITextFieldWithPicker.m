@@ -58,8 +58,8 @@
 - (void)donePicker {
     if ([self selectedValue]){
         self.text = [self selectedValue];
-        if ([self.delegate respondsToSelector:@selector(savePickerView)]){
-            [self.delegate savePickerView];
+        if ([self.delegate respondsToSelector:@selector(savePickerView:)]){
+            [self.delegate savePickerView:self.pickerView];
         }
     }
     [self resignFirstResponder];
@@ -79,7 +79,7 @@
     UIBarButtonItem *cancelButton;
     cancelButton = [[UIBarButtonItem alloc] init];
     cancelButton.style = UIBarButtonItemStyleBordered;
-    cancelButton.title = @"Cancel";
+    cancelButton.title = NSLocalizedString(@"Cancel", @"Cancel");
     cancelButton.target = self;
     cancelButton.action = @selector(cancelDatePicker);
     UIBarButtonItem *centerSpace = [[UIBarButtonItem alloc]
@@ -88,7 +88,7 @@
     UIBarButtonItem *doneButton;
     doneButton = [[UIBarButtonItem alloc] init];
     doneButton.style = UIBarButtonItemStyleDone;
-    doneButton.title = @"Save";
+    doneButton.title = NSLocalizedString(@"Save", @"Save");
     doneButton.target = self;
     doneButton.action = @selector(donePicker);
     [keyboardDoneButtonView setItems:[NSArray arrayWithObjects:cancelButton, centerSpace, doneButton, nil]];

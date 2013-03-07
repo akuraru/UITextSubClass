@@ -4,5 +4,5 @@
 
 
 @protocol UITextFieldWithPickerProtocol <NSObject>
-- (void)savePickerView;
+- (void)savePickerView:(UIPickerView *)pickerView;
 @end

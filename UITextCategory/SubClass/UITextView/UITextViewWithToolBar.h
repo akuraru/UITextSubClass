@@ -1,5 +1,5 @@
 //
-//  UITextViewWithToolBar.h
+//  UITextViewWithToolbar.h
 //  diseases
 //
 //  Created by azu on 11/20/12.
@@ -7,8 +7,8 @@
 //
 
 
-// ToolBar and placeholder and border
-@interface UITextViewWithToolBar : UITextView
+
+@interface UITextViewWithToolbar : UITextView
 
 
 @property(nonatomic, strong) NSString *placeholderText;
@@ -16,7 +16,6 @@
 @property(nonatomic, strong) UILabel *placeholder;
 #pragma mark - user defined runtime attributes
 
-// http://www.zero4racer.com/blog/727
 // Those Property would only work with Storyboard - iOS5
 @property(nonatomic, strong) UIColor *borderColor; // Color
 @property(nonatomic, strong) UIColor *shadowColor; // Color

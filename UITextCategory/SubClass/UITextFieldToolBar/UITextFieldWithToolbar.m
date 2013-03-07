@@ -31,7 +31,7 @@
     doneButton = [[UIBarButtonItem alloc] init];
     doneButton.style = UIBarButtonItemStyleDone;
     doneButton.tintColor = nil;
-    doneButton.title = @"保存";
+    doneButton.title = NSLocalizedString(@"Done", @"Done");
     doneButton.target = self;
     doneButton.action = @selector(resignFirstResponder);
     [keyboardDoneButtonView setItems:[NSArray arrayWithObjects:centerSpace, doneButton, nil]];

@@ -11,7 +11,7 @@
 }
 
 @property(nonatomic, strong) UIDatePicker *datePicker;
-@property(nonatomic, strong, readonly) NSDate *date;
+@property(nonatomic, strong) NSDate *date;
 @property(nonatomic) UIDatePickerMode datePickerMode;
 @property(nonatomic) NSInteger minuteInterval;
 @property(nonatomic, weak) id <UITextFieldDelegate,UITextFieldWithDatePickerProtocol> delegate;

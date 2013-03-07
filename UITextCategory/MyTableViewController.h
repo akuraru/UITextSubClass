@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@class UITextFieldWithDatePicker;
+
 @interface MyTableViewController : UITableViewController
+@property (weak, nonatomic) IBOutlet UITextFieldWithDatePicker *dateTextField;
 
 @end

@@ -1,5 +1,5 @@
 //
-//  UITextViewWithToolBar.m
+//  UITextViewWithToolbar.m
 //  diseases
 //
 //  Created by azu on 11/20/12.
@@ -7,9 +7,9 @@
 //
 
 #import <QuartzCore/QuartzCore.h>
-#import "UITextViewWithToolBar.h"
+#import "UITextViewWithToolbar.h"
 
-@implementation UITextViewWithToolBar {
+@implementation UITextViewWithToolbar {
 }
 
 @synthesize placeholderText = _placeholderText;
@@ -36,7 +36,7 @@
     doneButton = [[UIBarButtonItem alloc] init];
     doneButton.tintColor = nil;
     doneButton.style = UIBarButtonItemStyleDone;
-    doneButton.title = @"保存";
+    doneButton.title = NSLocalizedString(@"Done", @"Done");
     doneButton.target = self;
     doneButton.action = @selector(done);
     [keyboardDoneButtonView setItems:[NSArray arrayWithObjects:centerSpace, doneButton, nil]];
