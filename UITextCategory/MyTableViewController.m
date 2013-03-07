@@ -27,6 +27,7 @@
     [super viewDidLoad];
 
     // set datePickerMode
+    self.dateTextField.delegate = self;
     self.dateTextField.datePickerMode = UIDatePickerModeDate;
 }
 
@@ -40,4 +41,10 @@
     [self setDateTextField:nil];
     [super viewDidUnload];
 }
+
+#pragma mark - UITextField DatePicker delegate
+- (void)saveDateFrom:(UITextFieldWithDatePicker *) textField {
+    NSLog(@"textField.date = %@", textField.date);
+}
+
 @end
