@@ -48,6 +48,7 @@
 		17B5CD6888903E7FC9F28F40 /* UITextFieldWithPickerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithPickerProtocol.h; sourceTree = "<group>"; };
 		17B5CD8828BA21755AD3195E /* UITextSubClass-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UITextSubClass-Info.plist"; sourceTree = "<group>"; };
 		17B5CDA5FB96F0B43D2DCEB0 /* UITextFieldWithPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithPicker.m; sourceTree = "<group>"; };
+		17B5CDB61011174AC678870E /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = readme.md; sourceTree = "<group>"; };
 		17B5CE1C628C7A0B76695496 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		737068ED168996C0007BAA4F /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
 		737068EE168996C0007BAA4F /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
@@ -107,6 +108,7 @@
 				17B5C76A5A9E6C650D4B29BC /* Products */,
 				17B5CF6F0C9E0CA75B8AC47D /* Frameworks */,
 				17B5C1E2474D400534A8FCFD /* UITextCategory */,
+				17B5CDB61011174AC678870E /* readme.md */,
 			);
 			sourceTree = "<group>";
 		};
