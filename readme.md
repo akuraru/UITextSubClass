@@ -2,4 +2,4 @@
 
 UITextField/UITextView subclass.
 
-![UITextField+DatePicker](http://take.ms/gtzr2u)
+![UITextField+DatePicker](http://monosnap.com/image/TSwA3hPoDkdrr1jJRnGaaFQpI.png)
