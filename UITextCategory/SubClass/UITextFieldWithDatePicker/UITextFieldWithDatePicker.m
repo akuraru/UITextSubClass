@@ -10,8 +10,8 @@
 @implementation UITextFieldWithDatePicker {
 }
 
-@synthesize datePicker = datePicker_;
-@synthesize datePickerMode = datePickerMode_;
+@synthesize datePicker = _datePicker;
+@synthesize datePickerMode = _datePickerMode;
 @synthesize minuteInterval = _minuteInterval;
 
 
@@ -25,13 +25,13 @@
 
 
 - (UIDatePicker *)datePicker {
-    if (datePicker_ == nil) {
-        datePicker_ = [[UIDatePicker alloc] init];
-        datePicker_.autoresizingMask = UIViewAutoresizingNone;
-        datePicker_.minuteInterval = 0;
-        [datePicker_ setTimeZone:[NSTimeZone systemTimeZone]];
+    if (_datePicker == nil) {
+        _datePicker = [[UIDatePicker alloc] init];
+        _datePicker.autoresizingMask = UIViewAutoresizingNone;
+        _datePicker.minuteInterval = 0;
+        [_datePicker setTimeZone:[NSTimeZone systemTimeZone]];
     }
-    return datePicker_;
+    return _datePicker;
 }
 
 - (NSDate *)date {
