@@ -32,3 +32,11 @@ You can pass original dateformatter:
 manually update TextField
 
     [dateTextField updateText];
+
+get selected date
+
+    dateTextField.date;// <NSDate>
+    // also set date
+    dateTextField.date = [NSDate date];
+    [dateTextField updateText];
+
