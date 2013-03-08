@@ -4,6 +4,10 @@ UITextField/UITextView subclass.
 
 ![UITextField+DatePicker](https://monosnap.com/image/TSwA3hPoDkdrr1jJRnGaaFQpI.png)
 
+## Usage
+
+* D&D SubClass/* to your project
+
 ### UITextFieldWithDatePicker
 
 UITextFieldWithDatePicker is UITextField subclass
