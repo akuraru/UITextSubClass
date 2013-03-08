@@ -28,7 +28,12 @@
 
     // set datePickerMode
     self.dateTextField.delegate = self;
+    // set DatePicker type
     self.dateTextField.datePickerMode = UIDatePickerModeDate;
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+    self.dateTextField.dateFormatter = dateFormatter;// pass original date formatter
 }
 
 - (void)didReceiveMemoryWarning {

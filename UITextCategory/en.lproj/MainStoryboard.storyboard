@@ -22,7 +22,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="139"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ech-PO-ASi" customClass="UITextViewWithToolBar">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ech-PO-ASi" customClass="UITextViewWithToolbar">
                                                     <rect key="frame" x="20" y="40" width="280" height="79"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -37,8 +37,8 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </textView>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="プレースホルダ付きUITextView" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="teR-nk-bSo">
-                                                    <rect key="frame" x="20" y="11" width="240" height="21"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Placeholder UITextView" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="teR-nk-bSo">
+                                                    <rect key="frame" x="20" y="11" width="182" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -101,9 +101,15 @@
     <classes>
         <class className="MyTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MyTableViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="dateTextField" candidateClass="UITextFieldWithDatePicker"/>
+            </relationships>
         </class>
         <class className="UITextFieldWithDatePicker" superclassName="UITextField">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UITextFieldWithDatePicker.h"/>
+        </class>
+        <class className="UITextViewWithToolbar" superclassName="UITextView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UITextViewWithToolbar.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -53,23 +53,26 @@
 }
 
 - (void)updateText {
-// countdownだけ少し特殊
+    // countdownだけ少し特殊
     if (self.datePickerMode == UIDatePickerModeCountDownTimer) {
         self.text = [self labelFromTimeInterval:self.datePicker.countDownDuration];
         return;
     }
-
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    dateFormatter.calendar = calendar;
-    if (self.datePickerMode == UIDatePickerModeDate) {
-        [dateFormatter setDateFormat:@"yyyy年MM月dd日"];
-    } else if (self.datePickerMode == UIDatePickerModeTime) {
-        [dateFormatter setDateFormat:@"HH:mm"];
-    } else if (self.datePickerMode == UIDatePickerModeDateAndTime) {
-        [dateFormatter setDateFormat:@"yyyy/MM/dd HH:mm"];
+    // if user does not define dateFormatter
+    if (self.dateFormatter == nil) {
+        self.dateFormatter = [[NSDateFormatter alloc] init];
+        // http://qiita.com/items/868788c46315b0095869
+        NSString *dateString = nil;
+        if (self.datePickerMode == UIDatePickerModeDate) {
+            dateString = [NSDateFormatter dateFormatFromTemplate:@"yyyyMd" options:0 locale:[NSLocale currentLocale]];
+        } else if (self.datePickerMode == UIDatePickerModeTime) {
+            dateString = [NSDateFormatter dateFormatFromTemplate:@"HHmm" options:0 locale:[NSLocale currentLocale]];
+        } else if (self.datePickerMode == UIDatePickerModeDateAndTime) {
+            dateString = [NSDateFormatter dateFormatFromTemplate:@"yyyyMd HHmm" options:0 locale:[NSLocale currentLocale]];
+        }
+        [self.dateFormatter setDateFormat:dateString];
     }
-    self.text = [dateFormatter stringFromDate:self.datePicker.date];
+    self.text = [self.dateFormatter stringFromDate:self.datePicker.date];
 }
 
 - (NSString *)labelFromTimeInterval:(NSTimeInterval) interval {
