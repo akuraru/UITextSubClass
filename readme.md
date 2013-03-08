@@ -18,7 +18,7 @@ UITextFieldWithDatePicker is UITextField subclass
     // set DatePicker type
     dateTextField.datePickerMode = UIDatePickerModeDate;
 
-if set ``UIDatePickerModeTime``
+if set ``UIDatePickerModeTime``, you can set default minuteInterval :
 
     dateTextField.minuteInterval = 60; // default minuteInterval
 
