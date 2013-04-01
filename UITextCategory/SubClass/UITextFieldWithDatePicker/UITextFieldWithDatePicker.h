@@ -16,6 +16,8 @@
 @property(nonatomic) NSInteger minuteInterval;
 @property(nonatomic, weak) id <UITextFieldDelegate,UITextFieldWithDatePickerProtocol> delegate;
 
+@property(nonatomic, strong) NSDateFormatter *dateFormatter;
+
 - (void)updateText;
 
 
