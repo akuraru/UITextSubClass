@@ -40,3 +40,8 @@ get selected date
     dateTextField.date = [NSDate date];
     [dateTextField updateText];
 
+### UITextFieldToolBar
+
+UITextFieldToolBar is UITextField subclass
+
+Simply add @"done" button.
