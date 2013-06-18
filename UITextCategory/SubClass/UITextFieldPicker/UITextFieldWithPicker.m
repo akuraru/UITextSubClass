@@ -8,15 +8,7 @@
 
 
 @implementation UITextFieldWithPicker {
-
-@private
-    UIPickerView *pickerView_;
-    NSArray *dataSource_;
 }
-
-@synthesize pickerView = pickerView_;
-@synthesize dataSource = dataSource_;
-@synthesize delegate = delegate_;
 
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
@@ -29,7 +21,7 @@
 }
 
 - (NSString *)pickerView:(UIPickerView *)picker titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-    return [self.dataSource objectAtIndex:row];
+    return [self.dataSource objectAtIndex:(NSUInteger)row];
 }
 
 
@@ -52,14 +44,14 @@
 
 - (NSString *)selectedValue {
     NSInteger selected = [self.pickerView selectedRowInComponent:0];
-    return [self.dataSource objectAtIndex:selected];
+    return [self.dataSource objectAtIndex:(NSUInteger)selected];
 }
 
 - (void)donePicker {
     if ([self selectedValue]){
         self.text = [self selectedValue];
-        if ([self.delegate respondsToSelector:@selector(savePickerView:)]){
-            [self.delegate savePickerView:self.pickerView];
+        if ([self.myDelegate respondsToSelector:@selector(savePickerView:)]){
+            [self.myDelegate savePickerView:self.pickerView];
         }
     }
     [self resignFirstResponder];
@@ -88,7 +80,7 @@
     UIBarButtonItem *doneButton;
     doneButton = [[UIBarButtonItem alloc] init];
     doneButton.style = UIBarButtonItemStyleDone;
-    doneButton.title = NSLocalizedString(@"Save", @"Save");
+    doneButton.title = NSLocalizedString(@"Done", @"Done");
     doneButton.target = self;
     doneButton.action = @selector(donePicker);
     [keyboardDoneButtonView setItems:[NSArray arrayWithObjects:cancelButton, centerSpace, doneButton, nil]];

@@ -10,11 +10,6 @@
 @implementation UITextFieldWithDatePicker {
 }
 
-@synthesize datePicker = _datePicker;
-@synthesize datePickerMode = _datePickerMode;
-@synthesize minuteInterval = _minuteInterval;
-
-
 - (id)initWithCoder:(NSCoder *) aDecoder {
     self = [super initWithCoder:aDecoder];
     if (!self) {
@@ -99,8 +94,8 @@
 
 - (void)done {
     if (self.datePicker.date != nil) {
-        if ([self.delegate respondsToSelector:@selector(saveDateFrom:)]) {
-            [self.delegate saveDateFrom:self];
+        if ([self.myDelegate respondsToSelector:@selector(saveDateFrom:)]) {
+            [self.myDelegate saveDateFrom:self];
         }
         [self updateText];
     }

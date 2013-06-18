@@ -13,7 +13,7 @@ UITextField/UITextView subclass.
 UITextFieldWithDatePicker is UITextField subclass
 
     UITextFieldWithDatePicker *dateTextField = [[UITextFieldWithDatePicker alloc]init];
-    dateTextField.delegate = self;
+    dateTextField.myDelegate = self;
     // set DatePicker type
     dateTextField.datePickerMode = UIDatePickerModeDate;
 

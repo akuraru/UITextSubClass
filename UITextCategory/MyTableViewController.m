@@ -27,7 +27,7 @@
     [super viewDidLoad];
 
     // set datePickerMode
-    self.dateTextField.delegate = self;
+    self.dateTextField.myDelegate = self;
     // set DatePicker type
     self.dateTextField.datePickerMode = UIDatePickerModeDate;
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
