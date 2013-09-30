@@ -145,13 +145,13 @@
 			path = UITextFieldWithDatePicker;
 			sourceTree = "<group>";
 		};
-		17B5C688D75D08A17D6F96A9 /* UITextFieldToolBar */ = {
+		17B5C688D75D08A17D6F96A9 /* UITextFieldWithToolbar */ = {
 			isa = PBXGroup;
 			children = (
 				17B5C4479A6176369F842DB1 /* UITextFieldWithToolbar.h */,
 				17B5C2D16161E03F8DD3F82C /* UITextFieldWithToolbar.m */,
 			);
-			path = UITextFieldToolBar;
+			path = UITextFieldWithToolbar;
 			sourceTree = "<group>";
 		};
 		17B5C6BA2544723305DAA434 /* Supporting Files */ = {
@@ -177,14 +177,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		17B5CBD28C5BDDF32BB4C831 /* UITextFieldPicker */ = {
+		17B5CBD28C5BDDF32BB4C831 /* UITextFieldWithPicker */ = {
 			isa = PBXGroup;
 			children = (
 				17B5C895E82A5AF3F6BFE348 /* UITextFieldWithPickerProtocol.h */,
 				17B5C62EC3E860D60F900A1A /* UITextFieldWithPicker.h */,
 				17B5C2B391EB5B29AD1C725E /* UITextFieldWithPicker.m */,
 			);
-			path = UITextFieldPicker;
+			path = UITextFieldWithPicker;
 			sourceTree = "<group>";
 		};
 		17B5CF6F0C9E0CA75B8AC47D /* Frameworks */ = {
@@ -203,8 +203,8 @@
 			isa = PBXGroup;
 			children = (
 				17B5C5335D3D5B8E079C30EB /* UITextFieldWithDatePicker */,
-				17B5C688D75D08A17D6F96A9 /* UITextFieldToolBar */,
-				17B5CBD28C5BDDF32BB4C831 /* UITextFieldPicker */,
+				17B5C688D75D08A17D6F96A9 /* UITextFieldWithToolbar */,
+				17B5CBD28C5BDDF32BB4C831 /* UITextFieldWithPicker */,
 				17B5CFD22AD40C8AF5BA1205 /* UITextViewWithToolbar */,
 			);
 			path = UITextSubClass;
