@@ -8,7 +8,10 @@ Pod::Spec.new do |s|
   s.author       = { "azu" => "info@efcl.info" }
   s.platform     = :ios, '5.0'
   s.source       = { :git => "https://github.com/azu/UITextSubClass.git" }
+  s.requires_arc = true
+
   s.subspec 'Core' do |a|
+    a.resource_bundles = { 'UITextSubClassLocalize' => ['UITextSubClass/*.lproj'] }
     a.source_files  = 'UITextSubClass/UITextSubClassHelper.{h,m}'
   end
   s.subspec 'UITextFieldWithDatePicker' do |a|
@@ -28,6 +31,4 @@ Pod::Spec.new do |s|
     a.dependency 'UITextSubClass/Core'
     a.framework    = 'QuartzCore'
   end
-  s.resource_bundles = { 'UITextSubClassLocalize' => ['UITextSubClass/*.lproj'] }
-  s.requires_arc = true
 end
