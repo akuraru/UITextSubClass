@@ -53,6 +53,9 @@
         if ([self.myDelegate respondsToSelector:@selector(savePickerView:)]) {
             [self.myDelegate savePickerView:self.pickerView];
         }
+        if ([self.myDelegate respondsToSelector:@selector(saveFromUITextFieldWithPicker:)]) {
+            [self.myDelegate saveFromUITextFieldWithPicker:self];
+        }
     }
     [self resignFirstResponder];
 }

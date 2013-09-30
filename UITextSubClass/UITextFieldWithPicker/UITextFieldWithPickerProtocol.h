@@ -4,5 +4,7 @@
 
 
 @protocol UITextFieldWithPickerProtocol <NSObject>
-- (void)savePickerView:(UIPickerView *)pickerView;
+- (void)saveFromUITextFieldWithPicker:(UITextFieldWithPicker *)textFieldWithPicker;
+@optional
+- (void)savePickerView:(UIPickerView *)pickerView __attribute__((deprecated("This method has been replaced by - saveFromUITextFieldWithPicker")));
 @end

@@ -27,9 +27,9 @@ static NSBundle *_userDefineBundle;
     } else if (_alwaysUseMainBundle) {
         bundle = [NSBundle mainBundle];
     } else {
-        NSURL *coreBundleURl = [[NSBundle bundleForClass:[self class]] URLForResource:@"UITextSubClassLocalize" withExtension:@"bundle"];
-        if (coreBundleURl) {
-            bundle = [NSBundle bundleWithURL:coreBundleURl];
+        NSURL *coreBundleURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"UITextSubClassLocalize" withExtension:@"bundle"];
+        if (coreBundleURL) {
+            bundle = [NSBundle bundleWithURL:coreBundleURL];
         } else {
             bundle = [NSBundle bundleForClass:[self class]];
         }
