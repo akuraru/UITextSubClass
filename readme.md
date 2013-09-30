@@ -8,7 +8,7 @@ UITextField/UITextView subclass.
 
 CocoaPods
 
-``` objc
+``` ruby
 pod 'UITextSubClass', :git => 'https://github.com/azu/UITextSubClass.git'
 ```
 
