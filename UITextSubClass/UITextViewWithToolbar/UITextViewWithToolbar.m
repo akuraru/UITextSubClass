@@ -7,7 +7,7 @@
 
 #import "UITextViewWithToolbar.h"
 #import "UITextSubClassHelper.h"
-
+#import <QuartzCore/QuartzCore.h>
 @implementation UITextViewWithToolbar {
 }
 #pragma mark - toolbar

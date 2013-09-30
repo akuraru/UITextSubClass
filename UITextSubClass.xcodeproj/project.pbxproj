@@ -75,6 +75,7 @@
 		17B5CD335D7E3059BACE5B0F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		17B5CD55C18EE69D46D50053 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		17B5CD8828BA21755AD3195E /* UITextSubClass-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "UITextSubClass-Info.plist"; sourceTree = "<group>"; };
+		17B5CD8C9FD9AB4777DF1BBB /* UITextSubClass.podspec */ = {isa = PBXFileReference; lastKnownFileType = file.podspec; path = UITextSubClass.podspec; sourceTree = "<group>"; };
 		17B5CDB61011174AC678870E /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = readme.md; sourceTree = "<group>"; };
 		17B5CDD25123018D8D38F647 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		17B5CE1C628C7A0B76695496 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -144,6 +145,7 @@
 				17B5CF97FAB2E799186CE2BB /* UITextSubClass */,
 				17B5CDD25123018D8D38F647 /* Podfile */,
 				43C3FA33E1D64DADAC2A953D /* Pods-Tests.xcconfig */,
+				17B5CD8C9FD9AB4777DF1BBB /* UITextSubClass.podspec */,
 			);
 			sourceTree = "<group>";
 		};
