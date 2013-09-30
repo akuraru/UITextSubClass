@@ -7,51 +7,80 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17B5C0EE01AC9EAB02FF550A /* UITextFieldWithPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CDA5FB96F0B43D2DCEB0 /* UITextFieldWithPicker.m */; };
 		17B5C239B054BD771FB7E3D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C591AD8D7C78CA80F20C /* main.m */; };
 		17B5C2A9910B093DAD97C061 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C137FDDEFC0A46C79FC3 /* MainStoryboard.storyboard */; };
+		17B5C3ECDA5CBBAB26A75805 /* UITextViewWithToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C7A2D9410D77CC8FABD3 /* UITextViewWithToolBar.m */; };
+		17B5C4E8E6FAC19EB2880BE6 /* UITextFieldWithDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CEB4A62A4A12AA4DF6F3 /* UITextFieldWithDatePicker.m */; };
 		17B5C772D8CF9CBFCB1DBCBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CA998EBAEE23911CE978 /* Foundation.framework */; };
+		17B5C7B680CBB3EAC12F28BA /* UITextFieldWithToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C2D16161E03F8DD3F82C /* UITextFieldWithToolbar.m */; };
 		17B5C802716CAD5F1065E307 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CD335D7E3059BACE5B0F /* UIKit.framework */; };
-		17B5C82294C1EAF303C4A34A /* UITextFieldWithToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CCA0796165EA48CD41AC /* UITextFieldWithToolbar.m */; };
+		17B5C80CFD32277629AF5ED9 /* UITextFieldWithDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CEB4A62A4A12AA4DF6F3 /* UITextFieldWithDatePicker.m */; };
 		17B5C8422BE868597546ED80 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C16D873CE5FE5645B92C /* InfoPlist.strings */; };
-		17B5C89AA627D1DD30817A32 /* UITextFieldWithDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CD61D2CFD580C6DC68BD /* UITextFieldWithDatePicker.m */; };
+		17B5C882D727D6A2FC8CAB8C /* UITextViewWithToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C7A2D9410D77CC8FABD3 /* UITextViewWithToolBar.m */; };
 		17B5CA32B06C5285CE381A5D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C00A093E4E48061349B1 /* CoreGraphics.framework */; };
 		17B5CB42375D39DE67DEC999 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C8787D8E78FAE52FA005 /* Default@2x.png */; };
+		17B5CB9D64F37735A227858F /* UITextViewWithToolbarTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C06D5D2AFABC4668D82B /* UITextViewWithToolbarTest.m */; };
 		17B5CC7B209152CF7353437A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CD55C18EE69D46D50053 /* AppDelegate.m */; };
-		17B5CE5D91CDFEE62145514B /* UITextViewWithToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C214013CC5D5B674EC40 /* UITextViewWithToolBar.m */; };
+		17B5CCF4E521D55AD663CB41 /* UITextFieldWithToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C2D16161E03F8DD3F82C /* UITextFieldWithToolbar.m */; };
+		17B5CEA2FBD660F5C64B65D7 /* UITextFieldWithPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C2B391EB5B29AD1C725E /* UITextFieldWithPicker.m */; };
 		17B5CF1FA0525F406BF7D62E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C5A3D65928ADBE8BDA5F /* Default-568h@2x.png */; };
 		17B5CF4446A4BB0CA29D0218 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C127C48985216D0E2852 /* Default.png */; };
+		17B5CF5B19767DC57E050C33 /* UITextFieldWithPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C2B391EB5B29AD1C725E /* UITextFieldWithPicker.m */; };
 		737068EF168996C0007BAA4F /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 737068EE168996C0007BAA4F /* MyTableViewController.m */; };
+		73EACB8117F9AD46000A444C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EACB8017F9AD46000A444C /* XCTest.framework */; };
+		73EACB8217F9AD46000A444C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CA998EBAEE23911CE978 /* Foundation.framework */; };
+		73EACB8317F9AD46000A444C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CD335D7E3059BACE5B0F /* UIKit.framework */; };
+		73EACB8917F9AD46000A444C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73EACB8717F9AD46000A444C /* InfoPlist.strings */; };
+		7C610C4B07B2445B88A6CFF5 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B65F29986BB74A408EF079D2 /* libPods-Tests.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		73EACB8D17F9AD46000A444C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17B5C5EEDB0839A1B9FBFB41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17B5C16BC8E6ED55005FF050;
+			remoteInfo = UITextSubClass;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		17B5C00A093E4E48061349B1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		17B5C01960F002BF6CF1EB32 /* UITextFieldWithToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithToolbar.h; sourceTree = "<group>"; };
-		17B5C068E30F6D41BA67AA5F /* UITextFieldWithDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithDatePicker.h; sourceTree = "<group>"; };
+		17B5C06D5D2AFABC4668D82B /* UITextViewWithToolbarTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewWithToolbarTest.m; sourceTree = "<group>"; };
 		17B5C0D623C7FF067EB237A6 /* UITextSubClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITextSubClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B5C10FC86A81DAB2C0A4F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		17B5C127C48985216D0E2852 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		17B5C214013CC5D5B674EC40 /* UITextViewWithToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewWithToolBar.m; sourceTree = "<group>"; };
+		17B5C21EE101DF029320D766 /* UITextViewWithToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextViewWithToolBar.h; sourceTree = "<group>"; };
+		17B5C2B391EB5B29AD1C725E /* UITextFieldWithPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithPicker.m; sourceTree = "<group>"; };
+		17B5C2D16161E03F8DD3F82C /* UITextFieldWithToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithToolbar.m; sourceTree = "<group>"; };
+		17B5C4479A6176369F842DB1 /* UITextFieldWithToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithToolbar.h; sourceTree = "<group>"; };
+		17B5C46DB33EDB1F26EA5E3A /* UITextFieldWithDatePickerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithDatePickerProtocol.h; sourceTree = "<group>"; };
 		17B5C591AD8D7C78CA80F20C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		17B5C5A3D65928ADBE8BDA5F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		17B5C77FB6946C17B0F736AD /* UITextFieldWithPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithPicker.h; sourceTree = "<group>"; };
+		17B5C62EC3E860D60F900A1A /* UITextFieldWithPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithPicker.h; sourceTree = "<group>"; };
+		17B5C7A2D9410D77CC8FABD3 /* UITextViewWithToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewWithToolBar.m; sourceTree = "<group>"; };
 		17B5C7E96C164B5921830962 /* UITextSubClass-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextSubClass-Prefix.pch"; sourceTree = "<group>"; };
 		17B5C8787D8E78FAE52FA005 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		17B5C9EA83F6ABB6ADCC1AEB /* UITextFieldWithDatePickerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithDatePickerProtocol.h; sourceTree = "<group>"; };
+		17B5C895E82A5AF3F6BFE348 /* UITextFieldWithPickerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithPickerProtocol.h; sourceTree = "<group>"; };
 		17B5CA998EBAEE23911CE978 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		17B5CB1CC2AC1575EE09EF77 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		17B5CCA0796165EA48CD41AC /* UITextFieldWithToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithToolbar.m; sourceTree = "<group>"; };
+		17B5CC21F20392DDA6819ED3 /* UITextFieldWithDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithDatePicker.h; sourceTree = "<group>"; };
 		17B5CD335D7E3059BACE5B0F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		17B5CD55C18EE69D46D50053 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		17B5CD59733DED7B657628B0 /* UITextViewWithToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextViewWithToolBar.h; sourceTree = "<group>"; };
-		17B5CD61D2CFD580C6DC68BD /* UITextFieldWithDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithDatePicker.m; sourceTree = "<group>"; };
-		17B5CD6888903E7FC9F28F40 /* UITextFieldWithPickerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithPickerProtocol.h; sourceTree = "<group>"; };
-		17B5CD8828BA21755AD3195E /* UITextSubClass-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UITextSubClass-Info.plist"; sourceTree = "<group>"; };
-		17B5CDA5FB96F0B43D2DCEB0 /* UITextFieldWithPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithPicker.m; sourceTree = "<group>"; };
+		17B5CD8828BA21755AD3195E /* UITextSubClass-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "UITextSubClass-Info.plist"; sourceTree = "<group>"; };
 		17B5CDB61011174AC678870E /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = readme.md; sourceTree = "<group>"; };
+		17B5CDD25123018D8D38F647 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		17B5CE1C628C7A0B76695496 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		17B5CEB4A62A4A12AA4DF6F3 /* UITextFieldWithDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithDatePicker.m; sourceTree = "<group>"; };
+		43C3FA33E1D64DADAC2A953D /* Pods-Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.xcconfig"; path = "Pods/Pods-Tests.xcconfig"; sourceTree = "<group>"; };
 		737068ED168996C0007BAA4F /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
 		737068EE168996C0007BAA4F /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
+		73EACB7F17F9AD46000A444C /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		73EACB8017F9AD46000A444C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		73EACB8617F9AD46000A444C /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		73EACB8817F9AD46000A444C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		73EACB8C17F9AD46000A444C /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		B65F29986BB74A408EF079D2 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,70 +94,64 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		73EACB7C17F9AD46000A444C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73EACB8117F9AD46000A444C /* XCTest.framework in Frameworks */,
+				73EACB8317F9AD46000A444C /* UIKit.framework in Frameworks */,
+				73EACB8217F9AD46000A444C /* Foundation.framework in Frameworks */,
+				7C610C4B07B2445B88A6CFF5 /* libPods-Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		17B5C09C512DB0FE9F906694 /* UITextFieldToolBar */ = {
-			isa = PBXGroup;
-			children = (
-				17B5C01960F002BF6CF1EB32 /* UITextFieldWithToolbar.h */,
-				17B5CCA0796165EA48CD41AC /* UITextFieldWithToolbar.m */,
-			);
-			path = UITextFieldToolBar;
-			sourceTree = "<group>";
-		};
-		17B5C1E2474D400534A8FCFD /* UITextCategory */ = {
+		17B5C1E2474D400534A8FCFD /* Example */ = {
 			isa = PBXGroup;
 			children = (
 				17B5C6BA2544723305DAA434 /* Supporting Files */,
 				17B5C10FC86A81DAB2C0A4F6 /* AppDelegate.h */,
 				17B5CD55C18EE69D46D50053 /* AppDelegate.m */,
 				17B5C137FDDEFC0A46C79FC3 /* MainStoryboard.storyboard */,
-				17B5C25463CE30F748A46B9D /* SubClass */,
 				737068ED168996C0007BAA4F /* MyTableViewController.h */,
 				737068EE168996C0007BAA4F /* MyTableViewController.m */,
 			);
-			path = UITextCategory;
-			sourceTree = "<group>";
-		};
-		17B5C25463CE30F748A46B9D /* SubClass */ = {
-			isa = PBXGroup;
-			children = (
-				17B5CF16BD060C4FABB41C11 /* UITextFieldWithDatePicker */,
-				17B5C09C512DB0FE9F906694 /* UITextFieldToolBar */,
-				17B5C634C91FFCA719204F54 /* UITextFieldPicker */,
-				17B5C4886949685B5DFD123D /* UITextViewWithToolbar */,
-			);
-			path = SubClass;
+			path = Example;
 			sourceTree = "<group>";
 		};
 		17B5C45FA7B744FE69E554B6 = {
 			isa = PBXGroup;
 			children = (
+				73EACB8417F9AD46000A444C /* Tests */,
 				17B5C76A5A9E6C650D4B29BC /* Products */,
 				17B5CF6F0C9E0CA75B8AC47D /* Frameworks */,
-				17B5C1E2474D400534A8FCFD /* UITextCategory */,
+				17B5C1E2474D400534A8FCFD /* Example */,
 				17B5CDB61011174AC678870E /* readme.md */,
+				17B5CF97FAB2E799186CE2BB /* UITextSubClass */,
+				17B5CDD25123018D8D38F647 /* Podfile */,
+				43C3FA33E1D64DADAC2A953D /* Pods-Tests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
-		17B5C4886949685B5DFD123D /* UITextViewWithToolbar */ = {
+		17B5C5335D3D5B8E079C30EB /* UITextFieldWithDatePicker */ = {
 			isa = PBXGroup;
 			children = (
-				17B5CD59733DED7B657628B0 /* UITextViewWithToolBar.h */,
-				17B5C214013CC5D5B674EC40 /* UITextViewWithToolBar.m */,
+				17B5C46DB33EDB1F26EA5E3A /* UITextFieldWithDatePickerProtocol.h */,
+				17B5CEB4A62A4A12AA4DF6F3 /* UITextFieldWithDatePicker.m */,
+				17B5CC21F20392DDA6819ED3 /* UITextFieldWithDatePicker.h */,
 			);
-			path = UITextViewWithToolbar;
+			path = UITextFieldWithDatePicker;
 			sourceTree = "<group>";
 		};
-		17B5C634C91FFCA719204F54 /* UITextFieldPicker */ = {
+		17B5C688D75D08A17D6F96A9 /* UITextFieldToolBar */ = {
 			isa = PBXGroup;
 			children = (
-				17B5CD6888903E7FC9F28F40 /* UITextFieldWithPickerProtocol.h */,
-				17B5C77FB6946C17B0F736AD /* UITextFieldWithPicker.h */,
-				17B5CDA5FB96F0B43D2DCEB0 /* UITextFieldWithPicker.m */,
+				17B5C4479A6176369F842DB1 /* UITextFieldWithToolbar.h */,
+				17B5C2D16161E03F8DD3F82C /* UITextFieldWithToolbar.m */,
 			);
-			path = UITextFieldPicker;
+			path = UITextFieldToolBar;
 			sourceTree = "<group>";
 		};
 		17B5C6BA2544723305DAA434 /* Supporting Files */ = {
@@ -149,18 +172,19 @@
 			isa = PBXGroup;
 			children = (
 				17B5C0D623C7FF067EB237A6 /* UITextSubClass.app */,
+				73EACB7F17F9AD46000A444C /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		17B5CF16BD060C4FABB41C11 /* UITextFieldWithDatePicker */ = {
+		17B5CBD28C5BDDF32BB4C831 /* UITextFieldPicker */ = {
 			isa = PBXGroup;
 			children = (
-				17B5C9EA83F6ABB6ADCC1AEB /* UITextFieldWithDatePickerProtocol.h */,
-				17B5CD61D2CFD580C6DC68BD /* UITextFieldWithDatePicker.m */,
-				17B5C068E30F6D41BA67AA5F /* UITextFieldWithDatePicker.h */,
+				17B5C895E82A5AF3F6BFE348 /* UITextFieldWithPickerProtocol.h */,
+				17B5C62EC3E860D60F900A1A /* UITextFieldWithPicker.h */,
+				17B5C2B391EB5B29AD1C725E /* UITextFieldWithPicker.m */,
 			);
-			path = UITextFieldWithDatePicker;
+			path = UITextFieldPicker;
 			sourceTree = "<group>";
 		};
 		17B5CF6F0C9E0CA75B8AC47D /* Frameworks */ = {
@@ -169,8 +193,49 @@
 				17B5CD335D7E3059BACE5B0F /* UIKit.framework */,
 				17B5CA998EBAEE23911CE978 /* Foundation.framework */,
 				17B5C00A093E4E48061349B1 /* CoreGraphics.framework */,
+				73EACB8017F9AD46000A444C /* XCTest.framework */,
+				B65F29986BB74A408EF079D2 /* libPods-Tests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		17B5CF97FAB2E799186CE2BB /* UITextSubClass */ = {
+			isa = PBXGroup;
+			children = (
+				17B5C5335D3D5B8E079C30EB /* UITextFieldWithDatePicker */,
+				17B5C688D75D08A17D6F96A9 /* UITextFieldToolBar */,
+				17B5CBD28C5BDDF32BB4C831 /* UITextFieldPicker */,
+				17B5CFD22AD40C8AF5BA1205 /* UITextViewWithToolbar */,
+			);
+			path = UITextSubClass;
+			sourceTree = "<group>";
+		};
+		17B5CFD22AD40C8AF5BA1205 /* UITextViewWithToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				17B5C21EE101DF029320D766 /* UITextViewWithToolBar.h */,
+				17B5C7A2D9410D77CC8FABD3 /* UITextViewWithToolBar.m */,
+			);
+			path = UITextViewWithToolbar;
+			sourceTree = "<group>";
+		};
+		73EACB8417F9AD46000A444C /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				73EACB8517F9AD46000A444C /* Supporting Files */,
+				17B5C06D5D2AFABC4668D82B /* UITextViewWithToolbarTest.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		73EACB8517F9AD46000A444C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				73EACB8617F9AD46000A444C /* Tests-Info.plist */,
+				73EACB8717F9AD46000A444C /* InfoPlist.strings */,
+				73EACB8C17F9AD46000A444C /* Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,11 +258,38 @@
 			productReference = 17B5C0D623C7FF067EB237A6 /* UITextSubClass.app */;
 			productType = "com.apple.product-type.application";
 		};
+		73EACB7E17F9AD46000A444C /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73EACB9117F9AD46000A444C /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				3A956A133E3041E7899788D6 /* Check Pods Manifest.lock */,
+				73EACB7B17F9AD46000A444C /* Sources */,
+				73EACB7C17F9AD46000A444C /* Frameworks */,
+				73EACB7D17F9AD46000A444C /* Resources */,
+				E63563D6367647F8A0D943D1 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73EACB8E17F9AD46000A444C /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 73EACB7F17F9AD46000A444C /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		17B5C5EEDB0839A1B9FBFB41 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				TargetAttributes = {
+					73EACB7E17F9AD46000A444C = {
+						TestTargetID = 17B5C16BC8E6ED55005FF050 /* UITextSubClass */;
+					};
+				};
+			};
 			buildConfigurationList = 17B5C98C3D2093D000570863 /* Build configuration list for PBXProject "UITextSubClass" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -211,6 +303,7 @@
 			projectRoot = "";
 			targets = (
 				17B5C16BC8E6ED55005FF050 /* UITextSubClass */,
+				73EACB7E17F9AD46000A444C /* Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -228,7 +321,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		73EACB7D17F9AD46000A444C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73EACB8917F9AD46000A444C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A956A133E3041E7899788D6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E63563D6367647F8A0D943D1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		17B5C2EA2B963896316B6FF5 /* Sources */ = {
@@ -237,15 +371,35 @@
 			files = (
 				17B5C239B054BD771FB7E3D0 /* main.m in Sources */,
 				17B5CC7B209152CF7353437A /* AppDelegate.m in Sources */,
-				17B5C89AA627D1DD30817A32 /* UITextFieldWithDatePicker.m in Sources */,
-				17B5C82294C1EAF303C4A34A /* UITextFieldWithToolbar.m in Sources */,
-				17B5C0EE01AC9EAB02FF550A /* UITextFieldWithPicker.m in Sources */,
-				17B5CE5D91CDFEE62145514B /* UITextViewWithToolBar.m in Sources */,
 				737068EF168996C0007BAA4F /* MyTableViewController.m in Sources */,
+				17B5C4E8E6FAC19EB2880BE6 /* UITextFieldWithDatePicker.m in Sources */,
+				17B5CCF4E521D55AD663CB41 /* UITextFieldWithToolbar.m in Sources */,
+				17B5CF5B19767DC57E050C33 /* UITextFieldWithPicker.m in Sources */,
+				17B5C3ECDA5CBBAB26A75805 /* UITextViewWithToolBar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73EACB7B17F9AD46000A444C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17B5CB9D64F37735A227858F /* UITextViewWithToolbarTest.m in Sources */,
+				17B5CEA2FBD660F5C64B65D7 /* UITextFieldWithPicker.m in Sources */,
+				17B5C7B680CBB3EAC12F28BA /* UITextFieldWithToolbar.m in Sources */,
+				17B5C80CFD32277629AF5ED9 /* UITextFieldWithDatePicker.m in Sources */,
+				17B5C882D727D6A2FC8CAB8C /* UITextViewWithToolBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		73EACB8E17F9AD46000A444C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17B5C16BC8E6ED55005FF050 /* UITextSubClass */;
+			targetProxy = 73EACB8D17F9AD46000A444C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		17B5C137FDDEFC0A46C79FC3 /* MainStoryboard.storyboard */ = {
@@ -264,6 +418,14 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+		73EACB8717F9AD46000A444C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73EACB8817F9AD46000A444C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -271,8 +433,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "UITextCategory/UITextSubClass-Prefix.pch";
-				INFOPLIST_FILE = "UITextCategory/UITextSubClass-Info.plist";
+				GCC_PREFIX_HEADER = "Example/UITextSubClass-Prefix.pch";
+				INFOPLIST_FILE = "Example/UITextSubClass-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = UITextSubClass;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -334,14 +496,85 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "UITextCategory/UITextSubClass-Prefix.pch";
-				INFOPLIST_FILE = "UITextCategory/UITextSubClass-Info.plist";
+				GCC_PREFIX_HEADER = "Example/UITextSubClass-Prefix.pch";
+				INFOPLIST_FILE = "Example/UITextSubClass-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = UITextSubClass;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
+		};
+		73EACB8F17F9AD46000A444C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43C3FA33E1D64DADAC2A953D /* Pods-Tests.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UITextSubClass.app/UITextSubClass";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		73EACB9017F9AD46000A444C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43C3FA33E1D64DADAC2A953D /* Pods-Tests.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UITextSubClass.app/UITextSubClass";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -360,6 +593,15 @@
 			buildConfigurations = (
 				17B5CBAE8BA520FF06926056 /* Release */,
 				17B5C71E467DC1B9238A9E49 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73EACB9117F9AD46000A444C /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73EACB8F17F9AD46000A444C /* Release */,
+				73EACB9017F9AD46000A444C /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

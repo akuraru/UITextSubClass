@@ -116,15 +116,7 @@
 }
 
 - (void)textChanged:(NSNotification *) notification {
-    if ([[self.placeholder text] length] == 0) {
-        return;
-    }
-
-    if ([[self text] length] == 0) {
-        [self.placeholder setAlpha:1.0];
-    } else {
-        [self.placeholder setAlpha:0.0];
-    }
+    [self updatePlaceholderLabel];
 }
 
 - (void)gotFocus:(NSNotification *) notification {
@@ -132,21 +124,20 @@
 }
 
 - (void)lostFocus:(NSNotification *) notification {
-    if ([[self text] length] == 0) {
-        [self.placeholder setAlpha:1.0];
-    } else {
-        [self.placeholder setAlpha:0.0];
-    }
+    [self updatePlaceholderLabel];
 }
 
 - (void)drawRect:(CGRect) rect {
     [super drawRect:rect];
+    [self updatePlaceholderLabel];
+}
+
+- (void)updatePlaceholderLabel {
     if ([[self text] length] == 0 && [[self.placeholder text] length] > 0) {
         [self.placeholder setAlpha:1.0];
     } else {
         [self.placeholder setAlpha:0.0];
     }
-
 }
 
 - (void)setFont:(UIFont *) font {
@@ -158,6 +149,7 @@
 - (void)setPlaceholderText:(NSString *) placeholderText {
     [self.placeholder setText:placeholderText];
     [self.placeholder sizeToFit];
+    [self updatePlaceholderLabel];
 
 }
 
