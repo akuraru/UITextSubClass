@@ -4,9 +4,19 @@ UITextField/UITextView subclass.
 
 ![UITextField+DatePicker](https://monosnap.com/image/TSwA3hPoDkdrr1jJRnGaaFQpI.png)
 
-## Usage
+## Installation
 
-* D&D SubClass/* to your project
+CocoaPods
+
+``` objc
+pod 'UITextSubClass', :git => 'https://github.com/azu/UITextSubClass.git'
+```
+
+
+* D&D UITextSubClass/* to your project
+
+
+## Usage
 
 ### UITextFieldWithDatePicker
 
