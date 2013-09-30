@@ -1,6 +1,5 @@
 //
 //  UITextViewWithToolbar.m
-//  diseases
 //
 //  Created by azu on 11/20/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
@@ -11,12 +10,6 @@
 
 @implementation UITextViewWithToolbar {
 }
-
-@synthesize placeholderText = _placeholderText;
-@synthesize placeholder = _placeholder;
-
-
-
 #pragma mark - toolbar
 - (void)done {
     [self resignFirstResponder];
@@ -29,7 +22,7 @@
     keyboardDoneButtonView.tintColor = nil;
     [keyboardDoneButtonView sizeToFit];
     UIBarButtonItem *centerSpace = [[UIBarButtonItem alloc]
-                                                     initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+        initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
         target:nil action:nil];
 
     UIBarButtonItem *doneButton;
@@ -49,7 +42,7 @@
 }
 
 - (void)setupPlaceholder {
-    if ([self placeholder]){
+    if ([self placeholder]) {
         return;
     }
 
@@ -67,11 +60,11 @@
     [self setPlaceholder:self.placeholder];
 
     [[NSNotificationCenter defaultCenter]
-                           addObserver:self selector:@selector(textChanged:) name:UITextViewTextDidChangeNotification object:nil];
+        addObserver:self selector:@selector(textChanged:) name:UITextViewTextDidChangeNotification object:nil];
     [[NSNotificationCenter defaultCenter]
-                           addObserver:self selector:@selector(gotFocus:) name:UITextViewTextDidBeginEditingNotification object:nil];
+        addObserver:self selector:@selector(gotFocus:) name:UITextViewTextDidBeginEditingNotification object:nil];
     [[NSNotificationCenter defaultCenter]
-                           addObserver:self selector:@selector(lostFocus:) name:UITextViewTextDidEndEditingNotification object:nil];
+        addObserver:self selector:@selector(lostFocus:) name:UITextViewTextDidEndEditingNotification object:nil];
 
 }
 
@@ -81,74 +74,74 @@
     [self setUpStyle];
 }
 
-- (void)setUpStyle {
 // style customize - https://github.com/tomohisa/JTCCustomizableUIComponent
-    if (_borderColor){
+- (void)setUpStyle {
+    if (_borderColor) {
         self.layer.borderColor = _borderColor.CGColor;
     }
-    if (_shadowColor){
+    if (_shadowColor) {
         self.layer.shadowColor = _shadowColor.CGColor;
     }
-    if (_shadowOpacity){
+    if (_shadowOpacity) {
         self.layer.shadowOpacity = [_shadowOpacity floatValue];
     }
-    if (_borderWidth){
+    if (_borderWidth) {
         self.layer.borderWidth = [_borderWidth floatValue];
     }
-    if (_shadowRadius){
+    if (_shadowRadius) {
         self.layer.shadowRadius = [_shadowRadius floatValue];
     }
-    if (_cornerRadius){
+    if (_cornerRadius) {
         self.layer.cornerRadius = [_cornerRadius floatValue];
     }
-    if (_shadowOffset){
+    if (_shadowOffset) {
         self.layer.shadowOffset = [_shadowOffset CGSizeValue];
     }
 }
 
-- (id)initWithCoder:(NSCoder *)aDecoder {
+- (id)initWithCoder:(NSCoder *) aDecoder {
     self = [super initWithCoder:aDecoder];
-    if (self){
+    if (self) {
         [self setupPlaceholder];
     }
     return self;
 }
 
-- (id)initWithFrame:(CGRect)frame {
+- (id)initWithFrame:(CGRect) frame {
     self = [super initWithFrame:frame];
-    if (self){
+    if (self) {
         [self setupPlaceholder];
     }
     return self;
 }
 
-- (void)textChanged:(NSNotification *)notification {
-    if ([[self.placeholder text] length] == 0){
+- (void)textChanged:(NSNotification *) notification {
+    if ([[self.placeholder text] length] == 0) {
         return;
     }
 
-    if ([[self text] length] == 0){
+    if ([[self text] length] == 0) {
         [self.placeholder setAlpha:1.0];
     } else {
         [self.placeholder setAlpha:0.0];
     }
 }
 
-- (void)gotFocus:(NSNotification *)notification {
+- (void)gotFocus:(NSNotification *) notification {
     [self.placeholder setAlpha:0.0];
 }
 
-- (void)lostFocus:(NSNotification *)notification {
-    if ([[self text] length] == 0){
+- (void)lostFocus:(NSNotification *) notification {
+    if ([[self text] length] == 0) {
         [self.placeholder setAlpha:1.0];
     } else {
         [self.placeholder setAlpha:0.0];
     }
 }
 
-- (void)drawRect:(CGRect)rect {
+- (void)drawRect:(CGRect) rect {
     [super drawRect:rect];
-    if ([[self text] length] == 0 && [[self.placeholder text] length] > 0){
+    if ([[self text] length] == 0 && [[self.placeholder text] length] > 0) {
         [self.placeholder setAlpha:1.0];
     } else {
         [self.placeholder setAlpha:0.0];
@@ -156,13 +149,13 @@
 
 }
 
-- (void)setFont:(UIFont *)font {
+- (void)setFont:(UIFont *) font {
     [super setFont:font];
     [self.placeholder setFont:self.font];
 }
 
 
-- (void)setPlaceholderText:(NSString *)placeholderText {
+- (void)setPlaceholderText:(NSString *) placeholderText {
     [self.placeholder setText:placeholderText];
     [self.placeholder sizeToFit];
 
@@ -172,7 +165,7 @@
     return [self.placeholder textColor];
 }
 
-- (void)setPlaceholderColor:(UIColor *)placeholderColor {
+- (void)setPlaceholderColor:(UIColor *) placeholderColor {
     [self.placeholder setTextColor:placeholderColor];
 }
 @end

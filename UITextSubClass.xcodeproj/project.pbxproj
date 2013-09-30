@@ -97,7 +97,7 @@
 				17B5CF16BD060C4FABB41C11 /* UITextFieldWithDatePicker */,
 				17B5C09C512DB0FE9F906694 /* UITextFieldToolBar */,
 				17B5C634C91FFCA719204F54 /* UITextFieldPicker */,
-				17B5C4886949685B5DFD123D /* UITextView */,
+				17B5C4886949685B5DFD123D /* UITextViewWithToolbar */,
 			);
 			path = SubClass;
 			sourceTree = "<group>";
@@ -112,13 +112,13 @@
 			);
 			sourceTree = "<group>";
 		};
-		17B5C4886949685B5DFD123D /* UITextView */ = {
+		17B5C4886949685B5DFD123D /* UITextViewWithToolbar */ = {
 			isa = PBXGroup;
 			children = (
 				17B5CD59733DED7B657628B0 /* UITextViewWithToolBar.h */,
 				17B5C214013CC5D5B674EC40 /* UITextViewWithToolBar.m */,
 			);
-			path = UITextView;
+			path = UITextViewWithToolbar;
 			sourceTree = "<group>";
 		};
 		17B5C634C91FFCA719204F54 /* UITextFieldPicker */ = {
