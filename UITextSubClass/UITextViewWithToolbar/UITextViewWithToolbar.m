@@ -5,8 +5,8 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import <QuartzCore/QuartzCore.h>
 #import "UITextViewWithToolbar.h"
+#import "UITextSubClassHelper.h"
 
 @implementation UITextViewWithToolbar {
 }
@@ -19,17 +19,15 @@
     UIToolbar *keyboardDoneButtonView = [[UIToolbar alloc] init];
     keyboardDoneButtonView.barStyle = UIBarStyleBlack;
     keyboardDoneButtonView.translucent = YES;
-    keyboardDoneButtonView.tintColor = nil;
     [keyboardDoneButtonView sizeToFit];
+
     UIBarButtonItem *centerSpace = [[UIBarButtonItem alloc]
         initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
         target:nil action:nil];
 
-    UIBarButtonItem *doneButton;
-    doneButton = [[UIBarButtonItem alloc] init];
-    doneButton.tintColor = nil;
+    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] init];
     doneButton.style = UIBarButtonItemStyleDone;
-    doneButton.title = NSLocalizedString(@"Done", @"Done");
+    doneButton.title = NSLocalizedStringFromTableInBundle(@"Done", nil, [UITextSubClassHelper bundle], @"Done");
     doneButton.target = self;
     doneButton.action = @selector(done);
     [keyboardDoneButtonView setItems:[NSArray arrayWithObjects:centerSpace, doneButton, nil]];

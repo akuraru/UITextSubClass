@@ -5,6 +5,7 @@
 
 #import "UITextFieldWithDatePicker.h"
 #import "UITextFieldWithDatePickerProtocol.h"
+#import "UITextSubClassHelper.h"
 
 
 @implementation UITextFieldWithDatePicker {
@@ -57,36 +58,39 @@
     if (self.dateFormatter == nil) {
         self.dateFormatter = [[NSDateFormatter alloc] init];
         // http://qiita.com/items/868788c46315b0095869
-        NSString *dateString = nil;
-        if (self.datePickerMode == UIDatePickerModeDate) {
-            dateString = [NSDateFormatter dateFormatFromTemplate:@"yyyyMd" options:0 locale:[NSLocale currentLocale]];
-        } else if (self.datePickerMode == UIDatePickerModeTime) {
-            dateString = [NSDateFormatter dateFormatFromTemplate:@"HHmm" options:0 locale:[NSLocale currentLocale]];
-        } else if (self.datePickerMode == UIDatePickerModeDateAndTime) {
-            dateString = [NSDateFormatter dateFormatFromTemplate:@"yyyyMd HHmm" options:0 locale:[NSLocale currentLocale]];
-        }
+        NSString *dateString = [self dateFormatString];
         [self.dateFormatter setDateFormat:dateString];
     }
     self.text = [self.dateFormatter stringFromDate:self.datePicker.date];
 }
 
+- (NSString *)dateFormatString {
+    NSString *dateString = nil;
+    if (self.datePickerMode == UIDatePickerModeDate) {
+        dateString = [NSDateFormatter dateFormatFromTemplate:@"yyyyMd" options:0 locale:[NSLocale currentLocale]];
+    } else if (self.datePickerMode == UIDatePickerModeTime) {
+        dateString = [NSDateFormatter dateFormatFromTemplate:@"HHmm" options:0 locale:[NSLocale currentLocale]];
+    } else if (self.datePickerMode == UIDatePickerModeDateAndTime) {
+        dateString = [NSDateFormatter dateFormatFromTemplate:@"yyyyMd HHmm" options:0 locale:[NSLocale currentLocale]];
+    }
+    return dateString;
+}
+
 - (NSString *)labelFromTimeInterval:(NSTimeInterval) interval {
     NSTimeInterval theTimeInterval = interval;
-// Get the system calendar
-    NSCalendar *sysCalendar = [NSCalendar currentCalendar];
-// Create the NSDates
+    NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDate *date1 = [[NSDate alloc] init];
     NSDate *date2 = [[NSDate alloc] initWithTimeInterval:theTimeInterval sinceDate:date1];
-// Get conversion to months, days, hours, minutes
-    unsigned int unitFlags = NSHourCalendarUnit | NSMinuteCalendarUnit | NSDayCalendarUnit | NSMonthCalendarUnit;
-
-    NSDateComponents *conversionInfo = [sysCalendar components:unitFlags fromDate:date1 toDate:date2 options:0];
+    NSCalendarUnit unitFlags = NSHourCalendarUnit | NSMinuteCalendarUnit | NSDayCalendarUnit | NSMonthCalendarUnit;
+    NSDateComponents *conversionInfo = [calendar components:unitFlags fromDate:date1 toDate:date2 options:0];
     NSMutableString *mutableString = [NSMutableString string];
     if ([conversionInfo hour] != 0) {
-        [mutableString appendFormat:@"%d時間", [conversionInfo hour]];
+        NSString *hour = NSLocalizedStringFromTableInBundle(@"%d hour", nil, [UITextSubClassHelper bundle], @"%d hour");
+        [mutableString appendFormat:hour, [conversionInfo hour]];
     }
     if ([conversionInfo minute] != 0) {
-        [mutableString appendFormat:@"%d分", [conversionInfo minute]];
+        NSString *minute = NSLocalizedStringFromTableInBundle(@"%d min", nil, [UITextSubClassHelper bundle], @"%d min");
+        [mutableString appendFormat:minute, [conversionInfo minute]];
     }
 
     return mutableString;
@@ -109,25 +113,19 @@
 - (UIView *)inputAccessoryView {
     UIToolbar *keyboardDoneButtonView = [[UIToolbar alloc] init];
     keyboardDoneButtonView.barStyle = UIBarStyleBlack;
-    keyboardDoneButtonView.translucent = YES;
-    keyboardDoneButtonView.tintColor = nil;
     [keyboardDoneButtonView sizeToFit];
 
-    UIBarButtonItem *cancelButton;
-    cancelButton = [[UIBarButtonItem alloc] init];
+    UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] init];
     cancelButton.style = UIBarButtonItemStyleBordered;
-    cancelButton.tintColor = nil;
-    cancelButton.title = NSLocalizedString(@"Cancel", @"Cancel");
+    cancelButton.title = NSLocalizedStringFromTableInBundle(@"Cancel", nil, [UITextSubClassHelper bundle], @"Cancel");
     cancelButton.target = self;
     cancelButton.action = @selector(cancelDatePicker);
     UIBarButtonItem *centerSpace = [[UIBarButtonItem alloc]
-            initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
-                                 target:nil action:nil];
-    UIBarButtonItem *doneButton;
-    doneButton = [[UIBarButtonItem alloc] init];
+        initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+        target:nil action:nil];
+    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] init];
     doneButton.style = UIBarButtonItemStyleDone;
-    doneButton.tintColor = nil;
-    doneButton.title = NSLocalizedString(@"Done", @"Done");
+    doneButton.title = NSLocalizedStringFromTableInBundle(@"Done", nil, [UITextSubClassHelper bundle], @"Done");
     doneButton.target = self;
     doneButton.action = @selector(done);
     [keyboardDoneButtonView setItems:[NSArray arrayWithObjects:cancelButton, centerSpace, doneButton, nil]];

@@ -5,39 +5,39 @@
 
 #import "UITextFieldWithPicker.h"
 #import "UITextFieldWithPickerProtocol.h"
+#import "UITextSubClassHelper.h"
 
 
 @implementation UITextFieldWithPicker {
 }
 
 
-- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
-    // コンポーネント(ぐるぐる回る列)は2つ
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *) pickerView {
+    // Components is single
     return 1;
 }
 
-- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component; {
+- (NSInteger)pickerView:(UIPickerView *) pickerView numberOfRowsInComponent:(NSInteger) component; {
     return [self.dataSource count];
 }
 
-- (NSString *)pickerView:(UIPickerView *)picker titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+- (NSString *)pickerView:(UIPickerView *) picker titleForRow:(NSInteger) row forComponent:(NSInteger) component {
     return [self.dataSource objectAtIndex:(NSUInteger)row];
 }
 
 
-- (id)initWithCoder:(NSCoder *)aDecoder {
+- (id)initWithCoder:(NSCoder *) aDecoder {
     self = [super initWithCoder:aDecoder];
-    if (!self){
+    if (!self) {
         return nil;
     }
-
-    // ピッカーの作成
     self.pickerView = [[UIPickerView alloc] init];
     self.pickerView.delegate = self;
     self.pickerView.showsSelectionIndicator = YES;
     return self;
 
 }
+
 - (UIView *)inputView {
     return self.pickerView;
 }
@@ -48,9 +48,9 @@
 }
 
 - (void)donePicker {
-    if ([self selectedValue]){
+    if ([self selectedValue]) {
         self.text = [self selectedValue];
-        if ([self.myDelegate respondsToSelector:@selector(savePickerView:)]){
+        if ([self.myDelegate respondsToSelector:@selector(savePickerView:)]) {
             [self.myDelegate savePickerView:self.pickerView];
         }
     }
@@ -65,25 +65,23 @@
     UIToolbar *keyboardDoneButtonView = [[UIToolbar alloc] init];
     keyboardDoneButtonView.barStyle = UIBarStyleBlack;
     keyboardDoneButtonView.translucent = YES;
-    keyboardDoneButtonView.tintColor = nil;
     [keyboardDoneButtonView sizeToFit];
 
     UIBarButtonItem *cancelButton;
     cancelButton = [[UIBarButtonItem alloc] init];
     cancelButton.style = UIBarButtonItemStyleBordered;
-    cancelButton.title = NSLocalizedString(@"Cancel", @"Cancel");
+    cancelButton.title = NSLocalizedStringFromTableInBundle(@"Cancel", nil, [UITextSubClassHelper bundle], @"Cancel");
     cancelButton.target = self;
     cancelButton.action = @selector(cancelDatePicker);
     UIBarButtonItem *centerSpace = [[UIBarButtonItem alloc]
-                                                     initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+        initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
         target:nil action:nil];
-    UIBarButtonItem *doneButton;
-    doneButton = [[UIBarButtonItem alloc] init];
+    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] init];
     doneButton.style = UIBarButtonItemStyleDone;
-    doneButton.title = NSLocalizedString(@"Done", @"Done");
+    doneButton.title = NSLocalizedStringFromTableInBundle(@"Done", nil, [UITextSubClassHelper bundle], @"Done");
     doneButton.target = self;
     doneButton.action = @selector(donePicker);
-    [keyboardDoneButtonView setItems:[NSArray arrayWithObjects:cancelButton, centerSpace, doneButton, nil]];
+    [keyboardDoneButtonView setItems:@[cancelButton, centerSpace, doneButton]];
     return keyboardDoneButtonView;
 }
 
