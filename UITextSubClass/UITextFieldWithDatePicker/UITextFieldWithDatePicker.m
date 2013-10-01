@@ -40,10 +40,21 @@
     [self updateText];
 }
 
-- (UIView *)inputView {
-    self.datePicker.datePickerMode = self.datePickerMode;
-    self.datePicker.minuteInterval = self.minuteInterval;
+- (UIDatePickerMode)datePickerMode {
+    return self.datePicker.datePickerMode;
+}
+- (void)setDatePickerMode:(UIDatePickerMode)datePickerMode {
+    self.datePicker.datePickerMode = datePickerMode;
+}
 
+- (NSInteger)minuteInterval {
+    return self.datePicker.minuteInterval;
+}
+- (void)setMinuteInterval:(NSInteger)minuteInterval {
+    self.datePicker.minuteInterval = minuteInterval;
+}
+
+- (UIView *)inputView {
     return self.datePicker;
 }
 
