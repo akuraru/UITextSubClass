@@ -120,11 +120,17 @@
         }
         [self updateText];
     }
-    [self resignFirstResponder];
+	[self dismissPickerView];
 }
-
 - (void)cancelDatePicker {
-    [self resignFirstResponder];
+	[self dismissPickerView];
+}
+- (void)dismissPickerView {
+	if (popoverController) {
+		[popoverController dismissPopoverAnimated:YES];
+    } else {
+		[self resignFirstResponder];
+	}
 }
 
 - (UIView *)inputAccessoryView {
