@@ -66,15 +66,16 @@
 }
 
 - (NSString *)dateFormatString {
-    NSString *dateString = nil;
-    if (self.datePickerMode == UIDatePickerModeDate) {
-        dateString = [NSDateFormatter dateFormatFromTemplate:@"yyyyMd" options:0 locale:[NSLocale currentLocale]];
-    } else if (self.datePickerMode == UIDatePickerModeTime) {
-        dateString = [NSDateFormatter dateFormatFromTemplate:@"HHmm" options:0 locale:[NSLocale currentLocale]];
-    } else if (self.datePickerMode == UIDatePickerModeDateAndTime) {
-        dateString = [NSDateFormatter dateFormatFromTemplate:@"yyyyMd HHmm" options:0 locale:[NSLocale currentLocale]];
+    switch (self.datePickerMode) {
+        case UIDatePickerModeDate:
+            return [NSDateFormatter dateFormatFromTemplate:@"yyyyMd" options:0 locale:[NSLocale currentLocale]];
+        case UIDatePickerModeTime:
+            return [NSDateFormatter dateFormatFromTemplate:@"HHmm" options:0 locale:[NSLocale currentLocale]];
+        case UIDatePickerModeDateAndTime:
+            return [NSDateFormatter dateFormatFromTemplate:@"yyyyMd HHmm" options:0 locale:[NSLocale currentLocale]];
+        default:
+            return nil;
     }
-    return dateString;
 }
 
 - (NSString *)labelFromTimeInterval:(NSTimeInterval) interval {
