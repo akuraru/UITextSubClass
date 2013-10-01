@@ -8,6 +8,8 @@
 
 #import "MyTableViewController.h"
 #import "UITextFieldWithDatePicker.h"
+#import "UITextFieldWithToolbar.h"
+#import "UITextFieldWithPicker.h"
 
 @interface MyTableViewController ()
 
@@ -28,12 +30,17 @@
 
     // set datePickerMode
     self.dateTextField.myDelegate = self;
-    // set DatePicker type
     self.dateTextField.datePickerMode = UIDatePickerModeDate;
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
     self.dateTextField.dateFormatter = dateFormatter;// pass original date formatter
+
+    // countdown
+    self.dateCountDownTextField.datePickerMode = UIDatePickerModeCountDownTimer;
+
+    // UIPicker + UITextField
+    self.pickerTextField.dataSource = @[@"foo", @"biz", @"bar"];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -96,10 +96,10 @@
 - (NSString *)labelFromTimeInterval:(NSTimeInterval) interval {
     NSTimeInterval theTimeInterval = interval;
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDate *date1 = [[NSDate alloc] init];
-    NSDate *date2 = [[NSDate alloc] initWithTimeInterval:theTimeInterval sinceDate:date1];
+    NSDate *formDate = [NSDate date];
+    NSDate *toDate = [NSDate dateWithTimeInterval:theTimeInterval sinceDate:formDate];
     NSCalendarUnit unitFlags = NSHourCalendarUnit | NSMinuteCalendarUnit | NSDayCalendarUnit | NSMonthCalendarUnit;
-    NSDateComponents *conversionInfo = [calendar components:unitFlags fromDate:date1 toDate:date2 options:0];
+    NSDateComponents *conversionInfo = [calendar components:unitFlags fromDate:formDate toDate:toDate options:0];
     NSMutableString *mutableString = [NSMutableString string];
     if ([conversionInfo hour] != 0) {
         NSString *hour = NSLocalizedStringFromTableInBundle(@"%d hour", nil, [UITextSubClassHelper bundle], @"%d hour");

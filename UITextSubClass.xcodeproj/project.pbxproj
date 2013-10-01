@@ -317,7 +317,7 @@
 			attributes = {
 				TargetAttributes = {
 					73EACB7E17F9AD46000A444C = {
-						TestTargetID = 17B5C16BC8E6ED55005FF050;
+						TestTargetID = 17B5C16BC8E6ED55005FF050 /* UITextSubClass */;
 					};
 				};
 			};
