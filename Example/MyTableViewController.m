@@ -40,6 +40,7 @@
     self.dateCountDownTextField.datePickerMode = UIDatePickerModeCountDownTimer;
 
     // UIPicker + UITextField
+    self.pickerTextField.myDelegate = self;
     self.pickerTextField.dataSource = @[@"foo", @"biz", @"bar"];
 }
 
@@ -57,6 +58,10 @@
 #pragma mark - UITextField DatePicker delegate
 - (void)saveDateFrom:(UITextFieldWithDatePicker *) textField {
     NSLog(@"textField.date = %@", textField.date);
+}
+
+- (void)savePickerFrom:(UITextFieldWithPicker *) textFieldWithPicker {
+    NSLog(@"textFieldWithPicker = %@", textFieldWithPicker);
 }
 
 @end

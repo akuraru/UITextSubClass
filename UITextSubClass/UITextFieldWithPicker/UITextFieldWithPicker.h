@@ -4,13 +4,13 @@
 
 
 #import <Foundation/Foundation.h>
+#import "UITextFieldWithPickerBase.h"
 
 @protocol UITextFieldWithPickerProtocol;
 
 
-@interface UITextFieldWithPicker : UITextField <UIPickerViewDelegate>
+@interface UITextFieldWithPicker : UITextFieldWithPickerBase <UIPickerViewDelegate>
 
-@property(nonatomic, strong) UIPickerView *pickerView;
 @property(nonatomic, strong) NSArray *dataSource;
 @property(nonatomic, weak) NSObject <UITextFieldWithPickerProtocol> *myDelegate;
 

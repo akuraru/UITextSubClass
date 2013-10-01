@@ -113,7 +113,7 @@
     return mutableString;
 }
 
-- (void)done {
+- (void)donePicker {
     if (self.datePicker.date != nil) {
         if ([self.myDelegate respondsToSelector:@selector(saveDateFrom:)]) {
             [self.myDelegate saveDateFrom:self];

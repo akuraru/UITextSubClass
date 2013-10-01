@@ -41,13 +41,13 @@
 - (UIView *)inputView {
     return _pickerView;
 }
-- (void)done {
+- (void)donePicker {
 	if ([self selectedValue]) {
 		self.text = [self selectedValue];
 	}
 	[self dismissPickerView];
 }
-- (void)cancelDatePicker {
+- (void)cancelPicker {
 	[self dismissPickerView];
 }
 - (void)dismissPickerView {
@@ -94,7 +94,7 @@
     cancelButton.style = UIBarButtonItemStyleBordered;
     cancelButton.title = NSLocalizedStringFromTableInBundle(@"Cancel", nil, [UITextSubClassHelper bundle], @"Cancel");
     cancelButton.target = self;
-    cancelButton.action = @selector(cancelDatePicker);
+    cancelButton.action = @selector(cancelPicker);
     UIBarButtonItem *centerSpace = [[UIBarButtonItem alloc]
                                     initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
                                     target:nil action:nil];
@@ -102,7 +102,7 @@
     doneButton.style = UIBarButtonItemStyleDone;
     doneButton.title = NSLocalizedStringFromTableInBundle(@"Done", nil, [UITextSubClassHelper bundle], @"Done");
     doneButton.target = self;
-    doneButton.action = @selector(done);
+    doneButton.action = @selector(donePicker);
     [keyboardDoneButtonView setItems:[NSArray arrayWithObjects:cancelButton, centerSpace, doneButton, nil]];
     
 	keyboardDoneButtonView.frame = CGRectMake(0, 0, kWeight, kToolBarHeight);

@@ -54,4 +54,4 @@ get selected date
 
 UITextFieldToolBar is UITextField subclass
 
-Simply add @"done" button.
+Simply add @"donePicker" button.

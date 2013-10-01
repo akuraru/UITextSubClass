@@ -8,8 +8,7 @@
 #import "UITextSubClassHelper.h"
 
 
-@implementation UITextFieldWithPicker {
-}
+@implementation UITextFieldWithPicker
 
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *) pickerView {
@@ -31,19 +30,19 @@
     if (!self) {
         return nil;
     }
-    self.pickerView = [[UIPickerView alloc] init];
-    self.pickerView.delegate = self;
-    self.pickerView.showsSelectionIndicator = YES;
+    _pickerView = [[UIPickerView alloc] init];
+    [(UIPickerView *)_pickerView setDelegate:self];
+    [(UIPickerView *)_pickerView setShowsSelectionIndicator:YES];
     return self;
 
 }
 
 - (UIView *)inputView {
-    return self.pickerView;
+    return _pickerView;
 }
 
 - (NSString *)selectedValue {
-    NSInteger selected = [self.pickerView selectedRowInComponent:0];
+    NSInteger selected = [_pickerView selectedRowInComponent:0];
     return [self.dataSource objectAtIndex:(NSUInteger)selected];
 }
 
@@ -53,42 +52,14 @@
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-implementations"
         if ([self.myDelegate respondsToSelector:@selector(savePickerView:)]) {
-            [self.myDelegate savePickerView:self.pickerView];
+            [self.myDelegate savePickerView:_pickerView];
         }
 #pragma clang diagnostic pop
         if ([self.myDelegate respondsToSelector:@selector(savePickerFrom:)]) {
             [self.myDelegate savePickerFrom:self];
         }
     }
-    [self resignFirstResponder];
-}
-
-- (void)cancelDatePicker {
-    [self resignFirstResponder];
-}
-
-- (UIView *)inputAccessoryView {
-    UIToolbar *keyboardDoneButtonView = [[UIToolbar alloc] init];
-    keyboardDoneButtonView.barStyle = UIBarStyleBlack;
-    keyboardDoneButtonView.translucent = YES;
-    [keyboardDoneButtonView sizeToFit];
-
-    UIBarButtonItem *cancelButton;
-    cancelButton = [[UIBarButtonItem alloc] init];
-    cancelButton.style = UIBarButtonItemStyleBordered;
-    cancelButton.title = NSLocalizedStringFromTableInBundle(@"Cancel", nil, [UITextSubClassHelper bundle], @"Cancel");
-    cancelButton.target = self;
-    cancelButton.action = @selector(cancelDatePicker);
-    UIBarButtonItem *centerSpace = [[UIBarButtonItem alloc]
-        initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
-        target:nil action:nil];
-    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] init];
-    doneButton.style = UIBarButtonItemStyleDone;
-    doneButton.title = NSLocalizedStringFromTableInBundle(@"Done", nil, [UITextSubClassHelper bundle], @"Done");
-    doneButton.target = self;
-    doneButton.action = @selector(donePicker);
-    [keyboardDoneButtonView setItems:@[cancelButton, centerSpace, doneButton]];
-    return keyboardDoneButtonView;
+    [super dismissPickerView];
 }
 
 @end
