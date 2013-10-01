@@ -7,6 +7,12 @@
 //
 
 #import "UITextFieldWithPickerBase.h"
+#import "UITextSubClassHelper.h"
+
+#define kToolBarHeight 44
+#define kPickerHeiht 216
+#define kPopOverHeight (kToolBarHeight + kPickerHeiht)
+#define kWeight 320
 
 @interface UITextFieldWithPickerBase () <UITextFieldDelegate>
 @end
@@ -29,10 +35,13 @@
     return nil;
 }
 
+- (CGRect)pickerFrame {
+    return CGRectMake(0, kToolBarHeight, kWeight, kPickerHeiht);
+}
 - (UIView *)inputView {
     return _pickerView;
 }
-- (void)doneDatePicker {
+- (void)done {
 	if ([self selectedValue]) {
 		self.text = [self selectedValue];
 	}
@@ -69,12 +78,36 @@
         
 		popoverController = [[UIPopoverController alloc] initWithContentViewController:popoverContent];
 		[popoverController presentPopoverFromRect:self.frame inView:self.superview permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
-		[popoverController setPopoverContentSize:CGSizeMake(320, 264) animated:NO];
+		[popoverController setPopoverContentSize:CGSizeMake(kWeight, kPopOverHeight) animated:NO];
 	}
     
     return NO;
 }
 
+
+- (UIView *)inputAccessoryView {
+    UIToolbar *keyboardDoneButtonView = [[UIToolbar alloc] init];
+    keyboardDoneButtonView.barStyle = UIBarStyleBlack;
+    [keyboardDoneButtonView sizeToFit];
+    
+    UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] init];
+    cancelButton.style = UIBarButtonItemStyleBordered;
+    cancelButton.title = NSLocalizedStringFromTableInBundle(@"Cancel", nil, [UITextSubClassHelper bundle], @"Cancel");
+    cancelButton.target = self;
+    cancelButton.action = @selector(cancelDatePicker);
+    UIBarButtonItem *centerSpace = [[UIBarButtonItem alloc]
+                                    initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                    target:nil action:nil];
+    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] init];
+    doneButton.style = UIBarButtonItemStyleDone;
+    doneButton.title = NSLocalizedStringFromTableInBundle(@"Done", nil, [UITextSubClassHelper bundle], @"Done");
+    doneButton.target = self;
+    doneButton.action = @selector(done);
+    [keyboardDoneButtonView setItems:[NSArray arrayWithObjects:cancelButton, centerSpace, doneButton, nil]];
+    
+	keyboardDoneButtonView.frame = CGRectMake(0, 0, kWeight, kToolBarHeight);
+    return keyboardDoneButtonView;
+}
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
     if ([baseDelegate respondsToSelector:@selector(textFieldDidBeginEditing:)]) {

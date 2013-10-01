@@ -13,6 +13,9 @@
     id _pickerView;
 	UIPopoverController *popoverController;
 }
+- (CGRect)pickerFrame;
+- (void)dismissPickerView;
+
 - (void)setDelegate:(id<UITextFieldDelegate>)delegate;
 - (id<UITextFieldDelegate>)delegate;
 
