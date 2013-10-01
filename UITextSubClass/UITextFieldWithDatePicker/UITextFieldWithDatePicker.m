@@ -16,17 +16,15 @@
     if (!self) {
         return nil;
     }
+    _datePicker = [[UIDatePicker alloc] init];
+    [_datePicker setAutoresizingMask:UIViewAutoresizingNone];
+    [_datePicker setMinuteInterval:0];
+    [_datePicker setTimeZone:[NSTimeZone systemTimeZone]];
     return self;
 }
 
 
 - (UIDatePicker *)datePicker {
-    if (_datePicker == nil) {
-        _datePicker = [[UIDatePicker alloc] init];
-        _datePicker.autoresizingMask = UIViewAutoresizingNone;
-        _datePicker.minuteInterval = 0;
-        [_datePicker setTimeZone:[NSTimeZone systemTimeZone]];
-    }
     return _datePicker;
 }
 
