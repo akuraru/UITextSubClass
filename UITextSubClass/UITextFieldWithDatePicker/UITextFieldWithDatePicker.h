@@ -12,10 +12,12 @@
 
 @property(nonatomic, weak) NSObject <UITextFieldDelegate, UITextFieldWithDatePickerProtocol> *myDelegate;
 @property(nonatomic, strong) UIDatePicker *datePicker;
-@property(nonatomic, strong) NSDate *date;
 @property(nonatomic) UIDatePickerMode datePickerMode;
 @property(nonatomic) NSInteger minuteInterval;
 @property(nonatomic, strong) NSDateFormatter *dateFormatter;
+
+- (NSDate *)date;
+- (void)setDate:(NSDate *)date;
 
 - (void)updateText;
 
