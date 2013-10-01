@@ -16,16 +16,17 @@
     if (!self) {
         return nil;
     }
-    _datePicker = [[UIDatePicker alloc] init];
-    [_datePicker setAutoresizingMask:UIViewAutoresizingNone];
-    [_datePicker setMinuteInterval:0];
-    [_datePicker setTimeZone:[NSTimeZone systemTimeZone]];
+    _pickerView = [[UIDatePicker alloc] init];
+	[_pickerView setFrame:CGRectMake(0, 44, 320, 216)];
+    [_pickerView setAutoresizingMask:UIViewAutoresizingNone];
+    [_pickerView setMinuteInterval:0];
+    [_pickerView setTimeZone:[NSTimeZone systemTimeZone]];
     return self;
 }
 
 
 - (UIDatePicker *)datePicker {
-    return _datePicker;
+    return _pickerView;
 }
 
 - (NSDate *)date {
@@ -145,7 +146,8 @@
     doneButton.target = self;
     doneButton.action = @selector(done);
     [keyboardDoneButtonView setItems:[NSArray arrayWithObjects:cancelButton, centerSpace, doneButton, nil]];
-
+    
+	keyboardDoneButtonView.frame = CGRectMake(0, 0, 320, 44);
     return keyboardDoneButtonView;
 }
 

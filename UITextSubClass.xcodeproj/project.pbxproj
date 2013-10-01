@@ -37,6 +37,7 @@
 		73EACB9617F9BD14000A444C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73EACB9917F9BD14000A444C /* Localizable.strings */; };
 		73EACB9717F9BD14000A444C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73EACB9917F9BD14000A444C /* Localizable.strings */; };
 		7C610C4B07B2445B88A6CFF5 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B65F29986BB74A408EF079D2 /* libPods-Tests.a */; };
+		BE4D155D17FA566E002EEF1C /* UITextFieldWithPickerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4D155C17FA566E002EEF1C /* UITextFieldWithPickerBase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,8 @@
 		73EACB9817F9BD14000A444C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		73EACB9A17F9BD18000A444C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B65F29986BB74A408EF079D2 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE4D155A17FA5656002EEF1C /* UITextFieldWithPickerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithPickerBase.h; sourceTree = "<group>"; };
+		BE4D155C17FA566E002EEF1C /* UITextFieldWithPickerBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithPickerBase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +219,7 @@
 		17B5CF97FAB2E799186CE2BB /* UITextSubClass */ = {
 			isa = PBXGroup;
 			children = (
+				BE4D155817FA5632002EEF1C /* UITextFieldWithPickerBase */,
 				17B5C5335D3D5B8E079C30EB /* UITextFieldWithDatePicker */,
 				17B5C688D75D08A17D6F96A9 /* UITextFieldWithToolbar */,
 				17B5CBD28C5BDDF32BB4C831 /* UITextFieldWithPicker */,
@@ -254,6 +258,15 @@
 				73EACB8C17F9AD46000A444C /* Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE4D155817FA5632002EEF1C /* UITextFieldWithPickerBase */ = {
+			isa = PBXGroup;
+			children = (
+				BE4D155C17FA566E002EEF1C /* UITextFieldWithPickerBase.m */,
+				BE4D155A17FA5656002EEF1C /* UITextFieldWithPickerBase.h */,
+			);
+			name = UITextFieldWithPickerBase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,7 +317,7 @@
 			attributes = {
 				TargetAttributes = {
 					73EACB7E17F9AD46000A444C = {
-						TestTargetID = 17B5C16BC8E6ED55005FF050 /* UITextSubClass */;
+						TestTargetID = 17B5C16BC8E6ED55005FF050;
 					};
 				};
 			};
@@ -390,6 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE4D155D17FA566E002EEF1C /* UITextFieldWithPickerBase.m in Sources */,
 				17B5C239B054BD771FB7E3D0 /* main.m in Sources */,
 				17B5CC7B209152CF7353437A /* AppDelegate.m in Sources */,
 				737068EF168996C0007BAA4F /* MyTableViewController.m in Sources */,

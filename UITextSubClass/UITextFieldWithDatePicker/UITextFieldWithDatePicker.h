@@ -4,14 +4,14 @@
 
 
 #import <Foundation/Foundation.h>
+#import "UITextFieldWithPickerBase.h"
 
 @protocol UITextFieldWithDatePickerProtocol;
 
-@interface UITextFieldWithDatePicker : UITextField {
+@interface UITextFieldWithDatePicker : UITextFieldWithPickerBase {
 }
 
 @property(nonatomic, weak) NSObject <UITextFieldDelegate, UITextFieldWithDatePickerProtocol> *myDelegate;
-@property(nonatomic, strong) UIDatePicker *datePicker;
 @property(nonatomic, strong) NSDateFormatter *dateFormatter;
 
 - (NSDate *)date;
