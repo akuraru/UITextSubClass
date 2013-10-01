@@ -60,7 +60,7 @@
 }
 
 - (void)updateText {
-    // countdownだけ少し特殊
+    // countdown is special case
     if (self.datePickerMode == UIDatePickerModeCountDownTimer) {
         self.text = [self labelFromTimeInterval:self.datePicker.countDownDuration];
         return;

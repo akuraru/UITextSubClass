@@ -22,11 +22,13 @@
 
 - (void)setDatePickerMode:(UIDatePickerMode) datePickerMode;
 
+- (void)updateText;
+
+#pragma mark - UIDatePickerModeCountDownTimer
 - (NSInteger)minuteInterval;
 
 - (void)setMinuteInterval:(NSInteger) minuteInterval;
 
-- (void)updateText;
 
 
 @end

@@ -6,12 +6,19 @@ UITextField/UITextView subclass.
 
 ## Installation
 
-CocoaPods
+### CocoaPods
 
 ``` ruby
 pod 'UITextSubClass', :git => 'https://github.com/azu/UITextSubClass.git'
 ```
 
+if you want to use one components, install specific subspec.
+
+``` ruby
+pod 'UITextSubClass/UITextFieldWithDatePicker'
+```
+
+### Direct
 
 * D&D UITextSubClass/* to your project
 
@@ -27,12 +34,12 @@ UITextFieldWithDatePicker is UITextField subclass
     // set DatePicker type
     dateTextField.datePickerMode = UIDatePickerModeDate;
 
-if set ``UIDatePickerModeTime``, you can set default minuteInterval :
+if setting ``UIDatePickerModeTime``, you should also set default minuteInterval :
 
     dateTextField.minuteInterval = 60; // default minuteInterval
 
-You can pass original dateformatter:
-(Sending no dateformatter to dateTextField, will use ``dateFormatFromTemplate:``)
+You can pass original UIDateFormatter:
+(Defaults: use ``dateFormatFromTemplate:``)
 
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
@@ -46,9 +53,8 @@ manually update TextField
 get selected date
 
     dateTextField.date;// <NSDate>
-    // also set date
+    // also set date & update
     dateTextField.date = [NSDate date];
-    [dateTextField updateText];
 
 ### UITextFieldToolBar
 

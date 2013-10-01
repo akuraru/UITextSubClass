@@ -10,11 +10,11 @@
 
 @interface UITextViewWithToolbar : UITextView
 
+#pragma mark - user defined runtime attributes
 
 @property(nonatomic, strong) NSString *placeholderText;
 @property(nonatomic, strong) UIColor *placeholderColor;
 @property(nonatomic, strong) UILabel *placeholder;
-#pragma mark - user defined runtime attributes
 
 // Those Property would only work with Storyboard - iOS5
 @property(nonatomic, strong) UIColor *borderColor; // Color
