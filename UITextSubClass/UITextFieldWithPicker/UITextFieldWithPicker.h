@@ -11,6 +11,7 @@
 
 @interface UITextFieldWithPicker : UITextFieldWithPickerBase <UIPickerViewDelegate>
 
+- (UIPickerView *)pickerView;
 @property(nonatomic, strong) NSArray *dataSource;
 @property(nonatomic, weak) NSObject <UITextFieldWithPickerProtocol> *myDelegate;
 

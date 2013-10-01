@@ -39,6 +39,10 @@
     return _pickerView;
 }
 
+- (UIPickerView *)pickerView {
+    return _pickerView;
+}
+
 - (NSString *)selectedValue {
     NSInteger selected = [_pickerView selectedRowInComponent:0];
     return [self.dataSource objectAtIndex:(NSUInteger)selected];

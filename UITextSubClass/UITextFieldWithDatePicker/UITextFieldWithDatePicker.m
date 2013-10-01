@@ -52,6 +52,7 @@
     return self.datePicker.minuteInterval;
 }
 - (void)setMinuteInterval:(NSInteger)minuteInterval {
+
     self.datePicker.minuteInterval = minuteInterval;
 }
 
