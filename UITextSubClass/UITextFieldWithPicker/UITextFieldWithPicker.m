@@ -22,29 +22,21 @@
     return [self.dataSource objectAtIndex:(NSUInteger)row];
 }
 
-
-- (id)initWithCoder:(NSCoder *) aDecoder {
-    self = [super initWithCoder:aDecoder];
-    if (!self) {
-        return nil;
-    }
-    _pickerView = [[UIPickerView alloc] init];
-    [(UIPickerView *)_pickerView setDelegate:self];
-    [(UIPickerView *)_pickerView setShowsSelectionIndicator:YES];
-    return self;
-
-}
-
 - (UIView *)inputView {
-    return _pickerView;
+    return self.pickerView;
 }
 
 - (UIPickerView *)pickerView {
+    if (_pickerView == nil) {
+        _pickerView = [[UIPickerView alloc] init];
+        [(UIPickerView *)_pickerView setDelegate:self];
+        [(UIPickerView *)_pickerView setShowsSelectionIndicator:YES];
+    }
     return _pickerView;
 }
 
 - (NSString *)selectedValue {
-    NSInteger selected = [_pickerView selectedRowInComponent:0];
+    NSInteger selected = [self.pickerView selectedRowInComponent:0];
     return [self.dataSource objectAtIndex:(NSUInteger)selected];
 }
 
@@ -54,7 +46,7 @@
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-implementations"
         if ([self.myDelegate respondsToSelector:@selector(savePickerView:)]) {
-            [self.myDelegate savePickerView:_pickerView];
+            [self.myDelegate savePickerView:self.pickerView];
         }
 #pragma clang diagnostic pop
         if ([self.myDelegate respondsToSelector:@selector(savePickerFrom:)]) {

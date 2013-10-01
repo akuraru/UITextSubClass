@@ -10,11 +10,11 @@
 #import "UITextFieldWithPicker.h"
 #import "OCMockObject.h"
 #import "UITextFieldWithPickerProtocol.h"
-#import "UITextFieldWithDatePickerProtocol.h"
 
-@interface UITextFieldWithPicker(mock)
+@interface UITextFieldWithPicker (mock)
 - (void)donePicker;
 @end
+
 @interface UITextFieldWithPickerTest : XCTestCase
 
 @end

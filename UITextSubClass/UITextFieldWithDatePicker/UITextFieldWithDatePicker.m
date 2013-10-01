@@ -11,21 +11,14 @@
 @implementation UITextFieldWithDatePicker {
 }
 
-- (id)initWithCoder:(NSCoder *) aDecoder {
-    self = [super initWithCoder:aDecoder];
-    if (!self) {
-        return nil;
-    }
-    _pickerView = [[UIDatePicker alloc] init];
-	[_pickerView setFrame:[self pickerFrame]];
-    [_pickerView setAutoresizingMask:UIViewAutoresizingNone];
-    [_pickerView setMinuteInterval:0];
-    [_pickerView setTimeZone:[NSTimeZone systemTimeZone]];
-    return self;
-}
-
-
 - (UIDatePicker *)datePicker {
+    if (_pickerView == nil) {
+        _pickerView = [[UIDatePicker alloc] init];
+        [_pickerView setFrame:[self pickerFrame]];
+        [_pickerView setAutoresizingMask:UIViewAutoresizingNone];
+        [_pickerView setMinuteInterval:0];
+        [_pickerView setTimeZone:[NSTimeZone systemTimeZone]];
+    }
     return _pickerView;
 }
 
@@ -44,14 +37,16 @@
 - (UIDatePickerMode)datePickerMode {
     return self.datePicker.datePickerMode;
 }
-- (void)setDatePickerMode:(UIDatePickerMode)datePickerMode {
+
+- (void)setDatePickerMode:(UIDatePickerMode) datePickerMode {
     self.datePicker.datePickerMode = datePickerMode;
 }
 
 - (NSInteger)minuteInterval {
     return self.datePicker.minuteInterval;
 }
-- (void)setMinuteInterval:(NSInteger)minuteInterval {
+
+- (void)setMinuteInterval:(NSInteger) minuteInterval {
 
     self.datePicker.minuteInterval = minuteInterval;
 }
@@ -69,6 +64,7 @@
     NSDateFormatter *dateFormatter = [self dateFormatter];
     self.text = [dateFormatter stringFromDate:self.datePicker.date];
 }
+
 - (NSDateFormatter *)dateFormatter {
     if (_dateFormatter) {
         return _dateFormatter;
@@ -121,15 +117,15 @@
         }
         [self updateText];
     }
-	[super dismissPickerView];
+    [super dismissPickerView];
 }
 
-- (BOOL)canPerformAction:(SEL)action withSender:(id)sender {
-	UIMenuController *menuController = [UIMenuController sharedMenuController];
-	if (menuController) {
-		[UIMenuController sharedMenuController].menuVisible = NO;
-	}
-	return NO;
+- (BOOL)canPerformAction:(SEL) action withSender:(id) sender {
+    UIMenuController *menuController = [UIMenuController sharedMenuController];
+    if (menuController) {
+        [UIMenuController sharedMenuController].menuVisible = NO;
+    }
+    return NO;
 }
 
 @end
