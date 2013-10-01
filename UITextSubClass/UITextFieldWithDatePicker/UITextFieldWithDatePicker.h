@@ -7,7 +7,6 @@
 #import "UITextFieldWithPickerBase.h"
 
 @protocol UITextFieldWithDatePickerProtocol;
-
 @interface UITextFieldWithDatePicker : UITextFieldWithPickerBase {
 }
 
