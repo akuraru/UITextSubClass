@@ -39,6 +39,7 @@
         return;
     }
     [self.datePicker setDate:date];
+    [self updateText];
 }
 
 - (UIView *)inputView {
