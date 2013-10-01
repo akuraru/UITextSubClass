@@ -16,18 +16,17 @@
     if (!self) {
         return nil;
     }
+    _pickerView = [[UIDatePicker alloc] init];
+	[_pickerView setFrame:[self pickerFrame]];
+    [_pickerView setAutoresizingMask:UIViewAutoresizingNone];
+    [_pickerView setMinuteInterval:0];
+    [_pickerView setTimeZone:[NSTimeZone systemTimeZone]];
     return self;
 }
 
 
 - (UIDatePicker *)datePicker {
-    if (_datePicker == nil) {
-        _datePicker = [[UIDatePicker alloc] init];
-        _datePicker.autoresizingMask = UIViewAutoresizingNone;
-        _datePicker.minuteInterval = 0;
-        [_datePicker setTimeZone:[NSTimeZone systemTimeZone]];
-    }
-    return _datePicker;
+    return _pickerView;
 }
 
 - (NSDate *)date {
@@ -39,12 +38,24 @@
         return;
     }
     [self.datePicker setDate:date];
+    [self updateText];
+}
+
+- (UIDatePickerMode)datePickerMode {
+    return self.datePicker.datePickerMode;
+}
+- (void)setDatePickerMode:(UIDatePickerMode)datePickerMode {
+    self.datePicker.datePickerMode = datePickerMode;
+}
+
+- (NSInteger)minuteInterval {
+    return self.datePicker.minuteInterval;
+}
+- (void)setMinuteInterval:(NSInteger)minuteInterval {
+    self.datePicker.minuteInterval = minuteInterval;
 }
 
 - (UIView *)inputView {
-    self.datePicker.datePickerMode = self.datePickerMode;
-    self.datePicker.minuteInterval = self.minuteInterval;
-
     return self.datePicker;
 }
 
@@ -54,26 +65,32 @@
         self.text = [self labelFromTimeInterval:self.datePicker.countDownDuration];
         return;
     }
-    // if user does not define dateFormatter
-    if (self.dateFormatter == nil) {
-        self.dateFormatter = [[NSDateFormatter alloc] init];
+    NSDateFormatter *dateFormatter = [self dateFormatter];
+    self.text = [dateFormatter stringFromDate:self.datePicker.date];
+}
+- (NSDateFormatter *)dateFormatter {
+    if (_dateFormatter) {
+        return _dateFormatter;
+    } else {
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         // http://qiita.com/items/868788c46315b0095869
         NSString *dateString = [self dateFormatString];
-        [self.dateFormatter setDateFormat:dateString];
+        [dateFormatter setDateFormat:dateString];
+        return dateFormatter;
     }
-    self.text = [self.dateFormatter stringFromDate:self.datePicker.date];
 }
 
 - (NSString *)dateFormatString {
-    NSString *dateString = nil;
-    if (self.datePickerMode == UIDatePickerModeDate) {
-        dateString = [NSDateFormatter dateFormatFromTemplate:@"yyyyMd" options:0 locale:[NSLocale currentLocale]];
-    } else if (self.datePickerMode == UIDatePickerModeTime) {
-        dateString = [NSDateFormatter dateFormatFromTemplate:@"HHmm" options:0 locale:[NSLocale currentLocale]];
-    } else if (self.datePickerMode == UIDatePickerModeDateAndTime) {
-        dateString = [NSDateFormatter dateFormatFromTemplate:@"yyyyMd HHmm" options:0 locale:[NSLocale currentLocale]];
+    switch (self.datePickerMode) {
+        case UIDatePickerModeDate:
+            return [NSDateFormatter dateFormatFromTemplate:@"yyyyMd" options:0 locale:[NSLocale currentLocale]];
+        case UIDatePickerModeTime:
+            return [NSDateFormatter dateFormatFromTemplate:@"HHmm" options:0 locale:[NSLocale currentLocale]];
+        case UIDatePickerModeDateAndTime:
+            return [NSDateFormatter dateFormatFromTemplate:@"yyyyMd HHmm" options:0 locale:[NSLocale currentLocale]];
+        default:
+            return nil;
     }
-    return dateString;
 }
 
 - (NSString *)labelFromTimeInterval:(NSTimeInterval) interval {
@@ -103,34 +120,16 @@
         }
         [self updateText];
     }
-    [self resignFirstResponder];
+	[super dismissPickerView];
 }
 
-- (void)cancelDatePicker {
-    [self resignFirstResponder];
-}
-
-- (UIView *)inputAccessoryView {
-    UIToolbar *keyboardDoneButtonView = [[UIToolbar alloc] init];
-    keyboardDoneButtonView.barStyle = UIBarStyleBlack;
-    [keyboardDoneButtonView sizeToFit];
-
-    UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] init];
-    cancelButton.style = UIBarButtonItemStyleBordered;
-    cancelButton.title = NSLocalizedStringFromTableInBundle(@"Cancel", nil, [UITextSubClassHelper bundle], @"Cancel");
-    cancelButton.target = self;
-    cancelButton.action = @selector(cancelDatePicker);
-    UIBarButtonItem *centerSpace = [[UIBarButtonItem alloc]
-        initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
-        target:nil action:nil];
-    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] init];
-    doneButton.style = UIBarButtonItemStyleDone;
-    doneButton.title = NSLocalizedStringFromTableInBundle(@"Done", nil, [UITextSubClassHelper bundle], @"Done");
-    doneButton.target = self;
-    doneButton.action = @selector(done);
-    [keyboardDoneButtonView setItems:[NSArray arrayWithObjects:cancelButton, centerSpace, doneButton, nil]];
-
-    return keyboardDoneButtonView;
+- (BOOL)canPerformAction:(SEL)action withSender:(id)sender {
+	UIMenuController *menuController = [UIMenuController sharedMenuController];
+	if (menuController) {
+		[UIMenuController sharedMenuController].menuVisible = NO;
+	}
+    
+	return NO;
 }
 
 @end

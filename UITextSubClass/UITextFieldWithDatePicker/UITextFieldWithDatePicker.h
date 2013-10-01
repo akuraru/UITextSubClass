@@ -4,18 +4,24 @@
 
 
 #import <Foundation/Foundation.h>
+#import "UITextFieldWithPickerBase.h"
 
 @protocol UITextFieldWithDatePickerProtocol;
 
-@interface UITextFieldWithDatePicker : UITextField {
+@interface UITextFieldWithDatePicker : UITextFieldWithPickerBase {
 }
 
 @property(nonatomic, weak) NSObject <UITextFieldDelegate, UITextFieldWithDatePickerProtocol> *myDelegate;
-@property(nonatomic, strong) UIDatePicker *datePicker;
-@property(nonatomic, strong) NSDate *date;
-@property(nonatomic) UIDatePickerMode datePickerMode;
-@property(nonatomic) NSInteger minuteInterval;
 @property(nonatomic, strong) NSDateFormatter *dateFormatter;
+
+- (NSDate *)date;
+- (void)setDate:(NSDate *)date;
+
+- (UIDatePickerMode)datePickerMode;
+- (void)setDatePickerMode:(UIDatePickerMode)datePickerMode;
+
+- (NSInteger)minuteInterval;
+- (void)setMinuteInterval:(NSInteger)minuteInterval;
 
 - (void)updateText;
 
