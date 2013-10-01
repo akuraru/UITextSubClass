@@ -5,8 +5,6 @@
 
 #import "UITextFieldWithPicker.h"
 #import "UITextFieldWithPickerProtocol.h"
-#import "UITextSubClassHelper.h"
-
 
 @implementation UITextFieldWithPicker
 

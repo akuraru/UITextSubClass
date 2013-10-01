@@ -128,7 +128,6 @@
 	if (menuController) {
 		[UIMenuController sharedMenuController].menuVisible = NO;
 	}
-    
 	return NO;
 }
 
