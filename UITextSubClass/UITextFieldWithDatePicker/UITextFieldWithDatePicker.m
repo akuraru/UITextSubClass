@@ -55,14 +55,19 @@
         self.text = [self labelFromTimeInterval:self.datePicker.countDownDuration];
         return;
     }
-    // if user does not define dateFormatter
-    if (self.dateFormatter == nil) {
-        self.dateFormatter = [[NSDateFormatter alloc] init];
+    NSDateFormatter *dateFormatter = [self dateFormatter];
+    self.text = [dateFormatter stringFromDate:self.datePicker.date];
+}
+- (NSDateFormatter *)dateFormatter {
+    if (_dateFormatter) {
+        return _dateFormatter;
+    } else {
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         // http://qiita.com/items/868788c46315b0095869
         NSString *dateString = [self dateFormatString];
-        [self.dateFormatter setDateFormat:dateString];
+        [dateFormatter setDateFormat:dateString];
+        return dateFormatter;
     }
-    self.text = [self.dateFormatter stringFromDate:self.datePicker.date];
 }
 
 - (NSString *)dateFormatString {
