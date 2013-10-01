@@ -41,6 +41,7 @@
 		73EACB9717F9BD14000A444C /* UITextSubClassLocalize.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73EACB9917F9BD14000A444C /* UITextSubClassLocalize.strings */; };
 		7C610C4B07B2445B88A6CFF5 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B65F29986BB74A408EF079D2 /* libPods-Tests.a */; };
 		C87907E4633B261AF3F9A55C /* UITextFieldWithNumberPad.m in Sources */ = {isa = PBXBuildFile; fileRef = C8790F0A9BFEE6BAB3A8D98A /* UITextFieldWithNumberPad.m */; };
+		C8790EECDB774515E2BC251A /* UITextFieldWithDecimalPad.m in Sources */ = {isa = PBXBuildFile; fileRef = C879039193D0C0CEF59F1124 /* UITextFieldWithDecimalPad.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,8 @@
 		B65F29986BB74A408EF079D2 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8790A1D20A4D740AF5B3180 /* UITextFieldWithNumberPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithNumberPad.h; sourceTree = "<group>"; };
 		C8790F0A9BFEE6BAB3A8D98A /* UITextFieldWithNumberPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithNumberPad.m; sourceTree = "<group>"; };
+		C879004D23966508DAE2EE3D /* UITextFieldWithDecimalPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithDecimalPad.h; sourceTree = "<group>"; };
+		C879039193D0C0CEF59F1124 /* UITextFieldWithDecimalPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithDecimalPad.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +246,7 @@
 				73EACB9917F9BD14000A444C /* UITextSubClassLocalize.strings */,
 				17B5CCB1C4DBD335EBDBB8F8 /* UITextFieldWithPickerBase */,
 				C87907A587543DA659F044C1 /* UITextFieldWithNumberPad */,
+				C879013ABA17C78656E876BE /* UITextFieldWithDecimalPad */,
 			);
 			path = UITextSubClass;
 			sourceTree = "<group>";
@@ -284,6 +288,13 @@
 				C8790A1D20A4D740AF5B3180 /* UITextFieldWithNumberPad.h */,
 			);
 			path = UITextFieldWithNumberPad;
+		C879013ABA17C78656E876BE /* UITextFieldWithDecimalPad */ = {
+			isa = PBXGroup;
+			children = (
+				C879039193D0C0CEF59F1124 /* UITextFieldWithDecimalPad.m */,
+				C879004D23966508DAE2EE3D /* UITextFieldWithDecimalPad.h */,
+			);
+			path = UITextFieldWithDecimalPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -430,6 +441,7 @@
 				17B5CB2EEC757E485DE56EDB /* UITextSubClassHelper.m in Sources */,
 				17B5CE9A102375134188EC2F /* UITextFieldWithPickerBase.m in Sources */,
 				C87907E4633B261AF3F9A55C /* UITextFieldWithNumberPad.m in Sources */,
+				C8790EECDB774515E2BC251A /* UITextFieldWithDecimalPad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
