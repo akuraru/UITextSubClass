@@ -36,7 +36,7 @@
 
 - (void)testMyDelegate_when_selected {
     id mockDelegate = [OCMockObject mockForProtocol:@protocol(UITextFieldWithPickerProtocol)];
-    [[mockDelegate expect] saveFromUITextFieldWithPicker:textFieldWithPicker];
+    [[mockDelegate expect] savePickerFrom:textFieldWithPicker];
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-implementations"
     [[mockDelegate expect] savePickerView:textFieldWithPicker.pickerView];

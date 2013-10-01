@@ -56,8 +56,8 @@
             [self.myDelegate savePickerView:self.pickerView];
         }
 #pragma clang diagnostic pop
-        if ([self.myDelegate respondsToSelector:@selector(saveFromUITextFieldWithPicker:)]) {
-            [self.myDelegate saveFromUITextFieldWithPicker:self];
+        if ([self.myDelegate respondsToSelector:@selector(savePickerFrom:)]) {
+            [self.myDelegate savePickerFrom:self];
         }
     }
     [self resignFirstResponder];

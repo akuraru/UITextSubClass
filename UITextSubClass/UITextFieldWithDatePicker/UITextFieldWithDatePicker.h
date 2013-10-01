@@ -7,6 +7,7 @@
 #import "UITextFieldWithPickerBase.h"
 
 @protocol UITextFieldWithDatePickerProtocol;
+
 @interface UITextFieldWithDatePicker : UITextFieldWithPickerBase {
 }
 
@@ -14,13 +15,16 @@
 @property(nonatomic, strong) NSDateFormatter *dateFormatter;
 
 - (NSDate *)date;
-- (void)setDate:(NSDate *)date;
+
+- (void)setDate:(NSDate *) date;
 
 - (UIDatePickerMode)datePickerMode;
-- (void)setDatePickerMode:(UIDatePickerMode)datePickerMode;
+
+- (void)setDatePickerMode:(UIDatePickerMode) datePickerMode;
 
 - (NSInteger)minuteInterval;
-- (void)setMinuteInterval:(NSInteger)minuteInterval;
+
+- (void)setMinuteInterval:(NSInteger) minuteInterval;
 
 - (void)updateText;
 

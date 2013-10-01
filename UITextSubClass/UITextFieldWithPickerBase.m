@@ -10,8 +10,8 @@
 #import "UITextSubClassHelper.h"
 
 #define kToolBarHeight 44
-#define kPickerHeiht 216
-#define kPopOverHeight (kToolBarHeight + kPickerHeiht)
+#define kPickerHeight 216
+#define kPopOverHeight (kToolBarHeight + kPickerHeight)
 #define kWeight 320
 
 @interface UITextFieldWithPickerBase () <UITextFieldDelegate>
@@ -36,7 +36,7 @@
 }
 
 - (CGRect)pickerFrame {
-    return CGRectMake(0, kToolBarHeight, kWeight, kPickerHeiht);
+    return CGRectMake(0, kToolBarHeight, kWeight, kPickerHeight);
 }
 - (UIView *)inputView {
     return _pickerView;
