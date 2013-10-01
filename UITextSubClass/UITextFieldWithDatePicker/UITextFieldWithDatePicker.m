@@ -102,11 +102,11 @@
     NSDateComponents *conversionInfo = [calendar components:unitFlags fromDate:formDate toDate:toDate options:0];
     NSMutableString *mutableString = [NSMutableString string];
     if ([conversionInfo hour] != 0) {
-        NSString *hour = NSLocalizedStringFromTableInBundle(@"%d hour", nil, [UITextSubClassHelper bundle], @"%d hour");
+        NSString *hour = NSLocalizedStringFromTableInBundle(@"%d hour", UITextSubClassLocalize, [UITextSubClassHelper bundle], @"%d hour");
         [mutableString appendFormat:hour, [conversionInfo hour]];
     }
     if ([conversionInfo minute] != 0) {
-        NSString *minute = NSLocalizedStringFromTableInBundle(@"%d min", nil, [UITextSubClassHelper bundle], @"%d min");
+        NSString *minute = NSLocalizedStringFromTableInBundle(@"%d min", UITextSubClassLocalize, [UITextSubClassHelper bundle], @"%d min");
         [mutableString appendFormat:minute, [conversionInfo minute]];
     }
 

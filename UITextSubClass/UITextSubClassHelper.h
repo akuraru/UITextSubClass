@@ -6,6 +6,8 @@
 #import <Foundation/Foundation.h>
 
 
+extern NSString *const UITextSubClassLocalize;
+
 @interface UITextSubClassHelper : NSObject
 + (NSBundle *)bundle;
 

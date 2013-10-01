@@ -28,7 +28,7 @@
         target:nil action:nil];
     UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] init];
     doneButton.style = UIBarButtonItemStyleDone;
-    doneButton.title = NSLocalizedStringFromTableInBundle(@"Done", nil, [UITextSubClassHelper bundle], @"Done");
+    doneButton.title = NSLocalizedStringFromTableInBundle(@"Done", UITextSubClassLocalize, [UITextSubClassHelper bundle], @"Done");
     doneButton.target = self;
     doneButton.action = @selector(resignFirstResponder);
     [keyboardDoneButtonView setItems:@[centerSpace, doneButton]];

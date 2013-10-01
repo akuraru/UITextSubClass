@@ -36,8 +36,8 @@
 		73EACB8217F9AD46000A444C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CA998EBAEE23911CE978 /* Foundation.framework */; };
 		73EACB8317F9AD46000A444C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CD335D7E3059BACE5B0F /* UIKit.framework */; };
 		73EACB8917F9AD46000A444C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73EACB8717F9AD46000A444C /* InfoPlist.strings */; };
-		73EACB9617F9BD14000A444C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73EACB9917F9BD14000A444C /* Localizable.strings */; };
-		73EACB9717F9BD14000A444C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73EACB9917F9BD14000A444C /* Localizable.strings */; };
+		73EACB9617F9BD14000A444C /* UITextSubClassLocalize.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73EACB9917F9BD14000A444C /* UITextSubClassLocalize.strings */; };
+		73EACB9717F9BD14000A444C /* UITextSubClassLocalize.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73EACB9917F9BD14000A444C /* UITextSubClassLocalize.strings */; };
 		7C610C4B07B2445B88A6CFF5 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B65F29986BB74A408EF079D2 /* libPods-Tests.a */; };
 /* End PBXBuildFile section */
 
@@ -95,8 +95,8 @@
 		73EACB8C17F9AD46000A444C /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		73EACB9417F9BD05000A444C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		73EACB9517F9BD05000A444C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		73EACB9817F9BD14000A444C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		73EACB9A17F9BD18000A444C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		73EACB9817F9BD14000A444C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/UITextSubClassLocalize.strings; sourceTree = "<group>"; };
+		73EACB9A17F9BD18000A444C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/UITextSubClassLocalize.strings; sourceTree = "<group>"; };
 		B65F29986BB74A408EF079D2 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -235,7 +235,7 @@
 				17B5CFD22AD40C8AF5BA1205 /* UITextViewWithToolbar */,
 				17B5C867B738CCD1D2B56AF1 /* UITextSubClassHelper.m */,
 				17B5CE885BF8F1572A6EF57D /* UITextSubClassHelper.h */,
-				73EACB9917F9BD14000A444C /* Localizable.strings */,
+				73EACB9917F9BD14000A444C /* UITextSubClassLocalize.strings */,
 				17B5CCB1C4DBD335EBDBB8F8 /* UITextFieldWithPickerBase */,
 			);
 			path = UITextSubClass;
@@ -351,7 +351,7 @@
 				17B5CB42375D39DE67DEC999 /* Default@2x.png in Resources */,
 				17B5CF1FA0525F406BF7D62E /* Default-568h@2x.png in Resources */,
 				17B5C2A9910B093DAD97C061 /* MainStoryboard.storyboard in Resources */,
-				73EACB9617F9BD14000A444C /* Localizable.strings in Resources */,
+				73EACB9617F9BD14000A444C /* UITextSubClassLocalize.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73EACB8917F9AD46000A444C /* InfoPlist.strings in Resources */,
-				73EACB9717F9BD14000A444C /* Localizable.strings in Resources */,
+				73EACB9717F9BD14000A444C /* UITextSubClassLocalize.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,13 +468,13 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		73EACB9917F9BD14000A444C /* Localizable.strings */ = {
+		73EACB9917F9BD14000A444C /* UITextSubClassLocalize.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				73EACB9817F9BD14000A444C /* en */,
 				73EACB9A17F9BD18000A444C /* ja */,
 			);
-			name = Localizable.strings;
+			name = UITextSubClassLocalize.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

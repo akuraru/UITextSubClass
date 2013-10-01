@@ -5,6 +5,7 @@
 
 #import "UITextSubClassHelper.h"
 
+NSString *const UITextSubClassLocalize = @"UITextSubClassLocalize";
 
 @implementation UITextSubClassHelper {
 

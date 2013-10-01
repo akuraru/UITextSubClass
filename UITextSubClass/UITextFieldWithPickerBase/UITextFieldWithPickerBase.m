@@ -92,7 +92,7 @@
     
     UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] init];
     cancelButton.style = UIBarButtonItemStyleBordered;
-    cancelButton.title = NSLocalizedStringFromTableInBundle(@"Cancel", nil, [UITextSubClassHelper bundle], @"Cancel");
+    cancelButton.title = NSLocalizedStringFromTableInBundle(@"Cancel", UITextSubClassLocalize, [UITextSubClassHelper bundle], @"Cancel");
     cancelButton.target = self;
     cancelButton.action = @selector(cancelPicker);
     UIBarButtonItem *centerSpace = [[UIBarButtonItem alloc]
@@ -100,7 +100,7 @@
                                     target:nil action:nil];
     UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] init];
     doneButton.style = UIBarButtonItemStyleDone;
-    doneButton.title = NSLocalizedStringFromTableInBundle(@"Done", nil, [UITextSubClassHelper bundle], @"Done");
+    doneButton.title = NSLocalizedStringFromTableInBundle(@"Done", UITextSubClassLocalize, [UITextSubClassHelper bundle], @"Done");
     doneButton.target = self;
     doneButton.action = @selector(donePicker);
     [keyboardDoneButtonView setItems:[NSArray arrayWithObjects:cancelButton, centerSpace, doneButton, nil]];
