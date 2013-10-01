@@ -12,6 +12,7 @@
 		17B5C3ECDA5CBBAB26A75805 /* UITextViewWithToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C7A2D9410D77CC8FABD3 /* UITextViewWithToolBar.m */; };
 		17B5C4E8E6FAC19EB2880BE6 /* UITextFieldWithDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CEB4A62A4A12AA4DF6F3 /* UITextFieldWithDatePicker.m */; };
 		17B5C661B532FC2895E983F4 /* UITextFieldWithPickerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C592B505BDE9A363CAED /* UITextFieldWithPickerTest.m */; };
+		17B5C6F5148D8F4E341CBE8F /* UITextFieldWithPickerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C9F190503A0A86AF7352 /* UITextFieldWithPickerBase.m */; };
 		17B5C71E93172AAC4DAE6950 /* UITextSubClassHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C867B738CCD1D2B56AF1 /* UITextSubClassHelper.m */; };
 		17B5C772D8CF9CBFCB1DBCBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CA998EBAEE23911CE978 /* Foundation.framework */; };
 		17B5C7B680CBB3EAC12F28BA /* UITextFieldWithToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C2D16161E03F8DD3F82C /* UITextFieldWithToolbar.m */; };
@@ -25,6 +26,7 @@
 		17B5CB9D64F37735A227858F /* UITextViewWithToolbarTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C06D5D2AFABC4668D82B /* UITextViewWithToolbarTest.m */; };
 		17B5CC7B209152CF7353437A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CD55C18EE69D46D50053 /* AppDelegate.m */; };
 		17B5CCF4E521D55AD663CB41 /* UITextFieldWithToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C2D16161E03F8DD3F82C /* UITextFieldWithToolbar.m */; };
+		17B5CE9A102375134188EC2F /* UITextFieldWithPickerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C9F190503A0A86AF7352 /* UITextFieldWithPickerBase.m */; };
 		17B5CEA2FBD660F5C64B65D7 /* UITextFieldWithPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C2B391EB5B29AD1C725E /* UITextFieldWithPicker.m */; };
 		17B5CF1FA0525F406BF7D62E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C5A3D65928ADBE8BDA5F /* Default-568h@2x.png */; };
 		17B5CF4446A4BB0CA29D0218 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C127C48985216D0E2852 /* Default.png */; };
@@ -37,7 +39,6 @@
 		73EACB9617F9BD14000A444C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73EACB9917F9BD14000A444C /* Localizable.strings */; };
 		73EACB9717F9BD14000A444C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73EACB9917F9BD14000A444C /* Localizable.strings */; };
 		7C610C4B07B2445B88A6CFF5 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B65F29986BB74A408EF079D2 /* libPods-Tests.a */; };
-		BE4D155D17FA566E002EEF1C /* UITextFieldWithPickerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4D155C17FA566E002EEF1C /* UITextFieldWithPickerBase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,11 +66,13 @@
 		17B5C592B505BDE9A363CAED /* UITextFieldWithPickerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithPickerTest.m; sourceTree = "<group>"; };
 		17B5C5A3D65928ADBE8BDA5F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		17B5C62EC3E860D60F900A1A /* UITextFieldWithPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithPicker.h; sourceTree = "<group>"; };
+		17B5C74A3AFFDB71937325F6 /* UITextFieldWithPickerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithPickerBase.h; sourceTree = "<group>"; };
 		17B5C7A2D9410D77CC8FABD3 /* UITextViewWithToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewWithToolBar.m; sourceTree = "<group>"; };
 		17B5C7E96C164B5921830962 /* UITextSubClass-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextSubClass-Prefix.pch"; sourceTree = "<group>"; };
 		17B5C867B738CCD1D2B56AF1 /* UITextSubClassHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextSubClassHelper.m; sourceTree = "<group>"; };
 		17B5C8787D8E78FAE52FA005 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		17B5C895E82A5AF3F6BFE348 /* UITextFieldWithPickerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithPickerProtocol.h; sourceTree = "<group>"; };
+		17B5C9F190503A0A86AF7352 /* UITextFieldWithPickerBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithPickerBase.m; sourceTree = "<group>"; };
 		17B5CA998EBAEE23911CE978 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		17B5CB1CC2AC1575EE09EF77 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		17B5CC21F20392DDA6819ED3 /* UITextFieldWithDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithDatePicker.h; sourceTree = "<group>"; };
@@ -95,8 +98,6 @@
 		73EACB9817F9BD14000A444C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		73EACB9A17F9BD18000A444C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B65F29986BB74A408EF079D2 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE4D155A17FA5656002EEF1C /* UITextFieldWithPickerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithPickerBase.h; sourceTree = "<group>"; };
-		BE4D155C17FA566E002EEF1C /* UITextFieldWithPickerBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithPickerBase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +205,15 @@
 			path = UITextFieldWithPicker;
 			sourceTree = "<group>";
 		};
+		17B5CCB1C4DBD335EBDBB8F8 /* UITextFieldWithPickerBase */ = {
+			isa = PBXGroup;
+			children = (
+				17B5C9F190503A0A86AF7352 /* UITextFieldWithPickerBase.m */,
+				17B5C74A3AFFDB71937325F6 /* UITextFieldWithPickerBase.h */,
+			);
+			path = UITextFieldWithPickerBase;
+			sourceTree = "<group>";
+		};
 		17B5CF6F0C9E0CA75B8AC47D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,7 +229,6 @@
 		17B5CF97FAB2E799186CE2BB /* UITextSubClass */ = {
 			isa = PBXGroup;
 			children = (
-				BE4D155817FA5632002EEF1C /* UITextFieldWithPickerBase */,
 				17B5C5335D3D5B8E079C30EB /* UITextFieldWithDatePicker */,
 				17B5C688D75D08A17D6F96A9 /* UITextFieldWithToolbar */,
 				17B5CBD28C5BDDF32BB4C831 /* UITextFieldWithPicker */,
@@ -227,6 +236,7 @@
 				17B5C867B738CCD1D2B56AF1 /* UITextSubClassHelper.m */,
 				17B5CE885BF8F1572A6EF57D /* UITextSubClassHelper.h */,
 				73EACB9917F9BD14000A444C /* Localizable.strings */,
+				17B5CCB1C4DBD335EBDBB8F8 /* UITextFieldWithPickerBase */,
 			);
 			path = UITextSubClass;
 			sourceTree = "<group>";
@@ -258,15 +268,6 @@
 				73EACB8C17F9AD46000A444C /* Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		BE4D155817FA5632002EEF1C /* UITextFieldWithPickerBase */ = {
-			isa = PBXGroup;
-			children = (
-				BE4D155C17FA566E002EEF1C /* UITextFieldWithPickerBase.m */,
-				BE4D155A17FA5656002EEF1C /* UITextFieldWithPickerBase.h */,
-			);
-			name = UITextFieldWithPickerBase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,7 +404,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE4D155D17FA566E002EEF1C /* UITextFieldWithPickerBase.m in Sources */,
 				17B5C239B054BD771FB7E3D0 /* main.m in Sources */,
 				17B5CC7B209152CF7353437A /* AppDelegate.m in Sources */,
 				737068EF168996C0007BAA4F /* MyTableViewController.m in Sources */,
@@ -412,6 +412,7 @@
 				17B5CF5B19767DC57E050C33 /* UITextFieldWithPicker.m in Sources */,
 				17B5C3ECDA5CBBAB26A75805 /* UITextViewWithToolBar.m in Sources */,
 				17B5CB2EEC757E485DE56EDB /* UITextSubClassHelper.m in Sources */,
+				17B5CE9A102375134188EC2F /* UITextFieldWithPickerBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +427,7 @@
 				17B5C882D727D6A2FC8CAB8C /* UITextViewWithToolBar.m in Sources */,
 				17B5C71E93172AAC4DAE6950 /* UITextSubClassHelper.m in Sources */,
 				17B5C661B532FC2895E983F4 /* UITextFieldWithPickerTest.m in Sources */,
+				17B5C6F5148D8F4E341CBE8F /* UITextFieldWithPickerBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
