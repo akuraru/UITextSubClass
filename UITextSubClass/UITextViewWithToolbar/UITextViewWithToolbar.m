@@ -30,7 +30,7 @@
     doneButton.title = NSLocalizedStringFromTableInBundle(@"Done", UITextSubClassLocalize, [UITextSubClassHelper bundle], @"Done");
     doneButton.target = self;
     doneButton.action = @selector(done);
-    [keyboardDoneButtonView setItems:[NSArray arrayWithObjects:centerSpace, doneButton, nil]];
+    [keyboardDoneButtonView setItems:@[centerSpace, doneButton]];
     return keyboardDoneButtonView;
 }
 

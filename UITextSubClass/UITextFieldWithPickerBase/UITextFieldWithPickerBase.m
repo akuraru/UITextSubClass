@@ -103,7 +103,7 @@
     doneButton.title = NSLocalizedStringFromTableInBundle(@"Done", UITextSubClassLocalize, [UITextSubClassHelper bundle], @"Done");
     doneButton.target = self;
     doneButton.action = @selector(donePicker);
-    [keyboardDoneButtonView setItems:[NSArray arrayWithObjects:cancelButton, centerSpace, doneButton, nil]];
+    [keyboardDoneButtonView setItems:@[cancelButton, centerSpace, doneButton]];
     
 	keyboardDoneButtonView.frame = CGRectMake(0, 0, kWeight, kToolBarHeight);
     return keyboardDoneButtonView;

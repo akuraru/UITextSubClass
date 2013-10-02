@@ -8,8 +8,10 @@
 
 #import <XCTest/XCTest.h>
 #import <OCMock/OCMockObject.h>
+#import <OCMock/OCMArg.h>
 #import "UITextFieldWithDatePicker.h"
-#import "UITextFieldWithDatePickerProtocol.h"
+#import "UITextFieldWithPickerProtocol.h"
+
 @interface UITextFieldWithDatePicker(mock)
 - (void)donePicker;
 @end
@@ -33,8 +35,12 @@
 }
 
 - (void)testMyDelegate_when_done {
-    id mockDelegate = [OCMockObject mockForProtocol:@protocol(UITextFieldWithDatePickerProtocol)];
-    [[mockDelegate expect] saveDateFrom:textFieldWithPicker];
+    id mockDelegate = [OCMockObject mockForProtocol:@protocol(UITextFieldWithPickerProtocol)];
+    [[mockDelegate expect] savePickerFrom:textFieldWithPicker];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-implementations"
+    [[mockDelegate expect] savePickerView:OCMOCK_ANY];
+#pragma clang diagnostic pop
     // given
     textFieldWithPicker.myDelegate = mockDelegate;
     // when
