@@ -56,12 +56,12 @@
 }
 
 #pragma mark - UITextField DatePicker delegate
-- (void)saveDateFrom:(UITextFieldWithDatePicker *) textField {
-    NSLog(@"textField.date = %@", textField.date);
-}
-
-- (void)savePickerFrom:(UITextFieldWithPicker *) textFieldWithPicker {
-    NSLog(@"textFieldWithPicker = %@", textFieldWithPicker);
+- (void)savePickerFrom:(id) textField {
+    if ([textField isKindOfClass:UITextFieldWithPicker.class]) {
+        NSLog(@"textFieldWithPicker = %@", textField);
+    } else {
+        NSLog(@"textField.date = %@", [textField date]);
+    }
 }
 
 @end
