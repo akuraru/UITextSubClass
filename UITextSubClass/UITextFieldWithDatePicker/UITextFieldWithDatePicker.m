@@ -31,7 +31,7 @@
         return;
     }
     [self.datePicker setDate:date];
-    [self updateText];
+    self.text = [self selectedValue];
 }
 
 - (UIDatePickerMode)datePickerMode {
@@ -54,15 +54,16 @@
 - (UIView *)inputView {
     return self.datePicker;
 }
-
 - (void)updateText {
+    self.text = [self selectedValue];
+}
+- (NSString *)selectedValue {
     // countdown is special case
     if (self.datePickerMode == UIDatePickerModeCountDownTimer) {
-        self.text = [self labelFromTimeInterval:self.datePicker.countDownDuration];
-        return;
+        return [self labelFromTimeInterval:self.datePicker.countDownDuration];
     }
     NSDateFormatter *dateFormatter = [self dateFormatter];
-    self.text = [dateFormatter stringFromDate:self.datePicker.date];
+    return [dateFormatter stringFromDate:self.datePicker.date];
 }
 
 - (NSDateFormatter *)dateFormatter {
@@ -110,20 +111,9 @@
     return mutableString;
 }
 
-- (void)donePicker {
-    if (self.datePicker.date != nil) {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-implementations"
-        if ([self.myDelegate respondsToSelector:@selector(savePickerView:)]) {
-            [self.myDelegate savePickerView:_pickerView];
-        }
-#pragma clang diagnostic pop
-        if ([self.myDelegate respondsToSelector:@selector(savePickerFrom:)]) {
-            [self.myDelegate savePickerFrom:self];
-        }
-        [self updateText];
-    }
-    [super dismissPickerView];
+
+- (BOOL)hasValue {
+    return self.datePicker.date != nil;
 }
 
 - (BOOL)canPerformAction:(SEL) action withSender:(id) sender {

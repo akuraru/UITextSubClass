@@ -11,7 +11,6 @@
 @interface UITextFieldWithDatePicker : UITextFieldWithPickerBase {
 }
 
-@property(nonatomic, weak) NSObject <UITextFieldWithPickerProtocol> *myDelegate;
 @property(nonatomic, strong) NSDateFormatter *dateFormatter;
 
 - (NSDate *)date;

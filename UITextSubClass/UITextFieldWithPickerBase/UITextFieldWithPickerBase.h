@@ -8,11 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol UITextFieldWithPickerProtocol;
+
 @interface UITextFieldWithPickerBase : UITextField {
 @protected
     id _pickerView;
 	UIPopoverController *popoverController;
 }
+@property (weak, nonatomic) id<UITextFieldWithPickerProtocol>myDelegate;
+
 - (CGRect)pickerFrame;
 - (void)dismissPickerView;
 
