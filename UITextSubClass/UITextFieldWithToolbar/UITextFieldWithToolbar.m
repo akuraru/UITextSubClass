@@ -32,7 +32,6 @@
     doneButton.target = self;
     doneButton.action = @selector(resignFirstResponder);
     [keyboardDoneButtonView setItems:@[centerSpace, doneButton]];
-
     return keyboardDoneButtonView;
 }
 @end

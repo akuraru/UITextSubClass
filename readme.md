@@ -22,7 +22,7 @@ pod 'UITextSubClass/UITextFieldWithDatePicker'
 
 * D&D UITextSubClass/* to your project
 
-## Summary
+## UI Components Summary
 
 * UITextFieldWithPicker
     * UITextField + UIPickerView.
