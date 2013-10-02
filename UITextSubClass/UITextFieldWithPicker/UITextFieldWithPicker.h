@@ -13,7 +13,6 @@
 
 - (UIPickerView *)pickerView;
 @property(nonatomic, strong) NSArray *dataSource;
-@property(nonatomic, weak) NSObject <UITextFieldWithPickerProtocol> *myDelegate;
 
 - (NSString *)selectedValue;
 

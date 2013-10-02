@@ -111,21 +111,6 @@
     return mutableString;
 }
 
-- (void)donePicker {
-    if ([self existValue]) {
-        self.text = [self selectedValue];
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-implementations"
-        if ([self.myDelegate respondsToSelector:@selector(savePickerView:)]) {
-            [self.myDelegate savePickerView:_pickerView];
-        }
-#pragma clang diagnostic pop
-        if ([self.myDelegate respondsToSelector:@selector(savePickerFrom:)]) {
-            [self.myDelegate savePickerFrom:self];
-        }
-    }
-    [super dismissPickerView];
-}
 
 - (BOOL)existValue {
     return self.datePicker.date != nil;

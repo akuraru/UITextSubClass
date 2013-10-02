@@ -8,6 +8,7 @@
 
 #import "UITextFieldWithPickerBase.h"
 #import "UITextSubClassHelper.h"
+#import "UITextFieldWithPickerProtocol.h"
 
 #define kToolBarHeight 44
 #define kPickerHeight 216
@@ -41,12 +42,26 @@
 - (UIView *)inputView {
     return _pickerView;
 }
-- (void)donePicker {
-	if ([self selectedValue]) {
-		self.text = [self selectedValue];
-	}
-	[self dismissPickerView];
+- (BOOL)existValue {
+    return YES;
 }
+
+- (void)donePicker {
+    if ([self existValue]) {
+        self.text = [self selectedValue];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-implementations"
+        if ([self.myDelegate respondsToSelector:@selector(savePickerView:)]) {
+            [self.myDelegate savePickerView:_pickerView];
+        }
+#pragma clang diagnostic pop
+        if ([self.myDelegate respondsToSelector:@selector(savePickerFrom:)]) {
+            [self.myDelegate savePickerFrom:self];
+        }
+    }
+    [self dismissPickerView];
+}
+
 - (void)cancelPicker {
 	[self dismissPickerView];
 }
