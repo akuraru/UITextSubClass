@@ -112,7 +112,7 @@
 }
 
 - (void)donePicker {
-    if (self.datePicker.date != nil) {
+    if ([self existValue]) {
         self.text = [self selectedValue];
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-implementations"
@@ -125,6 +125,10 @@
         }
     }
     [super dismissPickerView];
+}
+
+- (BOOL)existValue {
+    return self.datePicker.date != nil;
 }
 
 - (BOOL)canPerformAction:(SEL) action withSender:(id) sender {

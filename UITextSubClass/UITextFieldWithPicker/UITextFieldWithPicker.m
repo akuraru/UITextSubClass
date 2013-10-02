@@ -41,7 +41,7 @@
 }
 
 - (void)donePicker {
-    if ([self selectedValue]) {
+    if ([self existValue]) {
         self.text = [self selectedValue];
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-implementations"
@@ -54,6 +54,10 @@
         }
     }
     [super dismissPickerView];
+}
+
+- (BOOL)existValue {
+    return [self selectedValue] != nil;
 }
 
 @end
