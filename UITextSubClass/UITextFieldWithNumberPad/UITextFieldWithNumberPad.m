@@ -15,11 +15,11 @@
     if (self) {
         self.keyboardType = UIKeyboardTypeNumberPad;
         self.menuHidden = YES;
-        [self  addTarget:self action:@selector(didChangetext:) forControlEvents:UIControlEventEditingChanged];
+        [self addTarget:self action:@selector(didChangeText:) forControlEvents:UIControlEventEditingChanged];
     }
     return self;
 }
-- (void)didChangetext:(id)sender {
+- (void)didChangeText:(id)sender {
     self.value = self.text.integerValue;
 }
 - (NSInteger)value {

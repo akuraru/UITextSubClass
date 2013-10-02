@@ -22,6 +22,21 @@ pod 'UITextSubClass/UITextFieldWithDatePicker'
 
 * D&D UITextSubClass/* to your project
 
+## Summary
+
+* UITextFieldWithPicker
+    * UITextField + UIPickerView.
+* UITextFieldWithDatePicker
+    * UITextField + UIDatePicker.
+* UITextFieldWithDecimalPad
+    * UITextField + ``keyboardType = UIKeyboardTypeDecimalPad`` +  treat decimal point.
+* UITextFieldWithNumberPad
+    * UITextField + ``keyboardType = UIKeyboardTypeNumberPad`` +   input control.
+* UITextFieldWithToolbar
+    * UITextField + UIToolbar(inputAccessoryView)
+* UITextViewWithToolbar
+    * UITextView + Placeholder + layer customized
+
 
 ## Usage
 
