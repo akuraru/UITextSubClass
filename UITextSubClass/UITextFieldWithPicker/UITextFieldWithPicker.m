@@ -40,7 +40,7 @@
     return [self.dataSource objectAtIndex:(NSUInteger)selected];
 }
 
-- (BOOL)existValue {
+- (BOOL)hasValue {
     return [self selectedValue] != nil;
 }
 

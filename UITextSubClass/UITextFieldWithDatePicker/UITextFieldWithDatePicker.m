@@ -112,7 +112,7 @@
 }
 
 
-- (BOOL)existValue {
+- (BOOL)hasValue {
     return self.datePicker.date != nil;
 }
 

@@ -42,12 +42,12 @@
 - (UIView *)inputView {
     return _pickerView;
 }
-- (BOOL)existValue {
+- (BOOL)hasValue {
     return YES;
 }
 
 - (void)donePicker {
-    if ([self existValue]) {
+    if ([self hasValue]) {
         self.text = [self selectedValue];
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-implementations"
