@@ -4,7 +4,7 @@
 
 
 #import "UITextFieldWithDatePicker.h"
-#import "UITextFieldWithDatePickerProtocol.h"
+#import "UITextFieldWithPickerProtocol.h"
 #import "UITextSubClassHelper.h"
 
 
@@ -112,8 +112,14 @@
 
 - (void)donePicker {
     if (self.datePicker.date != nil) {
-        if ([self.myDelegate respondsToSelector:@selector(saveDateFrom:)]) {
-            [self.myDelegate saveDateFrom:self];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-implementations"
+        if ([self.myDelegate respondsToSelector:@selector(savePickerView:)]) {
+            [self.myDelegate savePickerView:_pickerView];
+        }
+#pragma clang diagnostic pop
+        if ([self.myDelegate respondsToSelector:@selector(savePickerFrom:)]) {
+            [self.myDelegate savePickerFrom:self];
         }
         [self updateText];
     }

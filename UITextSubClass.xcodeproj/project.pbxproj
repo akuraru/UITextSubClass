@@ -62,7 +62,6 @@
 		17B5C2B391EB5B29AD1C725E /* UITextFieldWithPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithPicker.m; sourceTree = "<group>"; };
 		17B5C2D16161E03F8DD3F82C /* UITextFieldWithToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithToolbar.m; sourceTree = "<group>"; };
 		17B5C4479A6176369F842DB1 /* UITextFieldWithToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithToolbar.h; sourceTree = "<group>"; };
-		17B5C46DB33EDB1F26EA5E3A /* UITextFieldWithDatePickerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithDatePickerProtocol.h; sourceTree = "<group>"; };
 		17B5C591AD8D7C78CA80F20C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		17B5C592B505BDE9A363CAED /* UITextFieldWithPickerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithPickerTest.m; sourceTree = "<group>"; };
 		17B5C5A3D65928ADBE8BDA5F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -158,7 +157,6 @@
 		17B5C5335D3D5B8E079C30EB /* UITextFieldWithDatePicker */ = {
 			isa = PBXGroup;
 			children = (
-				17B5C46DB33EDB1F26EA5E3A /* UITextFieldWithDatePickerProtocol.h */,
 				17B5CEB4A62A4A12AA4DF6F3 /* UITextFieldWithDatePicker.m */,
 				17B5CC21F20392DDA6819ED3 /* UITextFieldWithDatePicker.h */,
 			);
