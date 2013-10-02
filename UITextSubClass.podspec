@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
     a.resource_bundles = { 'UITextSubClassLocalize' => ['UITextSubClass/*.lproj'] }
     a.source_files  = 'UITextSubClass/UITextSubClassHelper.{h,m}'
   end
-  # UIPicker
+  # UIPickerBase
   s.subspec 'UITextFieldWithPickerBase' do |a|
     a.source_files  = 'UITextSubClass/UITextFieldWithPickerBase/*.{h,m}'
   end
@@ -29,6 +29,14 @@ Pod::Spec.new do |s|
     a.dependency 'UITextSubClass/UITextFieldWithPickerBase'
   end
 
+  s.subspec 'UITextFieldWithDecimalPad' do |a|
+    a.source_files = 'UITextSubClass/UITextFieldWithDecimalPad/*.{h,m}'
+    a.dependency 'UITextSubClass/Core'
+  end
+  s.subspec 'UITextFieldWithNumberPad' do |a|
+    a.source_files = 'UITextSubClass/UITextFieldWithNumberPad/*.{h,m}'
+    a.dependency 'UITextSubClass/Core'
+  end
   s.subspec 'UITextFieldWithToolbar' do |a|
     a.source_files = 'UITextSubClass/UITextFieldWithToolbar/*.{h,m}'
     a.dependency 'UITextSubClass/Core'
