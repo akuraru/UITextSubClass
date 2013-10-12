@@ -3,11 +3,14 @@ Pod::Spec.new do |s|
   s.version      = "0.0.1"
   s.summary      = "UITextField/UITextView SubClass library."
   s.homepage     = "https://github.com/azu/UITextSubClass"
-  s.screenshots  = "https://monosnap.com/image/TSwA3hPoDkdrr1jJRnGaaFQpI.png"
+  s.screenshots  = "http://f.cl.ly/items/2O0W2X3e1j3z1a2h3Y0J/UITextWithDatepicker.png"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "azu" => "info@efcl.info" }
   s.platform     = :ios, '5.0'
-  s.source       = { :git => "https://github.com/azu/UITextSubClass.git" }
+  s.source       = {
+    :git => "https://github.com/azu/UITextSubClass.git",
+    :tag => s.version.to_s
+  }
   s.requires_arc = true
 
   s.subspec 'Core' do |a|
