@@ -2,7 +2,7 @@
 
 UITextField/UITextView subclass.
 
-![UITextField+DatePicker](https://monosnap.com/image/TSwA3hPoDkdrr1jJRnGaaFQpI.png)
+![UITextField+DatePicker](http://f.cl.ly/items/2O0W2X3e1j3z1a2h3Y0J/UITextWithDatepicker.png)
 
 ## Installation
 
