@@ -15,8 +15,16 @@
     if (self) {
         self.keyboardType = UIKeyboardTypeDecimalPad;
         self.menuHidden = YES;
+        [self addTarget:self action:@selector(didChangeText:) forControlEvents:UIControlEventEditingChanged];
     }
     return self;
+}
+- (void)didChangeText:(id)sender {
+    NSString *phoneNumberRegex = @"^([1-9]\\d*|0)?(\\.(\\d+)?)?$";
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", phoneNumberRegex];
+    if ([predicate evaluateWithObject:self.text] == NO) {
+        self.value = self.text.floatValue;
+    }
 }
 - (CGFloat)value {
     return [self format:[self.text floatValue]];
