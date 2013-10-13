@@ -29,7 +29,7 @@
     [super viewDidLoad];
 
     // set datePickerMode
-    self.dateTextField.myDelegate = self;
+    self.dateTextField.delegate = self;
     self.dateTextField.datePickerMode = UIDatePickerModeDate;
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
@@ -40,7 +40,7 @@
     self.dateCountDownTextField.datePickerMode = UIDatePickerModeCountDownTimer;
 
     // UIPicker + UITextField
-    self.pickerTextField.myDelegate = self;
+    self.pickerTextField.delegate = self;
     self.pickerTextField.dataSource = @[@"foo", @"biz", @"bar"];
 }
 

@@ -19,7 +19,7 @@
 @end
 
 @implementation UITextFieldWithPickerBase {
-    id<UITextFieldDelegate> baseDelegate;
+    id<UITextFieldWithPickerProtocol> baseDelegate;
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
@@ -51,12 +51,12 @@
         self.text = [self selectedValue];
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-implementations"
-        if ([self.myDelegate respondsToSelector:@selector(savePickerView:)]) {
-            [self.myDelegate savePickerView:_pickerView];
+        if ([baseDelegate respondsToSelector:@selector(savePickerView:)]) {
+            [baseDelegate savePickerView:_pickerView];
         }
 #pragma clang diagnostic pop
-        if ([self.myDelegate respondsToSelector:@selector(savePickerFrom:)]) {
-            [self.myDelegate savePickerFrom:self];
+        if ([baseDelegate respondsToSelector:@selector(savePickerFrom:)]) {
+            [baseDelegate savePickerFrom:self];
         }
     }
     [self dismissPickerView];
@@ -73,20 +73,17 @@
 	}
 }
 
-- (void)setDelegate:(id<UITextFieldDelegate>)delegate {
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        baseDelegate = delegate;
-    } else {
-        [super setDelegate:delegate];
-    }
+- (void)setDelegate:(id<UITextFieldWithPickerProtocol>)delegate {
+    baseDelegate = delegate;
 }
 - (id<UITextFieldDelegate>)delegate {
-    return (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)? baseDelegate : super.delegate;
+    return baseDelegate;
 }
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
     if ([baseDelegate respondsToSelector:@selector(textFieldShouldBeginEditing:)] && [baseDelegate textFieldShouldBeginEditing:textField] == NO) {
-    } else {
+        return NO;
+    } else if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
 		UIViewController *popoverContent = [[UIViewController alloc] init];
 		[popoverContent.view addSubview:_pickerView];
 		[popoverContent.view addSubview:self.inputAccessoryView];
@@ -94,9 +91,10 @@
 		popoverController = [[UIPopoverController alloc] initWithContentViewController:popoverContent];
 		[popoverController presentPopoverFromRect:self.frame inView:self.superview permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
 		[popoverController setPopoverContentSize:CGSizeMake(kWeight, kPopOverHeight) animated:NO];
-	}
-    
-    return NO;
+        return NO;
+	} else {
+        return YES;
+    }
 }
 
 
