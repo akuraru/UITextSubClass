@@ -50,7 +50,7 @@
     if ([self hasValue]) {
         self.text = [self selectedValue];
 #pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-implementations"
+#pragma clang diagnostic ignored "-Wdeprecated"
         if ([baseDelegate respondsToSelector:@selector(savePickerView:)]) {
             [baseDelegate savePickerView:_pickerView];
         }
