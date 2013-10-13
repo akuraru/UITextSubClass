@@ -15,12 +15,11 @@
     id _pickerView;
 	UIPopoverController *popoverController;
 }
-@property (weak, nonatomic) id<UITextFieldWithPickerProtocol>myDelegate;
 
 - (CGRect)pickerFrame;
 - (void)dismissPickerView;
 
-- (void)setDelegate:(id<UITextFieldDelegate>)delegate;
-- (id<UITextFieldDelegate>)delegate;
+- (void)setDelegate:(id<UITextFieldWithPickerProtocol>)delegate;
+- (id<UITextFieldWithPickerProtocol>)delegate;
 
 @end
