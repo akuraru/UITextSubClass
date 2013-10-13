@@ -6,14 +6,15 @@
 //
 //
 
-#import <XCTest/XCTest.h>
+#import <SenTestingKit/SenTestingKit.h>
 #import "UITextViewWithToolbar.h"
 #import "OCMock.h"
 
-@interface UITextViewWithToolbar(mock)
+@interface UITextViewWithToolbar (mock)
 - (void)updatePlaceholderLabel;
 @end
-@interface UITextViewWithToolbarTest : XCTestCase
+
+@interface UITextViewWithToolbarTest : SenTestCase
 
 @end
 
@@ -35,14 +36,14 @@
 
 - (void)testPlaceholder_text_is_nil {
     textViewWithToolbar.placeholderText = nil;
-    XCTAssertEqual(textViewWithToolbar.placeholder.alpha, 0.0f);
+    STAssertEquals(textViewWithToolbar.placeholder.alpha, 0.0f, @"alpha is default");
     textViewWithToolbar.placeholderText = @"";
-    XCTAssertEqual(textViewWithToolbar.placeholder.alpha, 0.0f);
+    STAssertEquals(textViewWithToolbar.placeholder.alpha, 0.0f, @"alpha is default");
 }
 
 - (void)testPlaceholder_text_is_filled {
     textViewWithToolbar.placeholderText = @"text";
-    XCTAssertEqual(textViewWithToolbar.placeholder.alpha, 1.0f);
+    STAssertEquals(textViewWithToolbar.placeholder.alpha, 1.0f, @"placeholder is hidden");
 }
 
 @end

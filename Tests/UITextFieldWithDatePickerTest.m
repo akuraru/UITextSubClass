@@ -6,17 +6,17 @@
 //
 //
 
-#import <XCTest/XCTest.h>
 #import <OCMock/OCMockObject.h>
 #import <OCMock/OCMArg.h>
+#import <SenTestingKit/SenTestingKit.h>
 #import "UITextFieldWithDatePicker.h"
 #import "UITextFieldWithPickerProtocol.h"
 
-@interface UITextFieldWithDatePicker(mock)
+@interface UITextFieldWithPickerBase (mock)
 - (void)donePicker;
 @end
 
-@interface UITextFieldWithDatePickerTest : XCTestCase
+@interface UITextFieldWithDatePickerTest : SenTestCase
 
 @end
 

@@ -6,7 +6,7 @@
 //
 //
 
-#import <XCTest/XCTest.h>
+#import <SenTestingKit/SenTestingKit.h>
 #import "UITextFieldWithPicker.h"
 #import "OCMockObject.h"
 #import "UITextFieldWithPickerProtocol.h"
@@ -15,7 +15,7 @@
 - (void)donePicker;
 @end
 
-@interface UITextFieldWithPickerTest : XCTestCase
+@interface UITextFieldWithPickerTest : SenTestCase
 
 @end
 
