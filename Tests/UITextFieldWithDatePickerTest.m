@@ -39,10 +39,10 @@
     [[mockDelegate expect] savePickerFrom:textFieldWithPicker];
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-implementations"
-    [[mockDelegate expect] savePickerView:OCMOCK_ANY];
+    [[mockDelegate expect] savePickerView:[OCMArg any]];
 #pragma clang diagnostic pop
     // given
-    textFieldWithPicker.myDelegate = mockDelegate;
+    textFieldWithPicker.delegate = mockDelegate;
     // when
     textFieldWithPicker.date = [NSDate date];
     [textFieldWithPicker donePicker];

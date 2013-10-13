@@ -11,7 +11,7 @@
 #import "OCMockObject.h"
 #import "UITextFieldWithPickerProtocol.h"
 
-@interface UITextFieldWithPicker (mock)
+@interface UITextFieldWithPickerBase (mock)
 - (void)donePicker;
 @end
 
@@ -42,7 +42,7 @@
     [[mockDelegate expect] savePickerView:textFieldWithPicker.pickerView];
 #pragma clang diagnostic pop
     // given
-    textFieldWithPicker.myDelegate = mockDelegate;
+    textFieldWithPicker.delegate = mockDelegate;
     // when
     [textFieldWithPicker.pickerView selectRow:1 inComponent:0 animated:NO];
     [textFieldWithPicker donePicker];
