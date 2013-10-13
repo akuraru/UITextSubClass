@@ -5,8 +5,7 @@
 //  Created by azu on 2013/09/30.
 //
 //
-
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 #import "UITextFieldWithPicker.h"
 #import "OCMockObject.h"
 #import "UITextFieldWithPickerProtocol.h"
@@ -15,7 +14,7 @@
 - (void)donePicker;
 @end
 
-@interface UITextFieldWithPickerTest : SenTestCase
+@interface UITextFieldWithPickerTest : XCTestCase
 
 @end
 
@@ -38,7 +37,7 @@
     id mockDelegate = [OCMockObject mockForProtocol:@protocol(UITextFieldWithPickerProtocol)];
     [[mockDelegate expect] savePickerFrom:textFieldWithPicker];
 #pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated"
+#pragma clang diagnostic ignored "-Wdeprecated-implementations"
     [[mockDelegate expect] savePickerView:textFieldWithPicker.pickerView];
 #pragma clang diagnostic pop
     // given
