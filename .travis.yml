@@ -1,3 +1,6 @@
 language: objective-c
 
 script: xctool -workspace UITextSubClass.xcworkspace -scheme Tests -sdk iphonesimulator test ONLY_ACTIVE_ARCH=YES
+
+notifications:
+  email: false
