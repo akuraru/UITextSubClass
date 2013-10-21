@@ -15,5 +15,7 @@
 @property(nonatomic, strong) NSArray *dataSource;
 
 - (NSString *)selectedValue;
+- (NSInteger)selectedIndex;
+- (void)setSelectedIndex:(NSInteger)index;
 
 @end

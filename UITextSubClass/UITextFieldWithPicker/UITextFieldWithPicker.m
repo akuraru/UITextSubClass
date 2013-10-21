@@ -44,4 +44,13 @@
     return [self selectedValue] != nil;
 }
 
+- (NSInteger)selectedIndex {
+    return [self.pickerView selectedRowInComponent:0];
+}
+
+- (void)setSelectedIndex:(NSInteger)index {
+    [self.pickerView selectRow:index inComponent:0 animated:NO];
+    self.text = [self selectedValue];
+}
+
 @end
