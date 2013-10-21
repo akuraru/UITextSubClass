@@ -50,6 +50,7 @@
 
 - (void)setSelectedIndex:(NSInteger)index {
     [self.pickerView selectRow:index inComponent:0 animated:NO];
+    self.text = [self selectedValue];
 }
 
 @end
