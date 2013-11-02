@@ -28,6 +28,6 @@
 
 - (void)setMinuteInterval:(NSInteger) minuteInterval;
 
-
+- (NSDate *)inputedDate;
 
 @end
