@@ -26,6 +26,10 @@
     return self.datePicker.date;
 }
 
+- (NSDate *)inputedDate {
+    return [[self dateFormatter] dateFromString:[self text]];
+}
+
 - (void)setDate:(NSDate *) date {
     if (date == nil) {
         return;
