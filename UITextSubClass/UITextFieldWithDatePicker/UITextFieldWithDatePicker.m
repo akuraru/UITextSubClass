@@ -9,6 +9,8 @@
 
 
 @implementation UITextFieldWithDatePicker {
+    NSDate *_date;
+    UIDatePickerMode _datePickerMode;
 }
 
 - (UIDatePicker *)datePicker {
@@ -19,11 +21,13 @@
         [_pickerView setMinuteInterval:0];
         [_pickerView setTimeZone:[NSTimeZone systemTimeZone]];
     }
+    [_pickerView setDate:[self date]];
+    [_pickerView setDatePickerMode:_datePickerMode];
     return _pickerView;
 }
 
 - (NSDate *)date {
-    return self.datePicker.date;
+    return (_date) ?: [NSDate date];
 }
 
 - (NSDate *)inputedDate {
@@ -34,16 +38,16 @@
     if (date == nil) {
         return;
     }
-    [self.datePicker setDate:date];
+    _date = date;
     self.text = [self selectedValue];
 }
 
 - (UIDatePickerMode)datePickerMode {
-    return self.datePicker.datePickerMode;
+    return _datePickerMode;
 }
 
 - (void)setDatePickerMode:(UIDatePickerMode) datePickerMode {
-    self.datePicker.datePickerMode = datePickerMode;
+    _datePickerMode = datePickerMode;
 }
 
 - (NSInteger)minuteInterval {
@@ -51,7 +55,7 @@
 }
 
 - (void)setMinuteInterval:(NSInteger) minuteInterval {
-
+    
     self.datePicker.minuteInterval = minuteInterval;
 }
 
@@ -67,7 +71,7 @@
         return [self labelFromTimeInterval:self.datePicker.countDownDuration];
     }
     NSDateFormatter *dateFormatter = [self dateFormatter];
-    return [dateFormatter stringFromDate:self.datePicker.date];
+    return [dateFormatter stringFromDate:[self date]];
 }
 
 - (NSDateFormatter *)dateFormatter {
@@ -111,13 +115,16 @@
         NSString *minute = NSLocalizedStringFromTableInBundle(@"%d min", UITextSubClassLocalize, [UITextSubClassHelper bundle], @"%d min");
         [mutableString appendFormat:minute, [conversionInfo minute]];
     }
-
+    
     return mutableString;
 }
-
+- (void)donePicker {
+    _date = [_pickerView date];
+    [super donePicker];
+}
 
 - (BOOL)hasValue {
-    return self.datePicker.date != nil;
+    return _date != nil;
 }
 
 - (BOOL)canPerformAction:(SEL) action withSender:(id) sender {
