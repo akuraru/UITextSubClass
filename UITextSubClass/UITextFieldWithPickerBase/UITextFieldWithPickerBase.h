@@ -22,4 +22,6 @@
 - (void)setDelegate:(id<UITextFieldWithPickerProtocol>)delegate;
 - (id<UITextFieldWithPickerProtocol>)delegate;
 
+- (void)donePicker;
+
 @end
