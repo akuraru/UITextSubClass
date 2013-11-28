@@ -99,9 +99,9 @@
 
 
 - (UIView *)inputAccessoryView {
-    UIToolbar *keyboardDoneButtonView = [[UIToolbar alloc] init];
-    keyboardDoneButtonView.barStyle = UIBarStyleBlack;
-    [keyboardDoneButtonView sizeToFit];
+    UIToolbar *toolbar = [[UIToolbar alloc] init];
+    toolbar.translucent = YES;
+    [toolbar sizeToFit];
     
     UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] init];
     cancelButton.style = UIBarButtonItemStyleBordered;
@@ -116,10 +116,10 @@
     doneButton.title = NSLocalizedStringFromTableInBundle(@"Done", UITextSubClassLocalize, [UITextSubClassHelper bundle], @"Done");
     doneButton.target = self;
     doneButton.action = @selector(donePicker);
-    [keyboardDoneButtonView setItems:@[cancelButton, centerSpace, doneButton]];
+    [toolbar setItems:@[cancelButton, centerSpace, doneButton]];
     
-	keyboardDoneButtonView.frame = CGRectMake(0, 0, kWeight, kToolBarHeight);
-    return keyboardDoneButtonView;
+	toolbar.frame = CGRectMake(0, 0, kWeight, kToolBarHeight);
+    return toolbar;
 }
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {

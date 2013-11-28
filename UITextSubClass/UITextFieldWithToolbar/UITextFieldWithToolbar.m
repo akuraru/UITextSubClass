@@ -20,9 +20,9 @@
 }
 
 - (UIView *)inputAccessoryView {
-    UIToolbar *keyboardDoneButtonView = [[UIToolbar alloc] init];
-    keyboardDoneButtonView.barStyle = UIBarStyleBlack;
-    [keyboardDoneButtonView sizeToFit];
+    UIToolbar *toolbar = [[UIToolbar alloc] init];
+    toolbar.translucent = YES;
+    [toolbar sizeToFit];
     UIBarButtonItem *centerSpace = [[UIBarButtonItem alloc]
         initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
         target:nil action:nil];
@@ -31,7 +31,7 @@
     doneButton.title = NSLocalizedStringFromTableInBundle(@"Done", UITextSubClassLocalize, [UITextSubClassHelper bundle], @"Done");
     doneButton.target = self;
     doneButton.action = @selector(resignFirstResponder);
-    [keyboardDoneButtonView setItems:@[centerSpace, doneButton]];
-    return keyboardDoneButtonView;
+    [toolbar setItems:@[centerSpace, doneButton]];
+    return toolbar;
 }
 @end
