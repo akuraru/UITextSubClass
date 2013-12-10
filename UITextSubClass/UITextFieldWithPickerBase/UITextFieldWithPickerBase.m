@@ -85,7 +85,7 @@
         return NO;
     } else if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
 		UIViewController *popoverContent = [[UIViewController alloc] init];
-		[popoverContent.view addSubview:_pickerView];
+		[popoverContent.view addSubview:self.inputView];
 		[popoverContent.view addSubview:self.inputAccessoryView];
         
 		popoverController = [[UIPopoverController alloc] initWithContentViewController:popoverContent];
