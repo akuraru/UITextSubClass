@@ -29,6 +29,7 @@
 - (UIPickerView *)pickerView {
     if (_pickerView == nil) {
         _pickerView = [[UIPickerView alloc] init];
+        [_pickerView setFrame:[self pickerFrame]];
         [(UIPickerView *)_pickerView setDelegate:self];
         [(UIPickerView *)_pickerView setShowsSelectionIndicator:YES];
     }
