@@ -1,8 +1,6 @@
 language: objective-c
 
-before_script: xcodebuild --help
-
-script: xctool -workspace UITextSubClass.xcworkspace -scheme Tests -sdk iphonesimulator test ONLY_ACTIVE_ARCH=YES
+script: xcodebuild -workspace UITextSubClass.xcworkspace -scheme UITextSubClass -configuration Debug -sdk iphonesimulator7.0 ONLY_ACTIVE_ARCH=YES clean build test | xcpretty -c
 
 notifications:
   email: false

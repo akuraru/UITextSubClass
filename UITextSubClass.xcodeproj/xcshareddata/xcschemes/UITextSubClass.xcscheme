@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "73EACB7E17F9AD46000A444C"
-               BuildableName = "Tests.xctest"
-               BlueprintName = "Tests"
+               BlueprintIdentifier = "17B5C16BC8E6ED55005FF050"
+               BuildableName = "UITextSubClass.app"
+               BlueprintName = "UITextSubClass"
                ReferencedContainer = "container:UITextSubClass.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -39,6 +39,15 @@
             </BuildableReference>
          </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "17B5C16BC8E6ED55005FF050"
+            BuildableName = "UITextSubClass.app"
+            BlueprintName = "UITextSubClass"
+            ReferencedContainer = "container:UITextSubClass.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -49,6 +58,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "17B5C16BC8E6ED55005FF050"
+            BuildableName = "UITextSubClass.app"
+            BlueprintName = "UITextSubClass"
+            ReferencedContainer = "container:UITextSubClass.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -58,6 +76,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "17B5C16BC8E6ED55005FF050"
+            BuildableName = "UITextSubClass.app"
+            BlueprintName = "UITextSubClass"
+            ReferencedContainer = "container:UITextSubClass.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

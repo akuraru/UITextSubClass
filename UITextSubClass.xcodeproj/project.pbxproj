@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17B5C0277B1DD2779AD22AB1 /* UITextFieldWithDatePickerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CA7092E4ACB146FA7C68 /* UITextFieldWithDatePickerTest.m */; };
 		17B5C2324038AF80F4222B62 /* UITextFieldWithDecimalPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CFFE7B0F6BD0D414326A /* UITextFieldWithDecimalPad.m */; };
 		17B5C239B054BD771FB7E3D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C591AD8D7C78CA80F20C /* main.m */; };
 		17B5C2A9910B093DAD97C061 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C137FDDEFC0A46C79FC3 /* MainStoryboard.storyboard */; };
@@ -77,7 +76,6 @@
 		17B5C8787D8E78FAE52FA005 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		17B5C9F190503A0A86AF7352 /* UITextFieldWithPickerBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithPickerBase.m; sourceTree = "<group>"; };
 		17B5CA167414E9DEC39C7AF5 /* UITextFieldWithDecimalPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithDecimalPad.h; sourceTree = "<group>"; };
-		17B5CA7092E4ACB146FA7C68 /* UITextFieldWithDatePickerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithDatePickerTest.m; sourceTree = "<group>"; };
 		17B5CA998EBAEE23911CE978 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		17B5CB1CC2AC1575EE09EF77 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		17B5CC21F20392DDA6819ED3 /* UITextFieldWithDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithDatePicker.h; sourceTree = "<group>"; };
@@ -274,7 +272,6 @@
 				73EACB8517F9AD46000A444C /* Supporting Files */,
 				17B5C06D5D2AFABC4668D82B /* UITextViewWithToolbarTest.m */,
 				17B5C592B505BDE9A363CAED /* UITextFieldWithPickerTest.m */,
-				17B5CA7092E4ACB146FA7C68 /* UITextFieldWithDatePickerTest.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -344,9 +341,10 @@
 		17B5C5EEDB0839A1B9FBFB41 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0500;
 				TargetAttributes = {
 					73EACB7E17F9AD46000A444C = {
-						TestTargetID = 17B5C16BC8E6ED55005FF050;
+						TestTargetID = 17B5C16BC8E6ED55005FF050 /* UITextSubClass */;
 					};
 				};
 			};
@@ -458,7 +456,6 @@
 				17B5C71E93172AAC4DAE6950 /* UITextSubClassHelper.m in Sources */,
 				17B5C661B532FC2895E983F4 /* UITextFieldWithPickerTest.m in Sources */,
 				17B5C6F5148D8F4E341CBE8F /* UITextFieldWithPickerBase.m in Sources */,
-				17B5C0277B1DD2779AD22AB1 /* UITextFieldWithDatePickerTest.m in Sources */,
 				17B5C9AC1CD4D6C7CA07929E /* UITextFieldWithDecimalPad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -592,7 +589,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 43C3FA33E1D64DADAC2A953D /* Pods-Tests.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UITextSubClass.app/UITextSubClass";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -626,7 +622,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 43C3FA33E1D64DADAC2A953D /* Pods-Tests.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UITextSubClass.app/UITextSubClass";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;

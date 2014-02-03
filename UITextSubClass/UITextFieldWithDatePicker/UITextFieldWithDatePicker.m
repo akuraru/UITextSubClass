@@ -55,7 +55,7 @@
 }
 
 - (void)setMinuteInterval:(NSInteger) minuteInterval {
-    
+
     self.datePicker.minuteInterval = minuteInterval;
 }
 
@@ -115,7 +115,7 @@
         NSString *minute = NSLocalizedStringFromTableInBundle(@"%d min", UITextSubClassLocalize, [UITextSubClassHelper bundle], @"%d min");
         [mutableString appendFormat:minute, [conversionInfo minute]];
     }
-    
+
     return mutableString;
 }
 - (void)donePicker {
