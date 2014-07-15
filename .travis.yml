@@ -1,11 +1,10 @@
 language: objective-c
+env: LC_CTYPE=en_US.UTF-8
 before_install:
-    - rvm get stable
-    - rvm use ruby-2.0.0-p247
     - gem install cocoapods
     - gem install xcpretty
 
-script: xcodebuild -workspace UITextSubClass.xcworkspace -scheme UITextSubClass -configuration Debug -sdk iphonesimulator7.0 ONLY_ACTIVE_ARCH=YES clean build test | xcpretty -c
+script: xcodebuild -workspace UITextSubClass.xcworkspace -scheme UITextSubClass -configuration Debug -sdk iphonesimulator ONLY_ACTIVE_ARCH=YES clean build test | xcpretty -c
 
 notifications:
   email: false
