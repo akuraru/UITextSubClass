@@ -1,8 +1,9 @@
-# What is this
+# UITextSubClass [![Build Status](https://travis-ci.org/azu/UITextSubClass.svg?branch=master)](https://travis-ci.org/azu/UITextSubClass)
 
-UITextField/UITextView subclass.
+This library is collection of UIText(View|Field) subclasses.
 
-![UITextField+DatePicker](http://f.cl.ly/items/2O0W2X3e1j3z1a2h3Y0J/UITextWithDatepicker.png)
+* a variety of subclass
+* support iPad(
 
 ## Installation
 
@@ -18,24 +19,40 @@ if you want to use one components, install specific subspec.
 pod 'UITextSubClass/UITextFieldWithDatePicker'
 ```
 
-### Direct
-
-* D&D UITextSubClass/* to your project
-
 ## UI Components Summary
 
-* UITextFieldWithPicker
-    * UITextField + UIPickerView.
-* UITextFieldWithDatePicker
-    * UITextField + UIDatePicker.
-* UITextFieldWithDecimalPad
-    * UITextField + ``keyboardType = UIKeyboardTypeDecimalPad`` +  treat decimal point.
-* UITextFieldWithNumberPad
-    * UITextField + ``keyboardType = UIKeyboardTypeNumberPad`` +   input control.
-* UITextFieldWithToolbar
-    * UITextField + UIToolbar(inputAccessoryView)
-* UITextViewWithToolbar
-    * UITextView + Placeholder + layer customized
+![img](http://monosnap.com/image/glhUDgrh3S2h6ZWZd90TYgNMZoBcuN.png)
+![img](http://monosnap.com/image/uHJhaFSbi5yLFVNcRtMdHJZpDq3H3Y.png)
+
+### UITextFieldWithPicker
+
+UITextField + UIPickerView.
+
+### UITextFieldWithDatePicker
+
+UITextField + UIDatePicker.
+
+### UITextFieldWithDecimalPad
+
+UITextField + ``keyboardType = UIKeyboardTypeDecimalPad`` +  treat decimal point.
+
+You have to set `significantFigures`.
+
+```objc
+@property (nonatomic) NSUInteger significantFigures;
+```
+
+### UITextFieldWithNumberPad
+
+UITextField + ``keyboardType = UIKeyboardTypeNumberPad`` +   input control.
+
+### UITextFieldWithToolbar
+
+UITextField + UIToolbar(inputAccessoryView)
+
+### UITextViewWithToolbar
+
+UITextView + Placeholder + layer customized
 
 
 ## Usage
@@ -65,14 +82,19 @@ manually update TextField
 
     [dateTextField updateText];
 
-get selected date
+To get selected date
 
-    dateTextField.date;// <NSDate>
-    // also set date & update
-    dateTextField.date = [NSDate date];
+    [dateTextField inputedDate];// <NSDate>
 
-### UITextFieldToolBar
 
-UITextFieldToolBar is UITextField subclass
+## Contributing
 
-Simply add @"donePicker" button.
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
+
+## License
+
+MIT
