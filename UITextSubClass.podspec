@@ -49,4 +49,10 @@ Pod::Spec.new do |s|
     a.dependency 'UITextSubClass/Core'
     a.framework    = 'QuartzCore'
   end
+
+  s.subspec 'UITextViewWithPlaceholder' do |a|
+    a.source_files = 'UITextSubClass/UITextViewWithPlaceholder/*.{h,m}'
+    a.dependency 'UITextSubClass/Core'
+    a.framework    = 'QuartzCore'
+  end
 end

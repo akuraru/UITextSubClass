@@ -8,7 +8,6 @@
 
 #import "MyTableViewController.h"
 #import "UITextFieldWithDatePicker.h"
-#import "UITextFieldWithToolbar.h"
 #import "UITextFieldWithPicker.h"
 
 @interface MyTableViewController ()
@@ -35,7 +34,6 @@
     dateFormatter.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
     self.dateTextField.dateFormatter = dateFormatter;// pass original date formatter
-
     // countdown
     self.dateCountDownTextField.datePickerMode = UIDatePickerModeCountDownTimer;
 
@@ -56,6 +54,7 @@
 }
 
 #pragma mark - UITextField DatePicker delegate
+
 - (void)savePickerFrom:(id) textField {
     if ([textField isKindOfClass:UITextFieldWithPicker.class]) {
         NSLog(@"textFieldWithPicker = %@", textField);

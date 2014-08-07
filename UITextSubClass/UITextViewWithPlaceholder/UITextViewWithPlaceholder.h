@@ -8,13 +8,12 @@
 
 
 
-#import "UITextViewWithPlaceholder.h"
+@interface UITextViewWithPlaceholder : UITextView
 
-@interface UITextViewWithToolbar : UITextViewWithPlaceholder
 #pragma mark - user defined runtime attributes
+
 @property(nonatomic, strong) NSString *placeholderText;
 @property(nonatomic, strong) UIColor *placeholderColor;
-@property(nonatomic, strong) UILabel *placeholder;
 
 // Those Property would only work with Storyboard - iOS5
 @property(nonatomic, strong) UIColor *borderColor; // Color
