@@ -46,7 +46,7 @@ Pod::Spec.new do |s|
   end
   s.subspec 'UITextViewWithToolbar' do |a|
     a.source_files = 'UITextSubClass/UITextViewWithToolbar/*.{h,m}'
-    a.dependency 'UITextSubClass/Core'
+    a.dependency 'UITextSubClass/UITextViewWithPlaceholder'
     a.framework    = 'QuartzCore'
   end
   s.subspec 'UITextViewWithPlaceholder' do |a|
