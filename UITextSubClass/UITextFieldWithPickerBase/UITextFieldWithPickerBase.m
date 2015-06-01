@@ -25,10 +25,8 @@
 - (id)initWithCoder:(NSCoder *)aDecoder {
 	self = [super initWithCoder:aDecoder];
 	if (self) {
-        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-            [super setDelegate:self];
-            baseDelegate = nil;
-        }
+        [super setDelegate:self];
+        baseDelegate = nil;
     }
     return self;
 }
