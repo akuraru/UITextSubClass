@@ -24,9 +24,11 @@
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
 	self = [super initWithCoder:aDecoder];
-	if (self) {
-        [super setDelegate:self];
-        baseDelegate = nil;
+    if (self) {
+        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+            [super setDelegate:self];
+            baseDelegate = nil;
+        }
     }
     return self;
 }
