@@ -37,12 +37,9 @@
 
     [self setPlaceholder:self.placeholder];
 
-    [[NSNotificationCenter defaultCenter]
-        addObserver:self selector:@selector(textChanged:) name:UITextViewTextDidChangeNotification object:nil];
-    [[NSNotificationCenter defaultCenter]
-        addObserver:self selector:@selector(gotFocus:) name:UITextViewTextDidBeginEditingNotification object:nil];
-    [[NSNotificationCenter defaultCenter]
-        addObserver:self selector:@selector(lostFocus:) name:UITextViewTextDidEndEditingNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChanged:) name:UITextViewTextDidChangeNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(gotFocus:) name:UITextViewTextDidBeginEditingNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(lostFocus:) name:UITextViewTextDidEndEditingNotification object:nil];
 
 }
 
@@ -77,7 +74,7 @@
     }
 }
 
-- (id)initWithCoder:(NSCoder *) aDecoder {
+- (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
         [self setupPlaceholder];
@@ -85,7 +82,7 @@
     return self;
 }
 
-- (id)initWithFrame:(CGRect) frame {
+- (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
         [self setupPlaceholder];
@@ -93,24 +90,27 @@
     return self;
 }
 
-- (void)textChanged:(NSNotification *) notification {
+- (void)textChanged:(NSNotification *)notification {
     [self updatePlaceholderLabel];
 }
 
-- (void)gotFocus:(NSNotification *) notification {
+- (void)gotFocus:(NSNotification *)notification {
     [self.placeholder setAlpha:0.0];
 }
 
-- (void)lostFocus:(NSNotification *) notification {
+- (void)lostFocus:(NSNotification *)notification {
     [self updatePlaceholderLabel];
 }
 
-- (void)drawRect:(CGRect) rect {
+- (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
     [self updatePlaceholderLabel];
 }
 
 - (void)updatePlaceholderLabel {
+    CGRect frame = CGRectMake(8, 8, self.bounds.size.width - 16, 0.0);
+    self.placeholder.frame = frame;
+    [self.placeholder sizeToFit];
     if ([[self text] length] == 0 && [[self.placeholder text] length] > 0) {
         [self.placeholder setAlpha:1.0];
     } else {
@@ -118,15 +118,14 @@
     }
 }
 
-- (void)setFont:(UIFont *) font {
+- (void)setFont:(UIFont *)font {
     [super setFont:font];
     [self.placeholder setFont:self.font];
 }
 
 
-- (void)setPlaceholderText:(NSString *) placeholderText {
+- (void)setPlaceholderText:(NSString *)placeholderText {
     [self.placeholder setText:placeholderText];
-    [self.placeholder sizeToFit];
     [self updatePlaceholderLabel];
 
 }
@@ -135,7 +134,8 @@
     return [self.placeholder textColor];
 }
 
-- (void)setPlaceholderColor:(UIColor *) placeholderColor {
+- (void)setPlaceholderColor:(UIColor *)placeholderColor {
     [self.placeholder setTextColor:placeholderColor];
+    [self updatePlaceholderLabel];
 }
 @end

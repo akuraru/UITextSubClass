@@ -23,4 +23,6 @@
 @property(nonatomic, strong) NSString *cornerRadius; // Number (available decimal) eg. 1 or 0.5
 @property(nonatomic, strong) NSString *shadowRadius; // Number (available decimal) eg. 1 or 0.5
 @property(nonatomic, strong) NSValue *shadowOffset; // CGSize
+
+- (void)updatePlaceholderLabel;
 @end
