@@ -74,7 +74,6 @@
 		17B5C62EC3E860D60F900A1A /* UITextFieldWithPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithPicker.h; sourceTree = "<group>"; };
 		17B5C74A3AFFDB71937325F6 /* UITextFieldWithPickerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithPickerBase.h; sourceTree = "<group>"; };
 		17B5C7A2D9410D77CC8FABD3 /* UITextViewWithToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewWithToolBar.m; sourceTree = "<group>"; };
-		17B5C7E96C164B5921830962 /* UITextSubClass-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextSubClass-Prefix.pch"; sourceTree = "<group>"; };
 		17B5C867B738CCD1D2B56AF1 /* UITextSubClassHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextSubClassHelper.m; sourceTree = "<group>"; };
 		17B5C8787D8E78FAE52FA005 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		17B5C9F190503A0A86AF7352 /* UITextFieldWithPickerBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithPickerBase.m; sourceTree = "<group>"; };
@@ -93,18 +92,18 @@
 		17B5CE885BF8F1572A6EF57D /* UITextSubClassHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextSubClassHelper.h; sourceTree = "<group>"; };
 		17B5CEB4A62A4A12AA4DF6F3 /* UITextFieldWithDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithDatePicker.m; sourceTree = "<group>"; };
 		17B5CFFE7B0F6BD0D414326A /* UITextFieldWithDecimalPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithDecimalPad.m; sourceTree = "<group>"; };
-		43C3FA33E1D64DADAC2A953D /* Pods-Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.xcconfig"; path = "Pods/Pods-Tests.xcconfig"; sourceTree = "<group>"; };
+		2E155DF2D83F5647BA4DC2A1 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		737068ED168996C0007BAA4F /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
 		737068EE168996C0007BAA4F /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
 		73EACB7F17F9AD46000A444C /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73EACB8617F9AD46000A444C /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		73EACB8817F9AD46000A444C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		73EACB8C17F9AD46000A444C /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		73EACB9417F9BD05000A444C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		73EACB9517F9BD05000A444C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		73EACB9817F9BD14000A444C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/UITextSubClassLocalize.strings; sourceTree = "<group>"; };
 		73EACB9A17F9BD18000A444C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/UITextSubClassLocalize.strings; sourceTree = "<group>"; };
 		B65F29986BB74A408EF079D2 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE55EFDE3389CEAC31315EF9 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C8790A1D20A4D740AF5B3180 /* UITextFieldWithNumberPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithNumberPad.h; sourceTree = "<group>"; };
 		C8790D7BF65C1B2BBCD6745F /* UITextFieldWithPickerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithPickerProtocol.h; sourceTree = "<group>"; };
 		C8790F0A9BFEE6BAB3A8D98A /* UITextFieldWithNumberPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithNumberPad.m; sourceTree = "<group>"; };
@@ -167,8 +166,8 @@
 				17B5CDB61011174AC678870E /* readme.md */,
 				17B5CF97FAB2E799186CE2BB /* UITextSubClass */,
 				17B5CDD25123018D8D38F647 /* Podfile */,
-				43C3FA33E1D64DADAC2A953D /* Pods-Tests.xcconfig */,
 				17B5CD8C9FD9AB4777DF1BBB /* UITextSubClass.podspec */,
+				845A0F4CE3CD2DCD6A05E549 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -196,7 +195,6 @@
 				17B5CD8828BA21755AD3195E /* UITextSubClass-Info.plist */,
 				17B5C16D873CE5FE5645B92C /* InfoPlist.strings */,
 				17B5C591AD8D7C78CA80F20C /* main.m */,
-				17B5C7E96C164B5921830962 /* UITextSubClass-Prefix.pch */,
 				17B5C127C48985216D0E2852 /* Default.png */,
 				17B5C8787D8E78FAE52FA005 /* Default@2x.png */,
 				17B5C5A3D65928ADBE8BDA5F /* Default-568h@2x.png */,
@@ -295,9 +293,17 @@
 			children = (
 				73EACB8617F9AD46000A444C /* Tests-Info.plist */,
 				73EACB8717F9AD46000A444C /* InfoPlist.strings */,
-				73EACB8C17F9AD46000A444C /* Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		845A0F4CE3CD2DCD6A05E549 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE55EFDE3389CEAC31315EF9 /* Pods-Tests.release.xcconfig */,
+				2E155DF2D83F5647BA4DC2A1 /* Pods-Tests.debug.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		C87907A587543DA659F044C1 /* UITextFieldWithNumberPad */ = {
@@ -434,7 +440,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -528,8 +534,8 @@
 		17B5C6885DBD5E6EF8CF6FD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Example/UITextSubClass-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "Example/UITextSubClass-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = UITextSubClass;
@@ -591,8 +597,8 @@
 		17B5CD4BC5B82A8465FF5D9F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Example/UITextSubClass-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "Example/UITextSubClass-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = UITextSubClass;
@@ -603,7 +609,7 @@
 		};
 		73EACB8F17F9AD46000A444C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43C3FA33E1D64DADAC2A953D /* Pods-Tests.xcconfig */;
+			baseConfigurationReference = BE55EFDE3389CEAC31315EF9 /* Pods-Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UITextSubClass.app/UITextSubClass";
 				CLANG_ENABLE_MODULES = YES;
@@ -619,8 +625,7 @@
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -636,7 +641,7 @@
 		};
 		73EACB9017F9AD46000A444C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43C3FA33E1D64DADAC2A953D /* Pods-Tests.xcconfig */;
+			baseConfigurationReference = 2E155DF2D83F5647BA4DC2A1 /* Pods-Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UITextSubClass.app/UITextSubClass";
 				CLANG_ENABLE_MODULES = YES;
@@ -651,8 +656,7 @@
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",

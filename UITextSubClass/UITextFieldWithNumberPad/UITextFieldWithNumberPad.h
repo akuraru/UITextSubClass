@@ -6,7 +6,7 @@
 //  Copyright (c) 2013年 P.I.akura. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface UITextFieldWithNumberPad : UITextField
 

@@ -7,6 +7,7 @@
 //
 
 
+#import <UIKit/UIKit.h>
 
 @interface UITextViewWithPlaceholder : UITextView
 
