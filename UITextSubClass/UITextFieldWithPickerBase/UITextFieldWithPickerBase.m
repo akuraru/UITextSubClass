@@ -104,7 +104,7 @@
     [toolbar sizeToFit];
     
     UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] init];
-    cancelButton.style = UIBarButtonItemStyleBordered;
+    cancelButton.style = UIBarButtonItemStylePlain;
     cancelButton.title = NSLocalizedStringFromTableInBundle(@"Cancel", UITextSubClassLocalize, [UITextSubClassHelper bundle], @"Cancel");
     cancelButton.target = self;
     cancelButton.action = @selector(cancelPicker);

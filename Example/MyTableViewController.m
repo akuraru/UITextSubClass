@@ -31,7 +31,7 @@
     self.dateTextField.delegate = self;
     self.dateTextField.datePickerMode = UIDatePickerModeDate;
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    dateFormatter.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    dateFormatter.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
     self.dateTextField.dateFormatter = dateFormatter;// pass original date formatter
     // countdown

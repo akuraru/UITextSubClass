@@ -104,7 +104,7 @@
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDate *formDate = [NSDate date];
     NSDate *toDate = [NSDate dateWithTimeInterval:theTimeInterval sinceDate:formDate];
-    NSCalendarUnit unitFlags = NSHourCalendarUnit | NSMinuteCalendarUnit | NSDayCalendarUnit | NSMonthCalendarUnit;
+    NSCalendarUnit unitFlags = NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitDay | NSCalendarUnitMonth;
     NSDateComponents *conversionInfo = [calendar components:unitFlags fromDate:formDate toDate:toDate options:0];
     NSMutableString *mutableString = [NSMutableString string];
     if ([conversionInfo hour] != 0) {
