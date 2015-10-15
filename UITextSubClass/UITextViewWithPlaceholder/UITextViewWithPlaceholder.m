@@ -33,6 +33,13 @@
     [self.placeholder setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
     [self.placeholder setTextColor:[UIColor lightGrayColor]];
     [self addSubview:self.placeholder];
+//    [self addConstraints:@[
+//        [NSLayoutConstraint constraintWithItem:self.placeholder attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1.0 constant:8],
+//        [NSLayoutConstraint constraintWithItem:self.placeholder attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1.0 constant:8],
+//        [NSLayoutConstraint constraintWithItem:self.placeholder attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1.0 constant:-8],
+//        [NSLayoutConstraint constraintWithItem:self.placeholder attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:-8],
+//    ]];
+    
     [self sendSubviewToBack:self.placeholder];
 
     [self setPlaceholder:self.placeholder];
