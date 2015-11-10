@@ -37,7 +37,7 @@
         [NSLayoutConstraint constraintWithItem:self.placeholder attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1.0 constant:8],
         [NSLayoutConstraint constraintWithItem:self.placeholder attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1.0 constant:8],
         [NSLayoutConstraint constraintWithItem:self.placeholder attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1.0 constant:-8],
-        [NSLayoutConstraint constraintWithItem:self.placeholder attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:-8],
+        [NSLayoutConstraint constraintWithItem:self.placeholder attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeWidth multiplier:1.0 constant:-16],
     ]];
     
     [self sendSubviewToBack:self.placeholder];
@@ -45,9 +45,7 @@
     [self setPlaceholder:self.placeholder];
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChanged:) name:UITextViewTextDidChangeNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(gotFocus:) name:UITextViewTextDidBeginEditingNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(lostFocus:) name:UITextViewTextDidEndEditingNotification object:nil];
-
 }
 
 - (void)awakeFromNib {
@@ -101,10 +99,6 @@
     [self updatePlaceholderLabel];
 }
 
-- (void)gotFocus:(NSNotification *)notification {
-    [self.placeholder setAlpha:0.0];
-}
-
 - (void)lostFocus:(NSNotification *)notification {
     [self updatePlaceholderLabel];
 }
@@ -115,9 +109,6 @@
 }
 
 - (void)updatePlaceholderLabel {
-    CGRect frame = CGRectMake(8, 8, self.bounds.size.width - 16, 0.0);
-    self.placeholder.frame = frame;
-    [self.placeholder sizeToFit];
     if ([[self text] length] == 0 && [[self.placeholder text] length] > 0) {
         [self.placeholder setAlpha:1.0];
     } else {
@@ -128,12 +119,15 @@
 - (void)setFont:(UIFont *)font {
     [super setFont:font];
     [self.placeholder setFont:self.font];
+    [self updatePlaceholderLabel];
+    [self.placeholder sizeToFit];
 }
 
 
 - (void)setPlaceholderText:(NSString *)placeholderText {
     [self.placeholder setText:placeholderText];
     [self updatePlaceholderLabel];
+    [self.placeholder sizeToFit];
 
 }
 
@@ -144,5 +138,6 @@
 - (void)setPlaceholderColor:(UIColor *)placeholderColor {
     [self.placeholder setTextColor:placeholderColor];
     [self updatePlaceholderLabel];
+    [self.placeholder sizeToFit];
 }
 @end

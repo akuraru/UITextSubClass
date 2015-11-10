@@ -49,12 +49,6 @@
 - (void)donePicker {
     if ([self hasValue]) {
         self.text = [self selectedValue];
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated"
-        if ([baseDelegate respondsToSelector:@selector(savePickerView:)]) {
-            [baseDelegate savePickerView:_pickerView];
-        }
-#pragma clang diagnostic pop
         if ([baseDelegate respondsToSelector:@selector(savePickerFrom:)]) {
             [baseDelegate savePickerFrom:self];
         }
