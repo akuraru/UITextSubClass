@@ -36,7 +36,7 @@
         }
         return NO;
     } else {
-        return YES;
+        return [super canPerformAction:action withSender:sender];
     }
 }
 
