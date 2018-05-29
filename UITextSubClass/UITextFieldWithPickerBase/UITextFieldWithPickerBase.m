@@ -16,6 +16,9 @@
 #define kWeight 320
 
 @interface UITextFieldWithPickerBase () <UITextFieldDelegate>
+
+@property (nonatomic, weak) UIViewController *popoverController;
+
 @end
 
 @implementation UITextFieldWithPickerBase {
@@ -60,8 +63,8 @@
 	[self dismissPickerView];
 }
 - (void)dismissPickerView {
-	if (popoverController) {
-		[popoverController dismissPopoverAnimated:YES];
+	if (self.popoverController) {
+		[self.popoverController dismissViewControllerAnimated:YES completion:nil];
     } else {
 		[self resignFirstResponder];
 	}
@@ -78,13 +81,19 @@
     if ([baseDelegate respondsToSelector:@selector(textFieldShouldBeginEditing:)] && [baseDelegate textFieldShouldBeginEditing:textField] == NO) {
         return NO;
     } else if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-		UIViewController *popoverContent = [[UIViewController alloc] init];
-		[popoverContent.view addSubview:self.inputView];
-		[popoverContent.view addSubview:self.inputAccessoryView];
+		UIViewController *popoverController = [[UIViewController alloc] init];
+		[popoverController.view addSubview:self.inputView];
+		[popoverController.view addSubview:self.inputAccessoryView];
         
-		popoverController = [[UIPopoverController alloc] initWithContentViewController:popoverContent];
-		[popoverController presentPopoverFromRect:self.frame inView:self.superview permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
-		[popoverController setPopoverContentSize:CGSizeMake(kWeight, kPopOverHeight) animated:NO];
+        popoverController.modalPresentationStyle = UIModalPresentationPopover;
+        popoverController.popoverPresentationController.sourceView = self;
+        popoverController.popoverPresentationController.sourceRect = self.frame;
+        popoverController.preferredContentSize = CGSizeMake(kWeight, kPopOverHeight);
+        
+        if ([baseDelegate respondsToSelector:@selector(textField:beginEditingWithPopoverViewController:)]) {
+            [baseDelegate textField:self beginEditingWithPopoverViewController:popoverController];
+        }
+        self.popoverController = popoverController;
         return NO;
 	} else {
         return YES;

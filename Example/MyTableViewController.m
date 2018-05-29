@@ -63,4 +63,8 @@
     }
 }
 
+- (void)textField:(UITextField *)textField beginEditingWithPopoverViewController:(UIViewController *)viewController {
+    [self presentViewController:viewController animated:YES completion:nil];
+}
+
 @end

@@ -13,7 +13,6 @@
 @interface UITextFieldWithPickerBase : UITextField {
 @protected
     id _pickerView;
-	UIPopoverController *popoverController;
 }
 
 - (CGRect)pickerFrame;
