@@ -42,7 +42,7 @@
 		73EACB8917F9AD46000A444C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73EACB8717F9AD46000A444C /* InfoPlist.strings */; };
 		73EACB9617F9BD14000A444C /* UITextSubClassLocalize.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73EACB9917F9BD14000A444C /* UITextSubClassLocalize.strings */; };
 		73EACB9717F9BD14000A444C /* UITextSubClassLocalize.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73EACB9917F9BD14000A444C /* UITextSubClassLocalize.strings */; };
-		7C610C4B07B2445B88A6CFF5 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B65F29986BB74A408EF079D2 /* libPods-Tests.a */; };
+		88FB26A3560C1567DCFA0C41 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CFF8381BB368427B2822B5 /* libPods-Tests.a */; };
 		C87907E4633B261AF3F9A55C /* UITextFieldWithNumberPad.m in Sources */ = {isa = PBXBuildFile; fileRef = C8790F0A9BFEE6BAB3A8D98A /* UITextFieldWithNumberPad.m */; };
 /* End PBXBuildFile section */
 
@@ -86,13 +86,13 @@
 		17B5CD8828BA21755AD3195E /* UITextSubClass-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "UITextSubClass-Info.plist"; sourceTree = "<group>"; };
 		17B5CD8C9FD9AB4777DF1BBB /* UITextSubClass.podspec */ = {isa = PBXFileReference; lastKnownFileType = file.podspec; path = UITextSubClass.podspec; sourceTree = "<group>"; };
 		17B5CDB61011174AC678870E /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = readme.md; sourceTree = "<group>"; };
-		17B5CDD25123018D8D38F647 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		17B5CDD25123018D8D38F647 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		17B5CE1C628C7A0B76695496 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		17B5CE809C072475DD9376B8 /* UITextViewWithPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewWithPlaceholder.m; sourceTree = "<group>"; };
 		17B5CE885BF8F1572A6EF57D /* UITextSubClassHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextSubClassHelper.h; sourceTree = "<group>"; };
 		17B5CEB4A62A4A12AA4DF6F3 /* UITextFieldWithDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithDatePicker.m; sourceTree = "<group>"; };
 		17B5CFFE7B0F6BD0D414326A /* UITextFieldWithDecimalPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithDecimalPad.m; sourceTree = "<group>"; };
-		2E155DF2D83F5647BA4DC2A1 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		357998853AC10EABAF9277E9 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		737068ED168996C0007BAA4F /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
 		737068EE168996C0007BAA4F /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
 		73EACB7F17F9AD46000A444C /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,11 +102,11 @@
 		73EACB9517F9BD05000A444C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		73EACB9817F9BD14000A444C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/UITextSubClassLocalize.strings; sourceTree = "<group>"; };
 		73EACB9A17F9BD18000A444C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/UITextSubClassLocalize.strings; sourceTree = "<group>"; };
-		B65F29986BB74A408EF079D2 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE55EFDE3389CEAC31315EF9 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B3CFF8381BB368427B2822B5 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8790A1D20A4D740AF5B3180 /* UITextFieldWithNumberPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithNumberPad.h; sourceTree = "<group>"; };
 		C8790D7BF65C1B2BBCD6745F /* UITextFieldWithPickerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithPickerProtocol.h; sourceTree = "<group>"; };
 		C8790F0A9BFEE6BAB3A8D98A /* UITextFieldWithNumberPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithNumberPad.m; sourceTree = "<group>"; };
+		E3CE21BD544E40314800A53E /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,8 +126,8 @@
 			files = (
 				73EACB8317F9AD46000A444C /* UIKit.framework in Frameworks */,
 				73EACB8217F9AD46000A444C /* Foundation.framework in Frameworks */,
-				7C610C4B07B2445B88A6CFF5 /* libPods-Tests.a in Frameworks */,
 				17B5CF3E96D0053F0E6926B6 /* XCTest.framework in Frameworks */,
+				88FB26A3560C1567DCFA0C41 /* libPods-Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,7 +167,7 @@
 				17B5CF97FAB2E799186CE2BB /* UITextSubClass */,
 				17B5CDD25123018D8D38F647 /* Podfile */,
 				17B5CD8C9FD9AB4777DF1BBB /* UITextSubClass.podspec */,
-				845A0F4CE3CD2DCD6A05E549 /* Pods */,
+				9E2F44E1811ACED5FB27D5B9 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -245,8 +245,8 @@
 				17B5CD335D7E3059BACE5B0F /* UIKit.framework */,
 				17B5CA998EBAEE23911CE978 /* Foundation.framework */,
 				17B5C00A093E4E48061349B1 /* CoreGraphics.framework */,
-				B65F29986BB74A408EF079D2 /* libPods-Tests.a */,
 				17B5C4BBA3E7D79480776476 /* XCTest.framework */,
+				B3CFF8381BB368427B2822B5 /* libPods-Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -297,11 +297,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		845A0F4CE3CD2DCD6A05E549 /* Pods */ = {
+		9E2F44E1811ACED5FB27D5B9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BE55EFDE3389CEAC31315EF9 /* Pods-Tests.release.xcconfig */,
-				2E155DF2D83F5647BA4DC2A1 /* Pods-Tests.debug.xcconfig */,
+				E3CE21BD544E40314800A53E /* Pods-Tests.release.xcconfig */,
+				357998853AC10EABAF9277E9 /* Pods-Tests.debug.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -339,11 +339,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73EACB9117F9AD46000A444C /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
-				3A956A133E3041E7899788D6 /* Check Pods Manifest.lock */,
+				6682A8B93C9B4A5AE5B7FB53 /* [CP] Check Pods Manifest.lock */,
 				73EACB7B17F9AD46000A444C /* Sources */,
 				73EACB7C17F9AD46000A444C /* Frameworks */,
 				73EACB7D17F9AD46000A444C /* Resources */,
-				E63563D6367647F8A0D943D1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -413,34 +412,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3A956A133E3041E7899788D6 /* Check Pods Manifest.lock */ = {
+		6682A8B93C9B4A5AE5B7FB53 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		E63563D6367647F8A0D943D1 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -612,7 +599,7 @@
 		};
 		73EACB8F17F9AD46000A444C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE55EFDE3389CEAC31315EF9 /* Pods-Tests.release.xcconfig */;
+			baseConfigurationReference = E3CE21BD544E40314800A53E /* Pods-Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UITextSubClass.app/UITextSubClass";
 				CLANG_ENABLE_MODULES = YES;
@@ -645,7 +632,7 @@
 		};
 		73EACB9017F9AD46000A444C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E155DF2D83F5647BA4DC2A1 /* Pods-Tests.debug.xcconfig */;
+			baseConfigurationReference = 357998853AC10EABAF9277E9 /* Pods-Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UITextSubClass.app/UITextSubClass";
 				CLANG_ENABLE_MODULES = YES;
