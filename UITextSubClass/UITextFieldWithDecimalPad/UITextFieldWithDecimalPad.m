@@ -48,4 +48,8 @@
     }
 }
 
+- (NSUndoManager *)undoManager {
+    return nil;
+}
+
 @end
