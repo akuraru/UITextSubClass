@@ -38,10 +38,6 @@
 }
 - (BOOL)canPerformAction:(SEL)action withSender:(id)sender {
     if (self.menuHidden) {
-        UIMenuController *menuController = [UIMenuController sharedMenuController];
-        if (menuController) {
-            [UIMenuController sharedMenuController].menuVisible = NO;
-        }
         return NO;
     } else {
         return YES;
