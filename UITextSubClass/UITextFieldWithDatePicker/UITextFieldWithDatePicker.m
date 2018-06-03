@@ -7,10 +7,8 @@
 #import "UITextFieldWithPickerProtocol.h"
 #import "UITextSubClassHelper.h"
 
-
 @implementation UITextFieldWithDatePicker {
     NSDate *_date;
-    UIDatePickerMode _datePickerMode;
 }
 
 - (UIDatePicker *)datePicker {
@@ -40,14 +38,6 @@
     }
     _date = date;
     self.text = [self selectedValue];
-}
-
-- (UIDatePickerMode)datePickerMode {
-    return _datePickerMode;
-}
-
-- (void)setDatePickerMode:(UIDatePickerMode) datePickerMode {
-    _datePickerMode = datePickerMode;
 }
 
 - (NSInteger)minuteInterval {
