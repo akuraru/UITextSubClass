@@ -19,15 +19,19 @@
     }
     return self;
 }
+
 - (void)didChangeText:(id)sender {
     self.value = self.text.integerValue;
 }
+
 - (NSInteger)value {
     return [self.text integerValue];
 }
+
 - (void)setValue:(NSInteger)value {
     super.text = [@(value) stringValue];
 }
+
 - (BOOL)canPerformAction:(SEL)action withSender:(id)sender {
     if (self.menuHidden) {
         return NO;

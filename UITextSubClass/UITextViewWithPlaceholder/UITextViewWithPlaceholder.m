@@ -123,7 +123,6 @@
     [self.placeholder sizeToFit];
 }
 
-
 - (void)setPlaceholderText:(NSString *)placeholderText {
     [self.placeholder setText:placeholderText];
     [self updatePlaceholderLabel];
@@ -140,4 +139,5 @@
     [self updatePlaceholderLabel];
     [self.placeholder sizeToFit];
 }
+
 @end
