@@ -18,20 +18,17 @@
 @interface UITextFieldWithPickerBase () <UITextFieldDelegate>
 
 @property (nonatomic, weak) UIViewController *popoverController;
+@property (nonatomic, weak) id<UITextFieldWithPickerProtocol> baseDelegate;
 
 @end
 
-@implementation UITextFieldWithPickerBase {
-    id<UITextFieldWithPickerProtocol> baseDelegate;
-}
+@implementation UITextFieldWithPickerBase
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
 	self = [super initWithCoder:aDecoder];
     if (self) {
-        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-            [super setDelegate:self];
-            baseDelegate = nil;
-        }
+        [super setDelegate:self];
+        self.baseDelegate = nil;
     }
     return self;
 }
@@ -55,8 +52,8 @@
 - (void)donePicker {
     if ([self hasValue]) {
         self.text = [self selectedValue];
-        if ([baseDelegate respondsToSelector:@selector(savePickerFrom:)]) {
-            [baseDelegate savePickerFrom:self];
+        if ([self.baseDelegate respondsToSelector:@selector(savePickerFrom:)]) {
+            [self.baseDelegate savePickerFrom:self];
         }
     }
     [self dismissPickerView];
@@ -75,15 +72,15 @@
 }
 
 - (void)setDelegate:(id<UITextFieldWithPickerProtocol>)delegate {
-    baseDelegate = delegate;
+    self.baseDelegate = delegate;
 }
 
 - (id<UITextFieldDelegate>)delegate {
-    return baseDelegate;
+    return self.baseDelegate;
 }
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
-    if ([baseDelegate respondsToSelector:@selector(textFieldShouldBeginEditing:)] && [baseDelegate textFieldShouldBeginEditing:textField] == NO) {
+    if ([self.baseDelegate respondsToSelector:@selector(textFieldShouldBeginEditing:)] && [self.baseDelegate textFieldShouldBeginEditing:textField] == NO) {
         return NO;
     } else if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
 		UIViewController *popoverController = [[UIViewController alloc] init];
@@ -95,8 +92,8 @@
         popoverController.popoverPresentationController.sourceRect = self.frame;
         popoverController.preferredContentSize = CGSizeMake(kWeight, kPopOverHeight);
         
-        if ([baseDelegate respondsToSelector:@selector(textField:beginEditingWithPopoverViewController:)]) {
-            [baseDelegate textField:self beginEditingWithPopoverViewController:popoverController];
+        if ([self.baseDelegate respondsToSelector:@selector(textField:beginEditingWithPopoverViewController:)]) {
+            [self.baseDelegate textField:self beginEditingWithPopoverViewController:popoverController];
         }
         self.popoverController = popoverController;
         return NO;
@@ -130,44 +127,44 @@
 }
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
-    if ([baseDelegate respondsToSelector:@selector(textFieldDidBeginEditing:)]) {
-        [baseDelegate textFieldDidBeginEditing:textField];
+    if ([self.baseDelegate respondsToSelector:@selector(textFieldDidBeginEditing:)]) {
+        [self.baseDelegate textFieldDidBeginEditing:textField];
     }
 }
 
 - (BOOL)textFieldShouldEndEditing:(UITextField *)textField {
-    if ([baseDelegate respondsToSelector:@selector(textFieldShouldEndEditing:)]) {
-        return [baseDelegate textFieldShouldEndEditing:textField];
+    if ([self.baseDelegate respondsToSelector:@selector(textFieldShouldEndEditing:)]) {
+        return [self.baseDelegate textFieldShouldEndEditing:textField];
     } else {
         return YES;
     }
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField {
-    if ([baseDelegate respondsToSelector:@selector(textFieldDidEndEditing:)]) {
-        [baseDelegate textFieldDidEndEditing:textField];
+    if ([self.baseDelegate respondsToSelector:@selector(textFieldDidEndEditing:)]) {
+        [self.baseDelegate textFieldDidEndEditing:textField];
     }
 }
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
-    if ([baseDelegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)]) {
-        return [baseDelegate textField:textField shouldChangeCharactersInRange:range replacementString:string];
+    if ([self.baseDelegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)]) {
+        return [self.baseDelegate textField:textField shouldChangeCharactersInRange:range replacementString:string];
     } else {
         return NO;
     }
 }
 
 - (BOOL)textFieldShouldClear:(UITextField *)textField {
-    if ([baseDelegate respondsToSelector:@selector(textFieldShouldClear:)]) {
-        return [baseDelegate textFieldShouldClear:textField];
+    if ([self.baseDelegate respondsToSelector:@selector(textFieldShouldClear:)]) {
+        return [self.baseDelegate textFieldShouldClear:textField];
     } else {
         return YES;
     }
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    if ([baseDelegate respondsToSelector:@selector(textFieldDidBeginEditing:)]) {
-        return [baseDelegate textFieldShouldReturn:textField];
+    if ([self.baseDelegate respondsToSelector:@selector(textFieldDidBeginEditing:)]) {
+        return [self.baseDelegate textFieldShouldReturn:textField];
     } else {
         return YES;
     }
