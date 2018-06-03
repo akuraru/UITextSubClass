@@ -55,16 +55,17 @@
 }
 
 - (void)setMinuteInterval:(NSInteger) minuteInterval {
-
     self.datePicker.minuteInterval = minuteInterval;
 }
 
 - (UIView *)inputView {
     return self.datePicker;
 }
+
 - (void)updateText {
     self.text = [self selectedValue];
 }
+
 - (NSString *)selectedValue {
     // countdown is special case
     if (self.datePickerMode == UIDatePickerModeCountDownTimer) {
@@ -118,6 +119,7 @@
 
     return mutableString;
 }
+
 - (void)donePicker {
     _date = [_pickerView date];
     [super donePicker];
@@ -126,4 +128,5 @@
 - (BOOL)hasValue {
     return _date != nil;
 }
+
 @end

@@ -19,6 +19,7 @@
     }
     return self;
 }
+
 - (void)didChangeText:(id)sender {
     NSString *phoneNumberRegex = @"^([1-9]\\d*|0)?(\\.(\\d+)?)?$";
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", phoneNumberRegex];
@@ -26,16 +27,20 @@
         self.value = self.text.floatValue;
     }
 }
+
 - (CGFloat)value {
     return [self format:[self.text floatValue]];
 }
+
 - (void)setValue:(CGFloat)value {
     super.text = [@([self format:value]) stringValue];
 }
+
 - (CGFloat)format:(CGFloat)value {
     NSInteger num = pow(10, self.significantFigures);
     return ((NSInteger)(value * num))/(CGFloat)num;
 }
+
 - (BOOL)canPerformAction:(SEL)action withSender:(id)sender {
     if (self.menuHidden) {
         return NO;

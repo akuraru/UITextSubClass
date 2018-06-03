@@ -35,6 +35,7 @@
     }
     return self;
 }
+
 - (NSString *)selectedValue {
     return nil;
 }
@@ -42,9 +43,11 @@
 - (CGRect)pickerFrame {
     return CGRectMake(0, kToolBarHeight, kWeight, kPickerHeight);
 }
+
 - (UIView *)inputView {
     return _pickerView;
 }
+
 - (BOOL)hasValue {
     return YES;
 }
@@ -62,6 +65,7 @@
 - (void)cancelPicker {
 	[self dismissPickerView];
 }
+
 - (void)dismissPickerView {
 	if (self.popoverController) {
 		[self.popoverController dismissViewControllerAnimated:YES completion:nil];
@@ -73,6 +77,7 @@
 - (void)setDelegate:(id<UITextFieldWithPickerProtocol>)delegate {
     baseDelegate = delegate;
 }
+
 - (id<UITextFieldDelegate>)delegate {
     return baseDelegate;
 }
@@ -99,7 +104,6 @@
         return YES;
     }
 }
-
 
 - (UIView *)inputAccessoryView {
     UIToolbar *toolbar = [[UIToolbar alloc] init];
@@ -130,6 +134,7 @@
         [baseDelegate textFieldDidBeginEditing:textField];
     }
 }
+
 - (BOOL)textFieldShouldEndEditing:(UITextField *)textField {
     if ([baseDelegate respondsToSelector:@selector(textFieldShouldEndEditing:)]) {
         return [baseDelegate textFieldShouldEndEditing:textField];
@@ -137,6 +142,7 @@
         return YES;
     }
 }
+
 - (void)textFieldDidEndEditing:(UITextField *)textField {
     if ([baseDelegate respondsToSelector:@selector(textFieldDidEndEditing:)]) {
         [baseDelegate textFieldDidEndEditing:textField];
@@ -158,6 +164,7 @@
         return YES;
     }
 }
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     if ([baseDelegate respondsToSelector:@selector(textFieldDidBeginEditing:)]) {
         return [baseDelegate textFieldShouldReturn:textField];
@@ -169,4 +176,5 @@
 - (BOOL)canPerformAction:(SEL) action withSender:(id) sender {
     return NO;
 }
+
 @end
