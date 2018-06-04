@@ -5,7 +5,7 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "UITextViewWithToolBar.h"
+#import "UITextViewWithToolbar.h"
 #import "UITextSubClassHelper.h"
 
 NS_ASSUME_NONNULL_BEGIN
