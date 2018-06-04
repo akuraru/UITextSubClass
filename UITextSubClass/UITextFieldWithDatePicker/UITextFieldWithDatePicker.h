@@ -6,6 +6,8 @@
 #import <Foundation/Foundation.h>
 #import "UITextFieldWithPickerBase.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol UITextFieldWithPickerProtocol;
 
 @interface UITextFieldWithDatePicker : UITextFieldWithPickerBase
@@ -24,3 +26,5 @@
 - (NSDate *)inputedDate;
 
 @end
+
+NS_ASSUME_NONNULL_END

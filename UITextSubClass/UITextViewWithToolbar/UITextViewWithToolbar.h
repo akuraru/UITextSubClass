@@ -10,7 +10,11 @@
 
 #import "UITextViewWithPlaceholder.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface UITextViewWithToolbar : UITextViewWithPlaceholder
 #pragma mark - user defined runtime attributes
 @property(nonatomic, strong) UILabel *placeholder;
 @end
+
+NS_ASSUME_NONNULL_END

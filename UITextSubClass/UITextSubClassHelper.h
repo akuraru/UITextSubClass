@@ -5,6 +5,7 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
 
 extern NSString *const UITextSubClassLocalize;
 
@@ -17,3 +18,5 @@ extern NSString *const UITextSubClassLocalize;
 // if you want to use mainBundle.
 + (void)setAlwaysUseMainBundle:(BOOL) alwaysUseMainBundle;
 @end
+
+NS_ASSUME_NONNULL_END

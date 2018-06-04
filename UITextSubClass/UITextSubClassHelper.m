@@ -5,6 +5,8 @@
 
 #import "UITextSubClassHelper.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 NSString *const UITextSubClassLocalize = @"UITextSubClassLocalize";
 
 @implementation UITextSubClassHelper
@@ -38,3 +40,5 @@ static NSBundle *_userDefineBundle;
 }
 
 @end
+
+NS_ASSUME_NONNULL_END

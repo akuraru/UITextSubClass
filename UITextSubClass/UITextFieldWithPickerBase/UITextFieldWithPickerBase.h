@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol UITextFieldWithPickerProtocol;
 
 @interface UITextFieldWithPickerBase : UITextField {
@@ -18,9 +20,11 @@
 - (CGRect)pickerFrame;
 - (void)dismissPickerView;
 
-- (void)setDelegate:(id<UITextFieldWithPickerProtocol>)delegate;
-- (id<UITextFieldWithPickerProtocol>)delegate;
+- (void)setDelegate:(id<UITextFieldWithPickerProtocol> _Nullable)delegate;
+- (id<UITextFieldWithPickerProtocol> _Nullable)delegate;
 
 - (void)donePicker;
 
 @end
+
+NS_ASSUME_NONNULL_END

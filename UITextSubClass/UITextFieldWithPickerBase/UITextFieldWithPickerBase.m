@@ -10,6 +10,8 @@
 #import "UITextSubClassHelper.h"
 #import "UITextFieldWithPickerProtocol.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 #define kToolBarHeight 44
 #define kPickerHeight 216
 #define kPopOverHeight (kToolBarHeight + kPickerHeight)
@@ -40,7 +42,7 @@
     return self;
 }
 
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+- (instancetype _Nullable)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
         [self setup];
@@ -61,7 +63,7 @@
     return CGRectMake(0, kToolBarHeight, kWeight, kPickerHeight);
 }
 
-- (UIView *)inputView {
+- (UIView * _Nullable)inputView {
     return _pickerView;
 }
 
@@ -91,11 +93,11 @@
 	}
 }
 
-- (void)setDelegate:(id<UITextFieldWithPickerProtocol>)delegate {
+- (void)setDelegate:(id<UITextFieldWithPickerProtocol> _Nullable)delegate {
     self.baseDelegate = delegate;
 }
 
-- (id<UITextFieldDelegate>)delegate {
+- (id<UITextFieldDelegate> _Nullable)delegate {
     return self.baseDelegate;
 }
 
@@ -122,7 +124,7 @@
     }
 }
 
-- (UIView *)inputAccessoryView {
+- (UIView * _Nullable)inputAccessoryView {
     UIToolbar *toolbar = [[UIToolbar alloc] init];
     toolbar.translucent = YES;
     [toolbar sizeToFit];
@@ -190,8 +192,10 @@
     }
 }
 
-- (BOOL)canPerformAction:(SEL) action withSender:(id) sender {
+- (BOOL)canPerformAction:(SEL)action withSender:(id _Nullable)sender {
     return NO;
 }
 
 @end
+
+NS_ASSUME_NONNULL_END

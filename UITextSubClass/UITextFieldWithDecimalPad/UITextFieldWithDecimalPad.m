@@ -8,6 +8,8 @@
 
 #import "UITextFieldWithDecimalPad.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @implementation UITextFieldWithDecimalPad
 
 - (instancetype)init {
@@ -26,7 +28,7 @@
     return self;
 }
 
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+- (instancetype _Nullable)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
         [self setup];
@@ -61,7 +63,7 @@
     return ((NSInteger)(value * num))/(CGFloat)num;
 }
 
-- (BOOL)canPerformAction:(SEL)action withSender:(id)sender {
+- (BOOL)canPerformAction:(SEL)action withSender:(id _Nullable)sender {
     if (self.menuHidden) {
         return NO;
     } else {
@@ -69,8 +71,10 @@
     }
 }
 
-- (NSUndoManager *)undoManager {
+- (NSUndoManager * _Nullable)undoManager {
     return nil;
 }
 
 @end
+
+NS_ASSUME_NONNULL_END

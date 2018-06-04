@@ -9,6 +9,8 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface UITextViewWithPlaceholder : UITextView
 
 #pragma mark - user defined runtime attributes
@@ -27,3 +29,5 @@
 
 - (void)updatePlaceholderLabel;
 @end
+
+NS_ASSUME_NONNULL_END

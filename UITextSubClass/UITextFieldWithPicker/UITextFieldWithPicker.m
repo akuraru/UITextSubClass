@@ -6,8 +6,9 @@
 #import "UITextFieldWithPicker.h"
 #import "UITextFieldWithPickerProtocol.h"
 
-@implementation UITextFieldWithPicker
+NS_ASSUME_NONNULL_BEGIN
 
+@implementation UITextFieldWithPicker
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *) pickerView {
     // Components is single
@@ -18,11 +19,11 @@
     return [self.dataSource count];
 }
 
-- (NSString *)pickerView:(UIPickerView *) picker titleForRow:(NSInteger) row forComponent:(NSInteger) component {
+- (NSString * _Nullable)pickerView:(UIPickerView *) picker titleForRow:(NSInteger) row forComponent:(NSInteger) component {
     return [self.dataSource objectAtIndex:(NSUInteger)row];
 }
 
-- (UIView *)inputView {
+- (UIView * _Nullable)inputView {
     return self.pickerView;
 }
 
@@ -55,3 +56,5 @@
 }
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -7,6 +7,8 @@
 
 #import "UITextViewWithPlaceholder.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface UITextViewWithPlaceholder ()
 @property(nonatomic, strong) UILabel *placeholder;
 @end
@@ -87,7 +89,7 @@
     return self;
 }
 
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+- (instancetype _Nullable)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
         [self setupPlaceholder];
@@ -124,7 +126,7 @@
     }
 }
 
-- (void)setFont:(UIFont *)font {
+- (void)setFont:(UIFont * _Nullable)font {
     [super setFont:font];
     [self.placeholder setFont:self.font];
     [self updatePlaceholderLabel];
@@ -149,3 +151,5 @@
 }
 
 @end
+
+NS_ASSUME_NONNULL_END
