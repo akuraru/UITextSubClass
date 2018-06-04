@@ -6,28 +6,25 @@
 #import <Foundation/Foundation.h>
 #import "UITextFieldWithPickerBase.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol UITextFieldWithPickerProtocol;
 
-@interface UITextFieldWithDatePicker : UITextFieldWithPickerBase {
-}
+@interface UITextFieldWithDatePicker : UITextFieldWithPickerBase
 
-@property(nonatomic, strong) NSDateFormatter *dateFormatter;
+@property (nonatomic, strong) NSDateFormatter *dateFormatter;
 
-- (NSDate *)date;
+@property (nonatomic) NSDate *date;
 
-- (void)setDate:(NSDate *) date;
-
-- (UIDatePickerMode)datePickerMode;
-
-- (void)setDatePickerMode:(UIDatePickerMode) datePickerMode;
+@property (nonatomic) UIDatePickerMode datePickerMode;
 
 - (void)updateText;
 
 #pragma mark - UIDatePickerModeCountDownTimer
-- (NSInteger)minuteInterval;
-
-- (void)setMinuteInterval:(NSInteger) minuteInterval;
+@property (nonatomic) NSInteger minuteInterval;
 
 - (NSDate *)inputedDate;
 
 @end
+
+NS_ASSUME_NONNULL_END

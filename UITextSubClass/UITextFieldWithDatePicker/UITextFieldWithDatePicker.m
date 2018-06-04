@@ -7,10 +7,10 @@
 #import "UITextFieldWithPickerProtocol.h"
 #import "UITextSubClassHelper.h"
 
+NS_ASSUME_NONNULL_BEGIN
 
 @implementation UITextFieldWithDatePicker {
     NSDate *_date;
-    UIDatePickerMode _datePickerMode;
 }
 
 - (UIDatePicker *)datePicker {
@@ -42,14 +42,6 @@
     self.text = [self selectedValue];
 }
 
-- (UIDatePickerMode)datePickerMode {
-    return _datePickerMode;
-}
-
-- (void)setDatePickerMode:(UIDatePickerMode) datePickerMode {
-    _datePickerMode = datePickerMode;
-}
-
 - (NSInteger)minuteInterval {
     return self.datePicker.minuteInterval;
 }
@@ -58,7 +50,7 @@
     self.datePicker.minuteInterval = minuteInterval;
 }
 
-- (UIView *)inputView {
+- (UIView * _Nullable)inputView {
     return self.datePicker;
 }
 
@@ -130,3 +122,5 @@
 }
 
 @end
+
+NS_ASSUME_NONNULL_END

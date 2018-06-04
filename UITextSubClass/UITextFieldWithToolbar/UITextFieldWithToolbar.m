@@ -6,10 +6,9 @@
 #import "UITextFieldWithToolbar.h"
 #import "UITextSubClassHelper.h"
 
+NS_ASSUME_NONNULL_BEGIN
 
-@implementation UITextFieldWithToolbar {
-
-}
+@implementation UITextFieldWithToolbar
 
 - (BOOL)becomeFirstResponder {
     return [super becomeFirstResponder];
@@ -19,7 +18,7 @@
     return [super resignFirstResponder];
 }
 
-- (UIView *)inputAccessoryView {
+- (UIView * _Nullable)inputAccessoryView {
     UIToolbar *toolbar = [[UIToolbar alloc] init];
     toolbar.translucent = YES;
     [toolbar sizeToFit];
@@ -36,3 +35,5 @@
 }
 
 @end
+
+NS_ASSUME_NONNULL_END

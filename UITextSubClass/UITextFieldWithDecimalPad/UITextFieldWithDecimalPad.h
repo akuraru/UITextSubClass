@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface UITextFieldWithDecimalPad : UITextField
 
 @property (nonatomic) BOOL menuHidden;
@@ -17,3 +19,5 @@
 - (void)setValue:(CGFloat)value;
 
 @end
+
+NS_ASSUME_NONNULL_END

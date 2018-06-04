@@ -8,16 +8,38 @@
 
 #import "UITextFieldWithNumberPad.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @implementation UITextFieldWithNumberPad
 
-- (id)initWithCoder:(NSCoder *)aDecoder {
-    self = [super initWithCoder:aDecoder];
+- (instancetype)init {
+    self = [super init];
     if (self) {
-        self.keyboardType = UIKeyboardTypeNumberPad;
-        self.menuHidden = YES;
-        [self addTarget:self action:@selector(didChangeText:) forControlEvents:UIControlEventEditingChanged];
+        [self setup];
     }
     return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self setup];
+    }
+    return self;
+}
+
+- (instancetype _Nullable)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self setup];
+    }
+    return self;
+}
+
+- (void)setup {
+    self.keyboardType = UIKeyboardTypeNumberPad;
+    self.menuHidden = YES;
+    [self addTarget:self action:@selector(didChangeText:) forControlEvents:UIControlEventEditingChanged];
 }
 
 - (void)didChangeText:(id)sender {
@@ -32,7 +54,7 @@
     super.text = [@(value) stringValue];
 }
 
-- (BOOL)canPerformAction:(SEL)action withSender:(id)sender {
+- (BOOL)canPerformAction:(SEL)action withSender:(id _Nullable)sender {
     if (self.menuHidden) {
         return NO;
     } else {
@@ -40,8 +62,10 @@
     }
 }
 
-- (NSUndoManager *)undoManager {
+- (NSUndoManager * _Nullable)undoManager {
     return nil;
 }
 
 @end
+
+NS_ASSUME_NONNULL_END
