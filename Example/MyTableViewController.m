@@ -47,10 +47,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-- (void)viewDidUnload {
+- (void)dealloc {
     [self setDateTextField:nil];
-    [super viewDidUnload];
 }
 
 #pragma mark - UITextField DatePicker delegate
