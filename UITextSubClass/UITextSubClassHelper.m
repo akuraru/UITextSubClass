@@ -7,9 +7,8 @@
 
 NSString *const UITextSubClassLocalize = @"UITextSubClassLocalize";
 
-@implementation UITextSubClassHelper {
+@implementation UITextSubClassHelper
 
-}
 static BOOL _alwaysUseMainBundle = NO;
 static NSBundle *_userDefineBundle;
 

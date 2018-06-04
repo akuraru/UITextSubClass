@@ -7,9 +7,7 @@
 #import "UITextSubClassHelper.h"
 
 
-@implementation UITextFieldWithToolbar {
-
-}
+@implementation UITextFieldWithToolbar
 
 - (BOOL)becomeFirstResponder {
     return [super becomeFirstResponder];

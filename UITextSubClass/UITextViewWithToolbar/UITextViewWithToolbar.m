@@ -8,8 +8,8 @@
 #import "UITextViewWithToolbar.h"
 #import "UITextSubClassHelper.h"
 
-@implementation UITextViewWithToolbar {
-}
+@implementation UITextViewWithToolbar
+
 #pragma mark - toolbar
 
 - (void)done {

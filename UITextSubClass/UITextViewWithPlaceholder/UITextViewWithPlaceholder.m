@@ -11,8 +11,8 @@
 @property(nonatomic, strong) UILabel *placeholder;
 @end
 
-@implementation UITextViewWithPlaceholder {
-}
+@implementation UITextViewWithPlaceholder
+
 #pragma mark - placeholder
 
 - (void)dealloc {
