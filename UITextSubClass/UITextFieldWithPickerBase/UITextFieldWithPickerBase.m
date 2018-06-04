@@ -24,13 +24,33 @@
 
 @implementation UITextFieldWithPickerBase
 
-- (id)initWithCoder:(NSCoder *)aDecoder {
-	self = [super initWithCoder:aDecoder];
+- (instancetype)init {
+    self = [super init];
     if (self) {
-        [super setDelegate:self];
-        self.baseDelegate = nil;
+        [self setup];
     }
     return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self setup];
+    }
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self setup];
+    }
+    return self;
+}
+
+- (void)setup {
+    [super setDelegate:self];
+    self.baseDelegate = nil;
 }
 
 - (NSString *)selectedValue {
