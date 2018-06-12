@@ -43,7 +43,7 @@
 		73EACB9617F9BD14000A444C /* UITextSubClassLocalize.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73EACB9917F9BD14000A444C /* UITextSubClassLocalize.strings */; };
 		73EACB9717F9BD14000A444C /* UITextSubClassLocalize.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73EACB9917F9BD14000A444C /* UITextSubClassLocalize.strings */; };
 		88FB26A3560C1567DCFA0C41 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CFF8381BB368427B2822B5 /* libPods-Tests.a */; };
-		C87907E4633B261AF3F9A55C /* UITextFieldWithNumberPad.m in Sources */ = {isa = PBXBuildFile; fileRef = C8790F0A9BFEE6BAB3A8D98A /* UITextFieldWithNumberPad.m */; };
+		BE73F4BE20D001E300F792D0 /* UITextFieldWithNumberPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE73F4BD20D001E300F792D0 /* UITextFieldWithNumberPad.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,9 +103,9 @@
 		73EACB9817F9BD14000A444C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/UITextSubClassLocalize.strings; sourceTree = "<group>"; };
 		73EACB9A17F9BD18000A444C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/UITextSubClassLocalize.strings; sourceTree = "<group>"; };
 		B3CFF8381BB368427B2822B5 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8790A1D20A4D740AF5B3180 /* UITextFieldWithNumberPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithNumberPad.h; sourceTree = "<group>"; };
+		BE73F4BC20D001E200F792D0 /* UITextSubClass-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextSubClass-Bridging-Header.h"; sourceTree = "<group>"; };
+		BE73F4BD20D001E300F792D0 /* UITextFieldWithNumberPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldWithNumberPad.swift; sourceTree = "<group>"; };
 		C8790D7BF65C1B2BBCD6745F /* UITextFieldWithPickerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithPickerProtocol.h; sourceTree = "<group>"; };
-		C8790F0A9BFEE6BAB3A8D98A /* UITextFieldWithNumberPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithNumberPad.m; sourceTree = "<group>"; };
 		E3CE21BD544E40314800A53E /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,6 +192,7 @@
 		17B5C6BA2544723305DAA434 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BE73F4BC20D001E200F792D0 /* UITextSubClass-Bridging-Header.h */,
 				17B5CD8828BA21755AD3195E /* UITextSubClass-Info.plist */,
 				17B5C16D873CE5FE5645B92C /* InfoPlist.strings */,
 				17B5C591AD8D7C78CA80F20C /* main.m */,
@@ -309,8 +310,7 @@
 		C87907A587543DA659F044C1 /* UITextFieldWithNumberPad */ = {
 			isa = PBXGroup;
 			children = (
-				C8790F0A9BFEE6BAB3A8D98A /* UITextFieldWithNumberPad.m */,
-				C8790A1D20A4D740AF5B3180 /* UITextFieldWithNumberPad.h */,
+				BE73F4BD20D001E300F792D0 /* UITextFieldWithNumberPad.swift */,
 			);
 			path = UITextFieldWithNumberPad;
 			sourceTree = "<group>";
@@ -362,6 +362,9 @@
 			attributes = {
 				LastUpgradeCheck = 0940;
 				TargetAttributes = {
+					17B5C16BC8E6ED55005FF050 = {
+						LastSwiftMigration = 0940;
+					};
 					73EACB7E17F9AD46000A444C = {
 						TestTargetID = 17B5C16BC8E6ED55005FF050;
 					};
@@ -446,7 +449,7 @@
 				17B5C3ECDA5CBBAB26A75805 /* UITextViewWithToolbar.m in Sources */,
 				17B5CB2EEC757E485DE56EDB /* UITextSubClassHelper.m in Sources */,
 				17B5CE9A102375134188EC2F /* UITextFieldWithPickerBase.m in Sources */,
-				C87907E4633B261AF3F9A55C /* UITextFieldWithNumberPad.m in Sources */,
+				BE73F4BE20D001E300F792D0 /* UITextFieldWithNumberPad.swift in Sources */,
 				17B5C2324038AF80F4222B62 /* UITextFieldWithDecimalPad.m in Sources */,
 				17B5C0D9C2538C8FA5045245 /* UITextViewWithPlaceholder.m in Sources */,
 			);
@@ -521,12 +524,17 @@
 		17B5C6885DBD5E6EF8CF6FD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "Example/UITextSubClass-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "info.efcl.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = UITextSubClass;
+				SWIFT_OBJC_BRIDGING_HEADER = "Example/UITextSubClass-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -628,12 +636,16 @@
 		17B5CD4BC5B82A8465FF5D9F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "Example/UITextSubClass-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "info.efcl.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = UITextSubClass;
+				SWIFT_OBJC_BRIDGING_HEADER = "Example/UITextSubClass-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -643,6 +655,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E3CE21BD544E40314800A53E /* Pods-Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UITextSubClass.app/UITextSubClass";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -676,6 +689,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 357998853AC10EABAF9277E9 /* Pods-Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UITextSubClass.app/UITextSubClass";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;

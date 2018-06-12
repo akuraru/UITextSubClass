@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
     a.dependency 'UITextSubClass/Core'
   end
   s.subspec 'UITextFieldWithNumberPad' do |a|
-    a.source_files = 'UITextSubClass/UITextFieldWithNumberPad/*.{h,m}'
+    a.source_files = 'UITextSubClass/UITextFieldWithNumberPad/*.{swift}'
     a.dependency 'UITextSubClass/Core'
   end
   s.subspec 'UITextFieldWithToolbar' do |a|
