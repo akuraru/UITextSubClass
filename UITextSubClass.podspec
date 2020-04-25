@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
     :tag => s.version.to_s
   }
   s.requires_arc = true
-  s.swift_version = '3.3'
+  s.swift_version = '5.2'
 
   s.subspec 'Core' do |a|
     a.resource_bundles = { 'UITextSubClassLocalize' => ['UITextSubClass/*.lproj'] }
