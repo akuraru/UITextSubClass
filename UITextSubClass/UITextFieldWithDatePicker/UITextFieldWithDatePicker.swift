@@ -12,9 +12,10 @@ let kWeight = 320
 
 public class UITextFieldWithDatePicker: UITextField, UITextFieldDelegate {
     public let pickerView: UIDatePicker
-    let toolbar: UIToolbar
     public var dateFormatter: DateFormatter
     public weak var pickerDelegate: UITextFieldWithDatePickerDelegate?
+    let toolbar: UIToolbar
+    var popoverController: UIViewController?
     
     public required init?(coder: NSCoder) {
         pickerView = UIDatePicker()
@@ -98,9 +99,7 @@ public class UITextFieldWithDatePicker: UITextField, UITextFieldDelegate {
 
     return mutableString
 }
-func hasValue() -> Bool { true }
   
-    var popoverController: UIViewController?
 
     @objc func cancelPicker() {
         dismissPickerView()
@@ -114,7 +113,7 @@ func hasValue() -> Bool { true }
             
             popoverController.modalPresentationStyle = .popover
             popoverController.popoverPresentationController?.sourceView = self
-            popoverController.popoverPresentationController?.sourceRect = self.frame
+            popoverController.popoverPresentationController?.sourceRect = self.bounds
             popoverController.preferredContentSize = CGSize(width: kWeight, height: kPopOverHeight)
             
             self.pickerDelegate?.textField(self, beginEditingWith:popoverController)

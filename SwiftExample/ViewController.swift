@@ -11,6 +11,7 @@ import UITextSubClass
 class ViewController: UITableViewController {
     @IBOutlet weak var dateTextField: UITextFieldWithDatePicker!
     @IBOutlet weak var dateCountDownTextField: UITextFieldWithDatePicker!
+    @IBOutlet weak var pickerTextField: UITextFieldWithPicker!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,9 @@ class ViewController: UITableViewController {
         
         self.dateCountDownTextField.pickerDelegate = self;
         self.dateCountDownTextField.pickerView.datePickerMode = .countDownTimer
+        
+        self.pickerTextField.pickerDelegate = self
+        self.pickerTextField.dataSource = ["foo", "biz", "bar"]
     }
 }
 
@@ -33,3 +37,12 @@ extension ViewController: UITextFieldWithDatePickerDelegate {
     }
 }
 
+extension ViewController: UITextFieldWithPickerDelegate {
+    func textField(_ textFiled: UITextFieldWithPicker, beginEditingWith viewController: UIViewController) {
+        present(viewController, animated: true)
+    }
+    
+    func savePicker(textField: UITextFieldWithPicker) {
+        print(textField.pickerView)
+    }
+}
