@@ -28,6 +28,7 @@ public class UITextFieldWithDatePicker: UITextField, UITextFieldDelegate {
         pickerView.timeZone = TimeZone.current
         pickerView.date = Date()
         pickerView.datePickerMode = .date
+        pickerView.addTarget(self, action: #selector(pickerValueChanged), for: .valueChanged)
 
         toolbar.isTranslucent = true
         toolbar.sizeToFit()
@@ -137,5 +138,8 @@ func hasValue() -> Bool { true }
         }
     }
 
+    @objc func pickerValueChanged(_ sender: UIDatePicker) {
+        text = selectedValue()
+    }
     }
 
