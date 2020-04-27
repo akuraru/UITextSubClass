@@ -39,6 +39,10 @@ static NSBundle *_userDefineBundle;
     return bundle;
 }
 
++ (NSString *)localizedStringWithKey:(NSString *)key {
+    return NSLocalizedStringFromTableInBundle(key, UITextSubClassLocalize, self.bundle, key);
+}
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -14,8 +14,6 @@
 @class UITextFieldWithPicker;
 
 @interface MyTableViewController : UITableViewController <UITextFieldDelegate, UITextFieldWithPickerProtocol>
-@property (weak, nonatomic) IBOutlet UITextFieldWithDatePicker *dateTextField;
-@property (weak, nonatomic) IBOutlet UITextFieldWithDatePicker *dateCountDownTextField;
 @property (weak, nonatomic) IBOutlet UITextFieldWithPicker *pickerTextField;
 
 @end

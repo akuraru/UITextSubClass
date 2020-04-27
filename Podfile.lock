@@ -1,16 +1,49 @@
 PODS:
   - OCMock (3.1.2)
+  - UITextSubClass (0.4.0):
+    - UITextSubClass/Core (= 0.4.0)
+    - UITextSubClass/UITextFieldWithDatePicker (= 0.4.0)
+    - UITextSubClass/UITextFieldWithDecimalPad (= 0.4.0)
+    - UITextSubClass/UITextFieldWithNumberPad (= 0.4.0)
+    - UITextSubClass/UITextFieldWithPicker (= 0.4.0)
+    - UITextSubClass/UITextFieldWithPickerBase (= 0.4.0)
+    - UITextSubClass/UITextFieldWithToolbar (= 0.4.0)
+    - UITextSubClass/UITextViewWithPlaceholder (= 0.4.0)
+    - UITextSubClass/UITextViewWithToolbar (= 0.4.0)
+  - UITextSubClass/Core (0.4.0)
+  - UITextSubClass/UITextFieldWithDatePicker (0.4.0):
+    - UITextSubClass/UITextFieldWithPickerBase
+  - UITextSubClass/UITextFieldWithDecimalPad (0.4.0):
+    - UITextSubClass/Core
+  - UITextSubClass/UITextFieldWithNumberPad (0.4.0):
+    - UITextSubClass/Core
+  - UITextSubClass/UITextFieldWithPicker (0.4.0):
+    - UITextSubClass/UITextFieldWithPickerBase
+  - UITextSubClass/UITextFieldWithPickerBase (0.4.0):
+    - UITextSubClass/Core
+  - UITextSubClass/UITextFieldWithToolbar (0.4.0):
+    - UITextSubClass/Core
+  - UITextSubClass/UITextViewWithPlaceholder (0.4.0):
+    - UITextSubClass/Core
+  - UITextSubClass/UITextViewWithToolbar (0.4.0):
+    - UITextSubClass/UITextViewWithPlaceholder
 
 DEPENDENCIES:
   - OCMock
+  - UITextSubClass (from `./`)
 
 SPEC REPOS:
   trunk:
     - OCMock
 
+EXTERNAL SOURCES:
+  UITextSubClass:
+    :path: "./"
+
 SPEC CHECKSUMS:
   OCMock: a10ea9f0a6e921651f96f78b6faee95ebc813b92
+  UITextSubClass: 6c032d924cf580724ee8eb51c593448f8bfa87e2
 
-PODFILE CHECKSUM: 10375e6afc5a511d45f7dccecd103f781f402e0e
+PODFILE CHECKSUM: 00bb5ab45458383f5e2e5063ebc541d66add4f95
 
 COCOAPODS: 1.9.1

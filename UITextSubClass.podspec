@@ -1,3 +1,5 @@
+
+
 Pod::Spec.new do |s|
   s.name         = "UITextSubClass"
   s.version      = "0.4.0"
@@ -20,12 +22,12 @@ Pod::Spec.new do |s|
   end
   # UIPickerBase
   s.subspec 'UITextFieldWithPickerBase' do |a|
-    a.source_files  = 'UITextSubClass/UITextFieldWithPickerBase/*.{h,m}'
+    a.source_files  = 'UITextSubClass/UITextFieldWithPickerBase/*.{h,m}', 'UITextSubClass/UITextFieldWithPickerBase/*.swift'
     a.dependency 'UITextSubClass/Core'
     
   end
   s.subspec 'UITextFieldWithDatePicker' do |a|
-    a.source_files = 'UITextSubClass/UITextFieldWithDatePicker/*.{h,m}'
+    a.source_files = 'UITextSubClass/UITextFieldWithDatePicker/*.{h,m}', 'UITextSubClass/UITextFieldWithDatePicker/*.swift'
     a.dependency 'UITextSubClass/UITextFieldWithPickerBase'
   end
   s.subspec 'UITextFieldWithPicker' do |a|

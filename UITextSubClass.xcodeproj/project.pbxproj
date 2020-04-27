@@ -7,43 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17B5C0D9C2538C8FA5045245 /* UITextViewWithPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CE809C072475DD9376B8 /* UITextViewWithPlaceholder.m */; };
-		17B5C2324038AF80F4222B62 /* UITextFieldWithDecimalPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CFFE7B0F6BD0D414326A /* UITextFieldWithDecimalPad.m */; };
+		059FCF99C0CD5265CAC480AA /* libPods-SwiftExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9159A55D2A0EAA85281E72FC /* libPods-SwiftExample.a */; };
+		116275304CCDA9E0C62DCBDF /* Pods_UITextSubClass_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3786F4CE3A8194CD92FFB855 /* Pods_UITextSubClass_Tests.framework */; };
 		17B5C239B054BD771FB7E3D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C591AD8D7C78CA80F20C /* main.m */; };
 		17B5C2A9910B093DAD97C061 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C137FDDEFC0A46C79FC3 /* MainStoryboard.storyboard */; };
-		17B5C3ECDA5CBBAB26A75805 /* UITextViewWithToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C7A2D9410D77CC8FABD3 /* UITextViewWithToolbar.m */; };
-		17B5C4E8E6FAC19EB2880BE6 /* UITextFieldWithDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CEB4A62A4A12AA4DF6F3 /* UITextFieldWithDatePicker.m */; };
 		17B5C661B532FC2895E983F4 /* UITextFieldWithPickerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C592B505BDE9A363CAED /* UITextFieldWithPickerTest.m */; };
-		17B5C6A8A7B1C8F56090F37C /* UITextViewWithPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CE809C072475DD9376B8 /* UITextViewWithPlaceholder.m */; };
-		17B5C6F5148D8F4E341CBE8F /* UITextFieldWithPickerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C9F190503A0A86AF7352 /* UITextFieldWithPickerBase.m */; };
-		17B5C71E93172AAC4DAE6950 /* UITextSubClassHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C867B738CCD1D2B56AF1 /* UITextSubClassHelper.m */; };
 		17B5C772D8CF9CBFCB1DBCBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CA998EBAEE23911CE978 /* Foundation.framework */; };
-		17B5C7B680CBB3EAC12F28BA /* UITextFieldWithToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C2D16161E03F8DD3F82C /* UITextFieldWithToolbar.m */; };
 		17B5C802716CAD5F1065E307 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CD335D7E3059BACE5B0F /* UIKit.framework */; };
-		17B5C80CFD32277629AF5ED9 /* UITextFieldWithDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CEB4A62A4A12AA4DF6F3 /* UITextFieldWithDatePicker.m */; };
 		17B5C8422BE868597546ED80 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C16D873CE5FE5645B92C /* InfoPlist.strings */; };
-		17B5C882D727D6A2FC8CAB8C /* UITextViewWithToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C7A2D9410D77CC8FABD3 /* UITextViewWithToolbar.m */; };
-		17B5C9AC1CD4D6C7CA07929E /* UITextFieldWithDecimalPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CFFE7B0F6BD0D414326A /* UITextFieldWithDecimalPad.m */; };
 		17B5CA32B06C5285CE381A5D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C00A093E4E48061349B1 /* CoreGraphics.framework */; };
-		17B5CB2EEC757E485DE56EDB /* UITextSubClassHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C867B738CCD1D2B56AF1 /* UITextSubClassHelper.m */; };
 		17B5CB42375D39DE67DEC999 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C8787D8E78FAE52FA005 /* Default@2x.png */; };
 		17B5CB9D64F37735A227858F /* UITextViewWithToolbarTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C06D5D2AFABC4668D82B /* UITextViewWithToolbarTest.m */; };
 		17B5CC7B209152CF7353437A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CD55C18EE69D46D50053 /* AppDelegate.m */; };
-		17B5CCF4E521D55AD663CB41 /* UITextFieldWithToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C2D16161E03F8DD3F82C /* UITextFieldWithToolbar.m */; };
-		17B5CE9A102375134188EC2F /* UITextFieldWithPickerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C9F190503A0A86AF7352 /* UITextFieldWithPickerBase.m */; };
-		17B5CEA2FBD660F5C64B65D7 /* UITextFieldWithPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C2B391EB5B29AD1C725E /* UITextFieldWithPicker.m */; };
 		17B5CF1FA0525F406BF7D62E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C5A3D65928ADBE8BDA5F /* Default-568h@2x.png */; };
 		17B5CF3E96D0053F0E6926B6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C4BBA3E7D79480776476 /* XCTest.framework */; };
 		17B5CF4446A4BB0CA29D0218 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C127C48985216D0E2852 /* Default.png */; };
-		17B5CF5B19767DC57E050C33 /* UITextFieldWithPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C2B391EB5B29AD1C725E /* UITextFieldWithPicker.m */; };
 		737068EF168996C0007BAA4F /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 737068EE168996C0007BAA4F /* MyTableViewController.m */; };
 		73EACB8217F9AD46000A444C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CA998EBAEE23911CE978 /* Foundation.framework */; };
 		73EACB8317F9AD46000A444C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CD335D7E3059BACE5B0F /* UIKit.framework */; };
 		73EACB8917F9AD46000A444C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73EACB8717F9AD46000A444C /* InfoPlist.strings */; };
-		73EACB9617F9BD14000A444C /* UITextSubClassLocalize.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73EACB9917F9BD14000A444C /* UITextSubClassLocalize.strings */; };
-		73EACB9717F9BD14000A444C /* UITextSubClassLocalize.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73EACB9917F9BD14000A444C /* UITextSubClassLocalize.strings */; };
-		88FB26A3560C1567DCFA0C41 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CFF8381BB368427B2822B5 /* libPods-Tests.a */; };
-		BE73F4BE20D001E300F792D0 /* UITextFieldWithNumberPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE73F4BD20D001E300F792D0 /* UITextFieldWithNumberPad.swift */; };
+		BE9CA2A624570C8C00819C3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9CA2A524570C8C00819C3F /* AppDelegate.swift */; };
+		BE9CA2A824570C8C00819C3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9CA2A724570C8C00819C3F /* SceneDelegate.swift */; };
+		BE9CA2AA24570C8C00819C3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9CA2A924570C8C00819C3F /* ViewController.swift */; };
+		BE9CA2AD24570C8C00819C3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9CA2AB24570C8C00819C3F /* Main.storyboard */; };
+		BE9CA2AF24570C8E00819C3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9CA2AE24570C8E00819C3F /* Assets.xcassets */; };
+		BE9CA2B224570C8E00819C3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9CA2B024570C8E00819C3F /* LaunchScreen.storyboard */; };
+		EB91BAF9A5863396E870E732 /* Pods_UITextSubClass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36A7AF9C60F04142156A2CA /* Pods_UITextSubClass.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,25 +51,13 @@
 		17B5C0D623C7FF067EB237A6 /* UITextSubClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITextSubClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B5C10FC86A81DAB2C0A4F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		17B5C127C48985216D0E2852 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		17B5C21EE101DF029320D766 /* UITextViewWithToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextViewWithToolbar.h; sourceTree = "<group>"; };
-		17B5C2B391EB5B29AD1C725E /* UITextFieldWithPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithPicker.m; sourceTree = "<group>"; };
-		17B5C2D16161E03F8DD3F82C /* UITextFieldWithToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithToolbar.m; sourceTree = "<group>"; };
-		17B5C4479A6176369F842DB1 /* UITextFieldWithToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithToolbar.h; sourceTree = "<group>"; };
 		17B5C4BBA3E7D79480776476 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		17B5C591AD8D7C78CA80F20C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		17B5C592B505BDE9A363CAED /* UITextFieldWithPickerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithPickerTest.m; sourceTree = "<group>"; };
 		17B5C5A3D65928ADBE8BDA5F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		17B5C62797BFB20F7214A5DA /* UITextViewWithPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextViewWithPlaceholder.h; sourceTree = "<group>"; };
-		17B5C62EC3E860D60F900A1A /* UITextFieldWithPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithPicker.h; sourceTree = "<group>"; };
-		17B5C74A3AFFDB71937325F6 /* UITextFieldWithPickerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithPickerBase.h; sourceTree = "<group>"; };
-		17B5C7A2D9410D77CC8FABD3 /* UITextViewWithToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewWithToolbar.m; sourceTree = "<group>"; };
-		17B5C867B738CCD1D2B56AF1 /* UITextSubClassHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextSubClassHelper.m; sourceTree = "<group>"; };
 		17B5C8787D8E78FAE52FA005 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		17B5C9F190503A0A86AF7352 /* UITextFieldWithPickerBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithPickerBase.m; sourceTree = "<group>"; };
-		17B5CA167414E9DEC39C7AF5 /* UITextFieldWithDecimalPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithDecimalPad.h; sourceTree = "<group>"; };
 		17B5CA998EBAEE23911CE978 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		17B5CB1CC2AC1575EE09EF77 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		17B5CC21F20392DDA6819ED3 /* UITextFieldWithDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithDatePicker.h; sourceTree = "<group>"; };
 		17B5CD335D7E3059BACE5B0F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		17B5CD55C18EE69D46D50053 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		17B5CD8828BA21755AD3195E /* UITextSubClass-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "UITextSubClass-Info.plist"; sourceTree = "<group>"; };
@@ -88,11 +65,12 @@
 		17B5CDB61011174AC678870E /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = readme.md; sourceTree = "<group>"; };
 		17B5CDD25123018D8D38F647 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		17B5CE1C628C7A0B76695496 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		17B5CE809C072475DD9376B8 /* UITextViewWithPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewWithPlaceholder.m; sourceTree = "<group>"; };
-		17B5CE885BF8F1572A6EF57D /* UITextSubClassHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextSubClassHelper.h; sourceTree = "<group>"; };
-		17B5CEB4A62A4A12AA4DF6F3 /* UITextFieldWithDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithDatePicker.m; sourceTree = "<group>"; };
-		17B5CFFE7B0F6BD0D414326A /* UITextFieldWithDecimalPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithDecimalPad.m; sourceTree = "<group>"; };
+		24A4C9CDA00FDC3F983BE16C /* Pods-UITextSubClass-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITextSubClass-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UITextSubClass-Tests/Pods-UITextSubClass-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2D334436AAA6CD84ACDC325E /* Pods-SwiftExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftExample/Pods-SwiftExample.release.xcconfig"; sourceTree = "<group>"; };
 		357998853AC10EABAF9277E9 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3786F4CE3A8194CD92FFB855 /* Pods_UITextSubClass_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UITextSubClass_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AE48424EFAF8A1055530AFC /* Pods-UITextSubClass-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITextSubClass-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UITextSubClass-Tests/Pods-UITextSubClass-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		61554984DFEBC17D9D726CB3 /* Pods-SwiftExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftExample/Pods-SwiftExample.debug.xcconfig"; sourceTree = "<group>"; };
 		737068ED168996C0007BAA4F /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
 		737068EE168996C0007BAA4F /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
 		73EACB7F17F9AD46000A444C /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,13 +78,20 @@
 		73EACB8817F9AD46000A444C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		73EACB9417F9BD05000A444C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		73EACB9517F9BD05000A444C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		73EACB9817F9BD14000A444C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/UITextSubClassLocalize.strings; sourceTree = "<group>"; };
-		73EACB9A17F9BD18000A444C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/UITextSubClassLocalize.strings; sourceTree = "<group>"; };
-		B3CFF8381BB368427B2822B5 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9159A55D2A0EAA85281E72FC /* libPods-SwiftExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B36A7AF9C60F04142156A2CA /* Pods_UITextSubClass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UITextSubClass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE73F4BC20D001E200F792D0 /* UITextSubClass-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextSubClass-Bridging-Header.h"; sourceTree = "<group>"; };
-		BE73F4BD20D001E300F792D0 /* UITextFieldWithNumberPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldWithNumberPad.swift; sourceTree = "<group>"; };
-		C8790D7BF65C1B2BBCD6745F /* UITextFieldWithPickerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldWithPickerProtocol.h; sourceTree = "<group>"; };
+		BE9CA2A324570C8C00819C3F /* SwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE9CA2A524570C8C00819C3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE9CA2A724570C8C00819C3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BE9CA2A924570C8C00819C3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE9CA2AC24570C8C00819C3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE9CA2AE24570C8E00819C3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE9CA2B124570C8E00819C3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE9CA2B324570C8E00819C3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEE307A9B1360AC6FC9E8196 /* Pods-UITextSubClass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITextSubClass.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UITextSubClass/Pods-UITextSubClass.debug.xcconfig"; sourceTree = "<group>"; };
 		E3CE21BD544E40314800A53E /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E46E2FCAFAF33B31B6702CFF /* Pods-UITextSubClass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITextSubClass.release.xcconfig"; path = "Pods/Target Support Files/Pods-UITextSubClass/Pods-UITextSubClass.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +102,7 @@
 				17B5C802716CAD5F1065E307 /* UIKit.framework in Frameworks */,
 				17B5C772D8CF9CBFCB1DBCBF /* Foundation.framework in Frameworks */,
 				17B5CA32B06C5285CE381A5D /* CoreGraphics.framework in Frameworks */,
+				EB91BAF9A5863396E870E732 /* Pods_UITextSubClass.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,7 +113,15 @@
 				73EACB8317F9AD46000A444C /* UIKit.framework in Frameworks */,
 				73EACB8217F9AD46000A444C /* Foundation.framework in Frameworks */,
 				17B5CF3E96D0053F0E6926B6 /* XCTest.framework in Frameworks */,
-				88FB26A3560C1567DCFA0C41 /* libPods-Tests.a in Frameworks */,
+				116275304CCDA9E0C62DCBDF /* Pods_UITextSubClass_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE9CA2A024570C8C00819C3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				059FCF99C0CD5265CAC480AA /* libPods-SwiftExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,46 +141,19 @@
 			path = Example;
 			sourceTree = "<group>";
 		};
-		17B5C33B9DE069D4DEF5E14E /* UITextViewWithPlaceholder */ = {
-			isa = PBXGroup;
-			children = (
-				17B5C62797BFB20F7214A5DA /* UITextViewWithPlaceholder.h */,
-				17B5CE809C072475DD9376B8 /* UITextViewWithPlaceholder.m */,
-			);
-			path = UITextViewWithPlaceholder;
-			sourceTree = "<group>";
-		};
 		17B5C45FA7B744FE69E554B6 = {
 			isa = PBXGroup;
 			children = (
 				73EACB8417F9AD46000A444C /* Tests */,
+				BE9CA2A424570C8C00819C3F /* SwiftExample */,
 				17B5C76A5A9E6C650D4B29BC /* Products */,
 				17B5CF6F0C9E0CA75B8AC47D /* Frameworks */,
 				17B5C1E2474D400534A8FCFD /* Example */,
 				17B5CDB61011174AC678870E /* readme.md */,
-				17B5CF97FAB2E799186CE2BB /* UITextSubClass */,
 				17B5CDD25123018D8D38F647 /* Podfile */,
 				17B5CD8C9FD9AB4777DF1BBB /* UITextSubClass.podspec */,
 				9E2F44E1811ACED5FB27D5B9 /* Pods */,
 			);
-			sourceTree = "<group>";
-		};
-		17B5C5335D3D5B8E079C30EB /* UITextFieldWithDatePicker */ = {
-			isa = PBXGroup;
-			children = (
-				17B5CEB4A62A4A12AA4DF6F3 /* UITextFieldWithDatePicker.m */,
-				17B5CC21F20392DDA6819ED3 /* UITextFieldWithDatePicker.h */,
-			);
-			path = UITextFieldWithDatePicker;
-			sourceTree = "<group>";
-		};
-		17B5C688D75D08A17D6F96A9 /* UITextFieldWithToolbar */ = {
-			isa = PBXGroup;
-			children = (
-				17B5C4479A6176369F842DB1 /* UITextFieldWithToolbar.h */,
-				17B5C2D16161E03F8DD3F82C /* UITextFieldWithToolbar.m */,
-			);
-			path = UITextFieldWithToolbar;
 			sourceTree = "<group>";
 		};
 		17B5C6BA2544723305DAA434 /* Supporting Files */ = {
@@ -208,36 +175,9 @@
 			children = (
 				17B5C0D623C7FF067EB237A6 /* UITextSubClass.app */,
 				73EACB7F17F9AD46000A444C /* Tests.xctest */,
+				BE9CA2A324570C8C00819C3F /* SwiftExample.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		17B5CBD28C5BDDF32BB4C831 /* UITextFieldWithPicker */ = {
-			isa = PBXGroup;
-			children = (
-				17B5C62EC3E860D60F900A1A /* UITextFieldWithPicker.h */,
-				17B5C2B391EB5B29AD1C725E /* UITextFieldWithPicker.m */,
-			);
-			path = UITextFieldWithPicker;
-			sourceTree = "<group>";
-		};
-		17B5CCB1C4DBD335EBDBB8F8 /* UITextFieldWithPickerBase */ = {
-			isa = PBXGroup;
-			children = (
-				17B5C9F190503A0A86AF7352 /* UITextFieldWithPickerBase.m */,
-				17B5C74A3AFFDB71937325F6 /* UITextFieldWithPickerBase.h */,
-				C8790D7BF65C1B2BBCD6745F /* UITextFieldWithPickerProtocol.h */,
-			);
-			path = UITextFieldWithPickerBase;
-			sourceTree = "<group>";
-		};
-		17B5CF399491A0BE8403D3DF /* UITextFieldWithDecimalPad */ = {
-			isa = PBXGroup;
-			children = (
-				17B5CA167414E9DEC39C7AF5 /* UITextFieldWithDecimalPad.h */,
-				17B5CFFE7B0F6BD0D414326A /* UITextFieldWithDecimalPad.m */,
-			);
-			path = UITextFieldWithDecimalPad;
 			sourceTree = "<group>";
 		};
 		17B5CF6F0C9E0CA75B8AC47D /* Frameworks */ = {
@@ -247,36 +187,11 @@
 				17B5CA998EBAEE23911CE978 /* Foundation.framework */,
 				17B5C00A093E4E48061349B1 /* CoreGraphics.framework */,
 				17B5C4BBA3E7D79480776476 /* XCTest.framework */,
-				B3CFF8381BB368427B2822B5 /* libPods-Tests.a */,
+				B36A7AF9C60F04142156A2CA /* Pods_UITextSubClass.framework */,
+				3786F4CE3A8194CD92FFB855 /* Pods_UITextSubClass_Tests.framework */,
+				9159A55D2A0EAA85281E72FC /* libPods-SwiftExample.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		17B5CF97FAB2E799186CE2BB /* UITextSubClass */ = {
-			isa = PBXGroup;
-			children = (
-				17B5C5335D3D5B8E079C30EB /* UITextFieldWithDatePicker */,
-				17B5C688D75D08A17D6F96A9 /* UITextFieldWithToolbar */,
-				17B5CBD28C5BDDF32BB4C831 /* UITextFieldWithPicker */,
-				17B5CFD22AD40C8AF5BA1205 /* UITextViewWithToolbar */,
-				17B5C867B738CCD1D2B56AF1 /* UITextSubClassHelper.m */,
-				17B5CE885BF8F1572A6EF57D /* UITextSubClassHelper.h */,
-				73EACB9917F9BD14000A444C /* UITextSubClassLocalize.strings */,
-				17B5CCB1C4DBD335EBDBB8F8 /* UITextFieldWithPickerBase */,
-				C87907A587543DA659F044C1 /* UITextFieldWithNumberPad */,
-				17B5CF399491A0BE8403D3DF /* UITextFieldWithDecimalPad */,
-				17B5C33B9DE069D4DEF5E14E /* UITextViewWithPlaceholder */,
-			);
-			path = UITextSubClass;
-			sourceTree = "<group>";
-		};
-		17B5CFD22AD40C8AF5BA1205 /* UITextViewWithToolbar */ = {
-			isa = PBXGroup;
-			children = (
-				17B5C21EE101DF029320D766 /* UITextViewWithToolbar.h */,
-				17B5C7A2D9410D77CC8FABD3 /* UITextViewWithToolbar.m */,
-			);
-			path = UITextViewWithToolbar;
 			sourceTree = "<group>";
 		};
 		73EACB8417F9AD46000A444C /* Tests */ = {
@@ -303,16 +218,28 @@
 			children = (
 				E3CE21BD544E40314800A53E /* Pods-Tests.release.xcconfig */,
 				357998853AC10EABAF9277E9 /* Pods-Tests.debug.xcconfig */,
+				E46E2FCAFAF33B31B6702CFF /* Pods-UITextSubClass.release.xcconfig */,
+				CEE307A9B1360AC6FC9E8196 /* Pods-UITextSubClass.debug.xcconfig */,
+				24A4C9CDA00FDC3F983BE16C /* Pods-UITextSubClass-Tests.release.xcconfig */,
+				3AE48424EFAF8A1055530AFC /* Pods-UITextSubClass-Tests.debug.xcconfig */,
+				2D334436AAA6CD84ACDC325E /* Pods-SwiftExample.release.xcconfig */,
+				61554984DFEBC17D9D726CB3 /* Pods-SwiftExample.debug.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C87907A587543DA659F044C1 /* UITextFieldWithNumberPad */ = {
+		BE9CA2A424570C8C00819C3F /* SwiftExample */ = {
 			isa = PBXGroup;
 			children = (
-				BE73F4BD20D001E300F792D0 /* UITextFieldWithNumberPad.swift */,
+				BE9CA2A524570C8C00819C3F /* AppDelegate.swift */,
+				BE9CA2A724570C8C00819C3F /* SceneDelegate.swift */,
+				BE9CA2A924570C8C00819C3F /* ViewController.swift */,
+				BE9CA2AB24570C8C00819C3F /* Main.storyboard */,
+				BE9CA2AE24570C8E00819C3F /* Assets.xcassets */,
+				BE9CA2B024570C8E00819C3F /* LaunchScreen.storyboard */,
+				BE9CA2B324570C8E00819C3F /* Info.plist */,
 			);
-			path = UITextFieldWithNumberPad;
+			path = SwiftExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,9 +249,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17B5C67916D6BAD3C3FF310E /* Build configuration list for PBXNativeTarget "UITextSubClass" */;
 			buildPhases = (
+				8F25043A4B6A78C6862B3C86 /* [CP] Check Pods Manifest.lock */,
 				17B5C2EA2B963896316B6FF5 /* Sources */,
 				17B5C9EA1B5911F462BA0D79 /* Frameworks */,
 				17B5CE7D4DCE1DA5E5113CDF /* Resources */,
+				1B2D79CFF7E23976F1863FB5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -343,6 +272,7 @@
 				73EACB7B17F9AD46000A444C /* Sources */,
 				73EACB7C17F9AD46000A444C /* Frameworks */,
 				73EACB7D17F9AD46000A444C /* Resources */,
+				3F320ED2A88BCA399E418C88 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -354,12 +284,32 @@
 			productReference = 73EACB7F17F9AD46000A444C /* Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BE9CA2A224570C8C00819C3F /* SwiftExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE9CA2B424570C8E00819C3F /* Build configuration list for PBXNativeTarget "SwiftExample" */;
+			buildPhases = (
+				709D90237F390B5C0A285DC5 /* [CP] Check Pods Manifest.lock */,
+				BE9CA29F24570C8C00819C3F /* Sources */,
+				BE9CA2A024570C8C00819C3F /* Frameworks */,
+				BE9CA2A124570C8C00819C3F /* Resources */,
+				25D811CC5381DA4722A140D9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftExample;
+			productName = SwiftExample;
+			productReference = BE9CA2A324570C8C00819C3F /* SwiftExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		17B5C5EEDB0839A1B9FBFB41 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
 				TargetAttributes = {
 					17B5C16BC8E6ED55005FF050 = {
@@ -367,6 +317,9 @@
 					};
 					73EACB7E17F9AD46000A444C = {
 						TestTargetID = 17B5C16BC8E6ED55005FF050;
+					};
+					BE9CA2A224570C8C00819C3F = {
+						CreatedOnToolsVersion = 11.4.1;
 					};
 				};
 			};
@@ -378,6 +331,7 @@
 				English,
 				en,
 				ja,
+				Base,
 			);
 			mainGroup = 17B5C45FA7B744FE69E554B6;
 			productRefGroup = 17B5C76A5A9E6C650D4B29BC /* Products */;
@@ -386,6 +340,7 @@
 			targets = (
 				17B5C16BC8E6ED55005FF050 /* UITextSubClass */,
 				73EACB7E17F9AD46000A444C /* Tests */,
+				BE9CA2A224570C8C00819C3F /* SwiftExample */,
 			);
 		};
 /* End PBXProject section */
@@ -400,7 +355,6 @@
 				17B5CB42375D39DE67DEC999 /* Default@2x.png in Resources */,
 				17B5CF1FA0525F406BF7D62E /* Default-568h@2x.png in Resources */,
 				17B5C2A9910B093DAD97C061 /* MainStoryboard.storyboard in Resources */,
-				73EACB9617F9BD14000A444C /* UITextSubClassLocalize.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,13 +363,73 @@
 			buildActionMask = 2147483647;
 			files = (
 				73EACB8917F9AD46000A444C /* InfoPlist.strings in Resources */,
-				73EACB9717F9BD14000A444C /* UITextSubClassLocalize.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE9CA2A124570C8C00819C3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE9CA2B224570C8E00819C3F /* LaunchScreen.storyboard in Resources */,
+				BE9CA2AF24570C8E00819C3F /* Assets.xcassets in Resources */,
+				BE9CA2AD24570C8C00819C3F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1B2D79CFF7E23976F1863FB5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UITextSubClass/Pods-UITextSubClass-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UITextSubClass/Pods-UITextSubClass-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UITextSubClass/Pods-UITextSubClass-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25D811CC5381DA4722A140D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftExample/Pods-SwiftExample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftExample/Pods-SwiftExample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftExample/Pods-SwiftExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F320ED2A88BCA399E418C88 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UITextSubClass-Tests/Pods-UITextSubClass-Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UITextSubClass-Tests/Pods-UITextSubClass-Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UITextSubClass-Tests/Pods-UITextSubClass-Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6682A8B93C9B4A5AE5B7FB53 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -427,7 +441,51 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-UITextSubClass-Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		709D90237F390B5C0A285DC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F25043A4B6A78C6862B3C86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UITextSubClass-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -444,15 +502,6 @@
 				17B5C239B054BD771FB7E3D0 /* main.m in Sources */,
 				17B5CC7B209152CF7353437A /* AppDelegate.m in Sources */,
 				737068EF168996C0007BAA4F /* MyTableViewController.m in Sources */,
-				17B5C4E8E6FAC19EB2880BE6 /* UITextFieldWithDatePicker.m in Sources */,
-				17B5CCF4E521D55AD663CB41 /* UITextFieldWithToolbar.m in Sources */,
-				17B5CF5B19767DC57E050C33 /* UITextFieldWithPicker.m in Sources */,
-				17B5C3ECDA5CBBAB26A75805 /* UITextViewWithToolbar.m in Sources */,
-				17B5CB2EEC757E485DE56EDB /* UITextSubClassHelper.m in Sources */,
-				17B5CE9A102375134188EC2F /* UITextFieldWithPickerBase.m in Sources */,
-				BE73F4BE20D001E300F792D0 /* UITextFieldWithNumberPad.swift in Sources */,
-				17B5C2324038AF80F4222B62 /* UITextFieldWithDecimalPad.m in Sources */,
-				17B5C0D9C2538C8FA5045245 /* UITextViewWithPlaceholder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,15 +510,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				17B5CB9D64F37735A227858F /* UITextViewWithToolbarTest.m in Sources */,
-				17B5CEA2FBD660F5C64B65D7 /* UITextFieldWithPicker.m in Sources */,
-				17B5C7B680CBB3EAC12F28BA /* UITextFieldWithToolbar.m in Sources */,
-				17B5C80CFD32277629AF5ED9 /* UITextFieldWithDatePicker.m in Sources */,
-				17B5C882D727D6A2FC8CAB8C /* UITextViewWithToolbar.m in Sources */,
-				17B5C71E93172AAC4DAE6950 /* UITextSubClassHelper.m in Sources */,
 				17B5C661B532FC2895E983F4 /* UITextFieldWithPickerTest.m in Sources */,
-				17B5C6F5148D8F4E341CBE8F /* UITextFieldWithPickerBase.m in Sources */,
-				17B5C9AC1CD4D6C7CA07929E /* UITextFieldWithDecimalPad.m in Sources */,
-				17B5C6A8A7B1C8F56090F37C /* UITextViewWithPlaceholder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE9CA29F24570C8C00819C3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE9CA2AA24570C8C00819C3F /* ViewController.swift in Sources */,
+				BE9CA2A624570C8C00819C3F /* AppDelegate.swift in Sources */,
+				BE9CA2A824570C8C00819C3F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,13 +561,20 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		73EACB9917F9BD14000A444C /* UITextSubClassLocalize.strings */ = {
+		BE9CA2AB24570C8C00819C3F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				73EACB9817F9BD14000A444C /* en */,
-				73EACB9A17F9BD18000A444C /* ja */,
+				BE9CA2AC24570C8C00819C3F /* Base */,
 			);
-			name = UITextSubClassLocalize.strings;
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE9CA2B024570C8E00819C3F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE9CA2B124570C8E00819C3F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -524,6 +582,7 @@
 /* Begin XCBuildConfiguration section */
 		17B5C6885DBD5E6EF8CF6FD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEE307A9B1360AC6FC9E8196 /* Pods-UITextSubClass.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
@@ -643,6 +702,7 @@
 		};
 		17B5CD4BC5B82A8465FF5D9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E46E2FCAFAF33B31B6702CFF /* Pods-UITextSubClass.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
@@ -667,9 +727,8 @@
 		};
 		73EACB8F17F9AD46000A444C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3CE21BD544E40314800A53E /* Pods-Tests.release.xcconfig */;
+			baseConfigurationReference = 24A4C9CDA00FDC3F983BE16C /* Pods-UITextSubClass-Tests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UITextSubClass.app/UITextSubClass";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -701,9 +760,8 @@
 		};
 		73EACB9017F9AD46000A444C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 357998853AC10EABAF9277E9 /* Pods-Tests.debug.xcconfig */;
+			baseConfigurationReference = 3AE48424EFAF8A1055530AFC /* Pods-UITextSubClass-Tests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UITextSubClass.app/UITextSubClass";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -736,6 +794,79 @@
 			};
 			name = Debug;
 		};
+		BE9CA2B524570C8E00819C3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D334436AAA6CD84ACDC325E /* Pods-SwiftExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = SwiftExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = akuraru.SwiftExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BE9CA2B624570C8E00819C3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61554984DFEBC17D9D726CB3 /* Pods-SwiftExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = SwiftExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = akuraru.SwiftExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -762,6 +893,15 @@
 			buildConfigurations = (
 				73EACB8F17F9AD46000A444C /* Release */,
 				73EACB9017F9AD46000A444C /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE9CA2B424570C8E00819C3F /* Build configuration list for PBXNativeTarget "SwiftExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE9CA2B524570C8E00819C3F /* Release */,
+				BE9CA2B624570C8E00819C3F /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

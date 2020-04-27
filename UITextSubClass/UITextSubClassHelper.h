@@ -17,6 +17,8 @@ extern NSString *const UITextSubClassLocalize;
 
 // if you want to use mainBundle.
 + (void)setAlwaysUseMainBundle:(BOOL) alwaysUseMainBundle;
+
++ (NSString *)localizedStringWithKey:(NSString *)key;
 @end
 
 NS_ASSUME_NONNULL_END

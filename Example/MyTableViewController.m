@@ -7,8 +7,8 @@
 //
 
 #import "MyTableViewController.h"
-#import "UITextFieldWithDatePicker.h"
 #import "UITextFieldWithPicker.h"
+@import UITextSubClass;
 
 @interface MyTableViewController ()
 
@@ -28,8 +28,7 @@
     [super viewDidLoad];
 
     // set datePickerMode
-    self.dateTextField.delegate = self;
-    self.dateTextField.datePickerMode = UIDatePickerModeDate;
+    [self.dateTextField ];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
