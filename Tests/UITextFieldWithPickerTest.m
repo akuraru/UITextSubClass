@@ -28,7 +28,7 @@
     textFieldWithPicker.dataSource = @[@"a", @"b", @"c"];
 }
 
-- (void)tearDown {
+- (void)tearDown { 
     textFieldWithPicker = nil;
     [super tearDown];
 }
