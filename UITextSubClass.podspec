@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'UITextFieldWithDecimalPad' do |a|
-    a.source_files = 'UITextSubClass/UITextFieldWithDecimalPad/*.{h,m}'
+    a.source_files = 'UITextSubClass/UITextFieldWithDecimalPad/*.swift'
     a.dependency 'UITextSubClass/Core'
   end
   s.subspec 'UITextFieldWithNumberPad' do |a|

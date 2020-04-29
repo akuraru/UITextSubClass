@@ -84,7 +84,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q28-l7-60a" customClass="UITextFieldWithDecimalPad">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q28-l7-60a" customClass="UITextFieldWithDecimalPad" customModule="UITextSubClass">
                                                     <rect key="frame" x="20" y="50" width="179" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -275,6 +275,7 @@ Line break UITextVuewWuthToolBar</string>
                     <connections>
                         <outlet property="dateCountDownTextField" destination="f16-IT-24h" id="jaT-A7-ERx"/>
                         <outlet property="dateTextField" destination="zDC-An-CEt" id="Fx9-lA-hCY"/>
+                        <outlet property="decimalPad" destination="q28-l7-60a" id="atL-0a-60J"/>
                         <outlet property="pickerTextField" destination="f6P-5S-EcJ" id="uly-8e-rXq"/>
                     </connections>
                 </tableViewController>

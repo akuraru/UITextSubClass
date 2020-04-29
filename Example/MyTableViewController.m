@@ -7,7 +7,6 @@
 //
 
 #import "MyTableViewController.h"
-#import "UITextFieldWithPicker.h"
 @import UITextSubClass;
 
 @interface MyTableViewController ()
@@ -28,26 +27,9 @@
     [super viewDidLoad];
 
     // set datePickerMode
-    [self.dateTextField ];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
-    self.dateTextField.dateFormatter = dateFormatter;// pass original date formatter
-    // countdown
-    self.dateCountDownTextField.datePickerMode = UIDatePickerModeCountDownTimer;
-
-    // UIPicker + UITextField
-    self.pickerTextField.delegate = self;
-    self.pickerTextField.dataSource = @[@"foo", @"biz", @"bar"];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (void)dealloc {
-    [self setDateTextField:nil];
 }
 
 #pragma mark - UITextField DatePicker delegate

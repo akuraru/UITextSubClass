@@ -7,13 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UITextFieldWithPickerProtocol.h"
 
-@class UITextFieldWithDatePicker;
 @class UITextFieldWithToolbar;
-@class UITextFieldWithPicker;
 
-@interface MyTableViewController : UITableViewController <UITextFieldDelegate, UITextFieldWithPickerProtocol>
-@property (weak, nonatomic) IBOutlet UITextFieldWithPicker *pickerTextField;
+@interface MyTableViewController : UITableViewController <UITextFieldDelegate>
 
 @end

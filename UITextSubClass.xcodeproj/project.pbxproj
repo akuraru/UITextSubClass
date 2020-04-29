@@ -11,7 +11,6 @@
 		116275304CCDA9E0C62DCBDF /* Pods_UITextSubClass_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3786F4CE3A8194CD92FFB855 /* Pods_UITextSubClass_Tests.framework */; };
 		17B5C239B054BD771FB7E3D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C591AD8D7C78CA80F20C /* main.m */; };
 		17B5C2A9910B093DAD97C061 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C137FDDEFC0A46C79FC3 /* MainStoryboard.storyboard */; };
-		17B5C661B532FC2895E983F4 /* UITextFieldWithPickerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C592B505BDE9A363CAED /* UITextFieldWithPickerTest.m */; };
 		17B5C772D8CF9CBFCB1DBCBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CA998EBAEE23911CE978 /* Foundation.framework */; };
 		17B5C802716CAD5F1065E307 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CD335D7E3059BACE5B0F /* UIKit.framework */; };
 		17B5C8422BE868597546ED80 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C16D873CE5FE5645B92C /* InfoPlist.strings */; };
@@ -26,6 +25,7 @@
 		73EACB8217F9AD46000A444C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CA998EBAEE23911CE978 /* Foundation.framework */; };
 		73EACB8317F9AD46000A444C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CD335D7E3059BACE5B0F /* UIKit.framework */; };
 		73EACB8917F9AD46000A444C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73EACB8717F9AD46000A444C /* InfoPlist.strings */; };
+		BE75681C2459BAFB0072D6ED /* UITextFieldWithDecimalPadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE75681B2459BAFB0072D6ED /* UITextFieldWithDecimalPadTests.swift */; };
 		BE9CA2A624570C8C00819C3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9CA2A524570C8C00819C3F /* AppDelegate.swift */; };
 		BE9CA2A824570C8C00819C3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9CA2A724570C8C00819C3F /* SceneDelegate.swift */; };
 		BE9CA2AA24570C8C00819C3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9CA2A924570C8C00819C3F /* ViewController.swift */; };
@@ -53,7 +53,6 @@
 		17B5C127C48985216D0E2852 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		17B5C4BBA3E7D79480776476 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		17B5C591AD8D7C78CA80F20C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		17B5C592B505BDE9A363CAED /* UITextFieldWithPickerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldWithPickerTest.m; sourceTree = "<group>"; };
 		17B5C5A3D65928ADBE8BDA5F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		17B5C8787D8E78FAE52FA005 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		17B5CA998EBAEE23911CE978 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -81,6 +80,7 @@
 		9159A55D2A0EAA85281E72FC /* libPods-SwiftExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36A7AF9C60F04142156A2CA /* Pods_UITextSubClass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UITextSubClass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE73F4BC20D001E200F792D0 /* UITextSubClass-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextSubClass-Bridging-Header.h"; sourceTree = "<group>"; };
+		BE75681B2459BAFB0072D6ED /* UITextFieldWithDecimalPadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldWithDecimalPadTests.swift; sourceTree = "<group>"; };
 		BE9CA2A324570C8C00819C3F /* SwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9CA2A524570C8C00819C3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE9CA2A724570C8C00819C3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -199,7 +199,7 @@
 			children = (
 				73EACB8517F9AD46000A444C /* Supporting Files */,
 				17B5C06D5D2AFABC4668D82B /* UITextViewWithToolbarTest.m */,
-				17B5C592B505BDE9A363CAED /* UITextFieldWithPickerTest.m */,
+				BE75681B2459BAFB0072D6ED /* UITextFieldWithDecimalPadTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -316,7 +316,7 @@
 						LastSwiftMigration = 0940;
 					};
 					73EACB7E17F9AD46000A444C = {
-						TestTargetID = 17B5C16BC8E6ED55005FF050;
+						LastSwiftMigration = 1140;
 					};
 					BE9CA2A224570C8C00819C3F = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -509,8 +509,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE75681C2459BAFB0072D6ED /* UITextFieldWithDecimalPadTests.swift in Sources */,
 				17B5CB9D64F37735A227858F /* UITextViewWithToolbarTest.m in Sources */,
-				17B5C661B532FC2895E983F4 /* UITextFieldWithPickerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,7 +590,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "Example/UITextSubClass-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -650,7 +649,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -692,7 +691,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -710,7 +709,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "Example/UITextSubClass-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -729,7 +727,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24A4C9CDA00FDC3F983BE16C /* Pods-UITextSubClass-Tests.release.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UITextSubClass.app/UITextSubClass";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -749,10 +746,14 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "info.efcl.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				SWIFT_VERSION = 5.0;
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -762,7 +763,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3AE48424EFAF8A1055530AFC /* Pods-UITextSubClass-Tests.debug.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UITextSubClass.app/UITextSubClass";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -785,10 +785,15 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "info.efcl.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -816,7 +821,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = SwiftExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -851,7 +855,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = SwiftExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
