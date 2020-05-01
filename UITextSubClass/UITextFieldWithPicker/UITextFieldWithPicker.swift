@@ -12,6 +12,12 @@ public class UITextFieldWithPicker: UITextField {
             updateText()
         }
     }
+    
+    let kToolBarHeight = 44
+    let kPickerHeight = 216
+    let kPopOverHeight = 44 + 216
+    let kWeight = 320
+    
         let toolbar: UIToolbar
         public weak var pickerDelegate: UITextFieldWithPickerDelegate?
         var popoverController: UIViewController?

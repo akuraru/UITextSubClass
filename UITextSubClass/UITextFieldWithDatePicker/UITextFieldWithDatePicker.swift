@@ -5,17 +5,17 @@ public protocol UITextFieldWithDatePickerDelegate: AnyObject {
     func textField(_ textFiled: UITextFieldWithDatePicker, beginEditingWith viewController: UIViewController)
 }
 
-let kToolBarHeight = 44
-let kPickerHeight = 216
-let kPopOverHeight = kToolBarHeight + kPickerHeight
-let kWeight = 320
-
 public class UITextFieldWithDatePicker: UITextField, UITextFieldDelegate {
     public let pickerView: UIDatePicker
     public var dateFormatter: DateFormatter
     public weak var pickerDelegate: UITextFieldWithDatePickerDelegate?
     let toolbar: UIToolbar
     var popoverController: UIViewController?
+
+    let kToolBarHeight = 44
+    let kPickerHeight = 216
+    let kPopOverHeight = 44 + 216
+    let kWeight = 320
     
     public required init?(coder: NSCoder) {
         pickerView = UIDatePicker()
