@@ -9,19 +9,11 @@
 /* Begin PBXBuildFile section */
 		059FCF99C0CD5265CAC480AA /* libPods-SwiftExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9159A55D2A0EAA85281E72FC /* libPods-SwiftExample.a */; };
 		116275304CCDA9E0C62DCBDF /* Pods_UITextSubClass_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3786F4CE3A8194CD92FFB855 /* Pods_UITextSubClass_Tests.framework */; };
-		17B5C239B054BD771FB7E3D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C591AD8D7C78CA80F20C /* main.m */; };
-		17B5C2A9910B093DAD97C061 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C137FDDEFC0A46C79FC3 /* MainStoryboard.storyboard */; };
 		17B5C772D8CF9CBFCB1DBCBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CA998EBAEE23911CE978 /* Foundation.framework */; };
 		17B5C802716CAD5F1065E307 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CD335D7E3059BACE5B0F /* UIKit.framework */; };
-		17B5C8422BE868597546ED80 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C16D873CE5FE5645B92C /* InfoPlist.strings */; };
 		17B5CA32B06C5285CE381A5D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C00A093E4E48061349B1 /* CoreGraphics.framework */; };
-		17B5CB42375D39DE67DEC999 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C8787D8E78FAE52FA005 /* Default@2x.png */; };
 		17B5CB9D64F37735A227858F /* UITextViewWithToolbarTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C06D5D2AFABC4668D82B /* UITextViewWithToolbarTest.m */; };
-		17B5CC7B209152CF7353437A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CD55C18EE69D46D50053 /* AppDelegate.m */; };
-		17B5CF1FA0525F406BF7D62E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C5A3D65928ADBE8BDA5F /* Default-568h@2x.png */; };
 		17B5CF3E96D0053F0E6926B6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C4BBA3E7D79480776476 /* XCTest.framework */; };
-		17B5CF4446A4BB0CA29D0218 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C127C48985216D0E2852 /* Default.png */; };
-		737068EF168996C0007BAA4F /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 737068EE168996C0007BAA4F /* MyTableViewController.m */; };
 		73EACB8217F9AD46000A444C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CA998EBAEE23911CE978 /* Foundation.framework */; };
 		73EACB8317F9AD46000A444C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CD335D7E3059BACE5B0F /* UIKit.framework */; };
 		73EACB8917F9AD46000A444C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73EACB8717F9AD46000A444C /* InfoPlist.strings */; };
@@ -49,37 +41,24 @@
 		17B5C00A093E4E48061349B1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		17B5C06D5D2AFABC4668D82B /* UITextViewWithToolbarTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewWithToolbarTest.m; sourceTree = "<group>"; };
 		17B5C0D623C7FF067EB237A6 /* UITextSubClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITextSubClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		17B5C10FC86A81DAB2C0A4F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		17B5C127C48985216D0E2852 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		17B5C4BBA3E7D79480776476 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		17B5C591AD8D7C78CA80F20C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		17B5C5A3D65928ADBE8BDA5F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		17B5C8787D8E78FAE52FA005 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		17B5CA998EBAEE23911CE978 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		17B5CB1CC2AC1575EE09EF77 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		17B5CD335D7E3059BACE5B0F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		17B5CD55C18EE69D46D50053 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		17B5CD8828BA21755AD3195E /* UITextSubClass-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "UITextSubClass-Info.plist"; sourceTree = "<group>"; };
-		17B5CD8C9FD9AB4777DF1BBB /* UITextSubClass.podspec */ = {isa = PBXFileReference; lastKnownFileType = file.podspec; path = UITextSubClass.podspec; sourceTree = "<group>"; };
+		17B5CD8C9FD9AB4777DF1BBB /* UITextSubClass.podspec */ = {isa = PBXFileReference; lastKnownFileType = file.podspec; path = UITextSubClass.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		17B5CDB61011174AC678870E /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = readme.md; sourceTree = "<group>"; };
 		17B5CDD25123018D8D38F647 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		17B5CE1C628C7A0B76695496 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		24A4C9CDA00FDC3F983BE16C /* Pods-UITextSubClass-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITextSubClass-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UITextSubClass-Tests/Pods-UITextSubClass-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2D334436AAA6CD84ACDC325E /* Pods-SwiftExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftExample/Pods-SwiftExample.release.xcconfig"; sourceTree = "<group>"; };
 		357998853AC10EABAF9277E9 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3786F4CE3A8194CD92FFB855 /* Pods_UITextSubClass_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UITextSubClass_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AE48424EFAF8A1055530AFC /* Pods-UITextSubClass-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITextSubClass-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UITextSubClass-Tests/Pods-UITextSubClass-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		61554984DFEBC17D9D726CB3 /* Pods-SwiftExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftExample/Pods-SwiftExample.debug.xcconfig"; sourceTree = "<group>"; };
-		737068ED168996C0007BAA4F /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
-		737068EE168996C0007BAA4F /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
 		73EACB7F17F9AD46000A444C /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73EACB8617F9AD46000A444C /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		73EACB8817F9AD46000A444C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		73EACB9417F9BD05000A444C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		73EACB9517F9BD05000A444C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9159A55D2A0EAA85281E72FC /* libPods-SwiftExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36A7AF9C60F04142156A2CA /* Pods_UITextSubClass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UITextSubClass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE73F4BC20D001E200F792D0 /* UITextSubClass-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextSubClass-Bridging-Header.h"; sourceTree = "<group>"; };
 		BE75681B2459BAFB0072D6ED /* UITextFieldWithDecimalPadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldWithDecimalPadTests.swift; sourceTree = "<group>"; };
 		BE9CA2A324570C8C00819C3F /* SwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9CA2A524570C8C00819C3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -128,19 +107,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		17B5C1E2474D400534A8FCFD /* Example */ = {
-			isa = PBXGroup;
-			children = (
-				17B5C6BA2544723305DAA434 /* Supporting Files */,
-				17B5C10FC86A81DAB2C0A4F6 /* AppDelegate.h */,
-				17B5CD55C18EE69D46D50053 /* AppDelegate.m */,
-				17B5C137FDDEFC0A46C79FC3 /* MainStoryboard.storyboard */,
-				737068ED168996C0007BAA4F /* MyTableViewController.h */,
-				737068EE168996C0007BAA4F /* MyTableViewController.m */,
-			);
-			path = Example;
-			sourceTree = "<group>";
-		};
 		17B5C45FA7B744FE69E554B6 = {
 			isa = PBXGroup;
 			children = (
@@ -148,26 +114,11 @@
 				BE9CA2A424570C8C00819C3F /* SwiftExample */,
 				17B5C76A5A9E6C650D4B29BC /* Products */,
 				17B5CF6F0C9E0CA75B8AC47D /* Frameworks */,
-				17B5C1E2474D400534A8FCFD /* Example */,
 				17B5CDB61011174AC678870E /* readme.md */,
 				17B5CDD25123018D8D38F647 /* Podfile */,
 				17B5CD8C9FD9AB4777DF1BBB /* UITextSubClass.podspec */,
 				9E2F44E1811ACED5FB27D5B9 /* Pods */,
 			);
-			sourceTree = "<group>";
-		};
-		17B5C6BA2544723305DAA434 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				BE73F4BC20D001E200F792D0 /* UITextSubClass-Bridging-Header.h */,
-				17B5CD8828BA21755AD3195E /* UITextSubClass-Info.plist */,
-				17B5C16D873CE5FE5645B92C /* InfoPlist.strings */,
-				17B5C591AD8D7C78CA80F20C /* main.m */,
-				17B5C127C48985216D0E2852 /* Default.png */,
-				17B5C8787D8E78FAE52FA005 /* Default@2x.png */,
-				17B5C5A3D65928ADBE8BDA5F /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		17B5C76A5A9E6C650D4B29BC /* Products */ = {
@@ -350,11 +301,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17B5C8422BE868597546ED80 /* InfoPlist.strings in Resources */,
-				17B5CF4446A4BB0CA29D0218 /* Default.png in Resources */,
-				17B5CB42375D39DE67DEC999 /* Default@2x.png in Resources */,
-				17B5CF1FA0525F406BF7D62E /* Default-568h@2x.png in Resources */,
-				17B5C2A9910B093DAD97C061 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,9 +445,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17B5C239B054BD771FB7E3D0 /* main.m in Sources */,
-				17B5CC7B209152CF7353437A /* AppDelegate.m in Sources */,
-				737068EF168996C0007BAA4F /* MyTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,23 +478,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		17B5C137FDDEFC0A46C79FC3 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				17B5CB1CC2AC1575EE09EF77 /* en */,
-			);
-			name = MainStoryboard.storyboard;
-			sourceTree = "<group>";
-		};
-		17B5C16D873CE5FE5645B92C /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				17B5CE1C628C7A0B76695496 /* en */,
-				73EACB9517F9BD05000A444C /* ja */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		73EACB8717F9AD46000A444C /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

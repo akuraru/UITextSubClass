@@ -13,7 +13,8 @@ class ViewController: UITableViewController {
     @IBOutlet weak var dateTextField: UITextFieldWithDatePicker!
     @IBOutlet weak var dateCountDownTextField: UITextFieldWithDatePicker!
     @IBOutlet weak var pickerTextField: UITextFieldWithPicker!
-
+    @IBOutlet weak var textView: UITextViewWithPlaceholder!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,6 +28,8 @@ class ViewController: UITableViewController {
         
         self.pickerTextField.pickerDelegate = self
         self.pickerTextField.dataSource = ["foo", "biz", "bar"]
+        
+        textView.placeholder.text = "hoge"
     }
 }
 

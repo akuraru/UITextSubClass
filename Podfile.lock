@@ -6,9 +6,7 @@ PODS:
     - UITextSubClass/UITextFieldWithDecimalPad (= 0.4.0)
     - UITextSubClass/UITextFieldWithNumberPad (= 0.4.0)
     - UITextSubClass/UITextFieldWithPicker (= 0.4.0)
-    - UITextSubClass/UITextFieldWithToolbar (= 0.4.0)
     - UITextSubClass/UITextViewWithPlaceholder (= 0.4.0)
-    - UITextSubClass/UITextViewWithToolbar (= 0.4.0)
   - UITextSubClass/Core (0.4.0)
   - UITextSubClass/UITextFieldWithDatePicker (0.4.0):
     - UITextSubClass/Core
@@ -18,12 +16,8 @@ PODS:
     - UITextSubClass/Core
   - UITextSubClass/UITextFieldWithPicker (0.4.0):
     - UITextSubClass/Core
-  - UITextSubClass/UITextFieldWithToolbar (0.4.0):
-    - UITextSubClass/Core
   - UITextSubClass/UITextViewWithPlaceholder (0.4.0):
     - UITextSubClass/Core
-  - UITextSubClass/UITextViewWithToolbar (0.4.0):
-    - UITextSubClass/UITextViewWithPlaceholder
 
 DEPENDENCIES:
   - OCMock
@@ -39,7 +33,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   OCMock: a10ea9f0a6e921651f96f78b6faee95ebc813b92
-  UITextSubClass: 54fe12e18bf6c6083d794c71b2071a1c33b6e986
+  UITextSubClass: fa567695da0b7d90f19a2f525af0877af40f2126
 
 PODFILE CHECKSUM: 00bb5ab45458383f5e2e5063ebc541d66add4f95
 

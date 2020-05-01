@@ -37,17 +37,8 @@ Pod::Spec.new do |s|
     a.source_files = 'UITextSubClass/UITextFieldWithNumberPad/*.{swift}'
     a.dependency 'UITextSubClass/Core'
   end
-  s.subspec 'UITextFieldWithToolbar' do |a|
-    a.source_files = 'UITextSubClass/UITextFieldWithToolbar/*.{h,m}'
-    a.dependency 'UITextSubClass/Core'
-  end
-  s.subspec 'UITextViewWithToolbar' do |a|
-    a.source_files = 'UITextSubClass/UITextViewWithToolbar/*.{h,m}'
-    a.dependency 'UITextSubClass/UITextViewWithPlaceholder'
-    a.framework    = 'QuartzCore'
-  end
   s.subspec 'UITextViewWithPlaceholder' do |a|
-    a.source_files = 'UITextSubClass/UITextViewWithPlaceholder/*.{h,m}'
+    a.source_files = 'UITextSubClass/UITextViewWithPlaceholder/*.swift'
     a.dependency 'UITextSubClass/Core'
     a.framework    = 'QuartzCore'
   end
