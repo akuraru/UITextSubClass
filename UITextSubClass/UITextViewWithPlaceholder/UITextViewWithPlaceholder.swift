@@ -3,7 +3,7 @@ import UIKit
 
 public class UITextViewWithPlaceholder: UITextView {
     public weak var placeholder: UILabel!
-    
+
     public func updatePlaceholderLabel() {
         if text.isEmpty {
             placeholder.alpha = 1
@@ -11,11 +11,11 @@ public class UITextViewWithPlaceholder: UITextView {
             placeholder.alpha = 0
         }
     }
-    
+
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
-    
+
     func setupPlaceholder() {
         placeholder.lineBreakMode = .byWordWrapping
         placeholder.numberOfLines = 0
@@ -29,12 +29,13 @@ public class UITextViewWithPlaceholder: UITextView {
             self.rightAnchor.constraint(equalTo: placeholder.rightAnchor, constant: -8),
         ])
 
+        NotificationCenter.default.addObserver(
+            self, selector: #selector(textChanged(_:)), name: UITextView.textDidChangeNotification, object: nil)
 
-        NotificationCenter.default.addObserver(self, selector: #selector(textChanged(_:)), name: UITextView.textDidChangeNotification, object: nil)
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(lostFocus(_:)), name: UITextView.textDidEndEditingNotification, object: nil)
+        NotificationCenter.default.addObserver(
+            self, selector: #selector(lostFocus(_:)), name: UITextView.textDidEndEditingNotification, object: nil)
     }
-    
+
     public required init?(coder: NSCoder) {
         let placeholder = UILabel()
         self.placeholder = placeholder
@@ -66,4 +67,3 @@ public class UITextViewWithPlaceholder: UITextView {
         }
     }
 }
-

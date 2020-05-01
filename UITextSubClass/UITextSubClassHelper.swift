@@ -7,11 +7,13 @@ public class UITextSubClassHelper {
     public static var bundle: Bundle {
         set { _bundle = newValue }
         get {
-        if let _bundle = _bundle {
-            return _bundle
-        } else if alwaysUseMainBundle {
-            return .main
-        } else if let coreBundleURL = Bundle(for: self.self).url(forResource: "UITextSubClassLocalize", withExtension: "bundle") {
+            if let _bundle = _bundle {
+                return _bundle
+            } else if alwaysUseMainBundle {
+                return .main
+            } else if let coreBundleURL = Bundle(for: self.self).url(
+                forResource: "UITextSubClassLocalize", withExtension: "bundle")
+            {
                 return Bundle(url: coreBundleURL)!
             } else {
                 return Bundle(for: self.self)
@@ -22,4 +24,3 @@ public class UITextSubClassHelper {
         NSLocalizedString(key, tableName: UITextSubClassLocalize, bundle: bundle, value: key, comment: key)
     }
 }
-

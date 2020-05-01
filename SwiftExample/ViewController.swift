@@ -14,21 +14,23 @@ class ViewController: UITableViewController {
     @IBOutlet weak var dateCountDownTextField: UITextFieldWithDatePicker!
     @IBOutlet weak var pickerTextField: UITextFieldWithPicker!
     @IBOutlet weak var textView: UITextViewWithPlaceholder!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        decimalPad.handler = .init(roundingMode: .down, scale: 3, raiseOnExactness: false, raiseOnOverflow: false, raiseOnUnderflow: false, raiseOnDivideByZero: false)
-        
-        self.dateTextField.pickerDelegate = self;
+
+        decimalPad.handler = .init(
+            roundingMode: .down, scale: 3, raiseOnExactness: false, raiseOnOverflow: false, raiseOnUnderflow: false,
+            raiseOnDivideByZero: false)
+
+        self.dateTextField.pickerDelegate = self
         self.dateTextField.pickerView.datePickerMode = .date
-        
-        self.dateCountDownTextField.pickerDelegate = self;
+
+        self.dateCountDownTextField.pickerDelegate = self
         self.dateCountDownTextField.pickerView.datePickerMode = .countDownTimer
-        
+
         self.pickerTextField.pickerDelegate = self
         self.pickerTextField.dataSource = ["foo", "biz", "bar"]
-        
+
         textView.placeholder.text = "hoge"
     }
 }
@@ -37,7 +39,7 @@ extension ViewController: UITextFieldWithDatePickerDelegate {
     func textField(_ textFiled: UITextFieldWithDatePicker, beginEditingWith viewController: UIViewController) {
         present(viewController, animated: true)
     }
-    
+
     func savePicker(textField: UITextFieldWithDatePicker) {
         print(textField.pickerView.date)
     }
@@ -47,7 +49,7 @@ extension ViewController: UITextFieldWithPickerDelegate {
     func textField(_ textFiled: UITextFieldWithPicker, beginEditingWith viewController: UIViewController) {
         present(viewController, animated: true)
     }
-    
+
     func savePicker(textField: UITextFieldWithPicker) {
         print(textField.pickerView)
     }
