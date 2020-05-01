@@ -35,7 +35,7 @@ public class UITextFieldWithDatePicker: UITextField, UITextFieldDelegate {
         toolbar.sizeToFit()
         
              let cancelButton = UIBarButtonItem(
-                title: UITextSubClassHelper.localizedString(withKey: "Cancel"),
+                title: UITextSubClassHelper.localizedString(with: "Cancel"),
                 style: .plain,
                 target: self,
                 action: #selector(cancelPicker)
@@ -43,7 +43,7 @@ public class UITextFieldWithDatePicker: UITextField, UITextFieldDelegate {
         
              let centerSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
              let doneButton = UIBarButtonItem(
-                title: UITextSubClassHelper.localizedString(withKey: "Done"),
+                title: UITextSubClassHelper.localizedString(with: "Done"),
                 style: .done,
                 target: self,
                 action: #selector(donePicker)
@@ -89,11 +89,11 @@ public class UITextFieldWithDatePicker: UITextField, UITextFieldDelegate {
         let conversionInfo = calendar.dateComponents(components, from: fromDate, to: toDate)
         var mutableString = String()
         if 0 < conversionInfo.hour ?? 0 {
-            let hour = NSLocalizedString("%d hour", tableName: UITextSubClassLocalize, bundle: UITextSubClassHelper.bundle(), value: "%d hour", comment: "")
+            let hour = UITextSubClassHelper.localizedString(with: "%d hour")
             mutableString = mutableString.appendingFormat(hour, conversionInfo.hour!)
     }
         if 0 < conversionInfo.minute ?? 0 {
-            let minue = NSLocalizedString("%d min", tableName: UITextSubClassLocalize, bundle: UITextSubClassHelper.bundle(), value: "%d min", comment: "")
+            let minue = UITextSubClassHelper.localizedString(with: "%d min")
             mutableString = mutableString.appendingFormat(minue, conversionInfo.minute!)
     }
 

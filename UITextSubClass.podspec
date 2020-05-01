@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Core' do |a|
     a.resource_bundles = { 'UITextSubClassLocalize' => ['UITextSubClass/*.lproj'] }
-    a.source_files  = 'UITextSubClass/UITextSubClassHelper.{h,m}'
+    a.source_files  = 'UITextSubClass/UITextSubClassHelper.swift'
   end
   s.subspec 'UITextFieldWithDatePicker' do |a|
     a.source_files = 'UITextSubClass/UITextFieldWithDatePicker/*.swift'
@@ -40,6 +40,5 @@ Pod::Spec.new do |s|
   s.subspec 'UITextViewWithPlaceholder' do |a|
     a.source_files = 'UITextSubClass/UITextViewWithPlaceholder/*.swift'
     a.dependency 'UITextSubClass/Core'
-    a.framework    = 'QuartzCore'
   end
 end

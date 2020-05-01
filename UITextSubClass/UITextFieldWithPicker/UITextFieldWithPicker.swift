@@ -30,7 +30,7 @@ public class UITextFieldWithPicker: UITextField {
             toolbar.sizeToFit()
             
                  let cancelButton = UIBarButtonItem(
-                    title: UITextSubClassHelper.localizedString(withKey: "Cancel"),
+                    title: UITextSubClassHelper.localizedString(with: "Cancel"),
                     style: .plain,
                     target: self,
                     action: #selector(cancelPicker)
@@ -38,7 +38,7 @@ public class UITextFieldWithPicker: UITextField {
             
                  let centerSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
                  let doneButton = UIBarButtonItem(
-                    title: UITextSubClassHelper.localizedString(withKey: "Done"),
+                    title: UITextSubClassHelper.localizedString(with: "Done"),
                     style: .done,
                     target: self,
                     action: #selector(donePicker)
