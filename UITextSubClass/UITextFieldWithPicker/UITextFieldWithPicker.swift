@@ -69,12 +69,23 @@ public class UITextFieldWithPicker: UITextField {
         pickerDelegate?.savePicker(textField: self)
         dismissPickerView()
     }
+    public func select(index: Int, animated: Bool) {
+        pickerView.selectRow(index, inComponent: 0, animated: animated)
+        updateText()
+    }
+    
     public func updateText() {
         text = selectedValue()
     }
-    func selectedValue() -> String {
-        if !dataSource.isEmpty {
-            return dataSource[pickerView.selectedRow(inComponent: 0)]
+    
+    public func selectedIndex() -> Int {
+        return pickerView.selectedRow(inComponent: 0)
+    }
+    
+    public func selectedValue() -> String {
+        let index = pickerView.selectedRow(inComponent: 0)
+        if !dataSource.isEmpty && index != -1 {
+            return dataSource[index]
         } else {
             return ""
         }
