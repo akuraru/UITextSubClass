@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "UITextSubClass"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "UITextField/UITextView SubClass library."
   s.homepage     = "https://github.com/azu/UITextSubClass"
   s.screenshots  = "http://f.cl.ly/items/2O0W2X3e1j3z1a2h3Y0J/UITextWithDatepicker.png"
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
     :tag => s.version.to_s
   }
   s.requires_arc = true
-  s.swift_version = '5.2'
+  s.swift_version = '5.0'
 
   s.subspec 'Core' do |a|
     a.resource_bundles = { 'UITextSubClassLocalize' => ['UITextSubClass/*.lproj'] }
