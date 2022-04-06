@@ -1,22 +1,22 @@
 PODS:
   - OCMock (3.1.2)
-  - UITextSubClass (0.4.0):
-    - UITextSubClass/Core (= 0.4.0)
-    - UITextSubClass/UITextFieldWithDatePicker (= 0.4.0)
-    - UITextSubClass/UITextFieldWithDecimalPad (= 0.4.0)
-    - UITextSubClass/UITextFieldWithNumberPad (= 0.4.0)
-    - UITextSubClass/UITextFieldWithPicker (= 0.4.0)
-    - UITextSubClass/UITextViewWithPlaceholder (= 0.4.0)
-  - UITextSubClass/Core (0.4.0)
-  - UITextSubClass/UITextFieldWithDatePicker (0.4.0):
+  - UITextSubClass (1.0.2):
+    - UITextSubClass/Core (= 1.0.2)
+    - UITextSubClass/UITextFieldWithDatePicker (= 1.0.2)
+    - UITextSubClass/UITextFieldWithDecimalPad (= 1.0.2)
+    - UITextSubClass/UITextFieldWithNumberPad (= 1.0.2)
+    - UITextSubClass/UITextFieldWithPicker (= 1.0.2)
+    - UITextSubClass/UITextViewWithPlaceholder (= 1.0.2)
+  - UITextSubClass/Core (1.0.2)
+  - UITextSubClass/UITextFieldWithDatePicker (1.0.2):
     - UITextSubClass/Core
-  - UITextSubClass/UITextFieldWithDecimalPad (0.4.0):
+  - UITextSubClass/UITextFieldWithDecimalPad (1.0.2):
     - UITextSubClass/Core
-  - UITextSubClass/UITextFieldWithNumberPad (0.4.0):
+  - UITextSubClass/UITextFieldWithNumberPad (1.0.2):
     - UITextSubClass/Core
-  - UITextSubClass/UITextFieldWithPicker (0.4.0):
+  - UITextSubClass/UITextFieldWithPicker (1.0.2):
     - UITextSubClass/Core
-  - UITextSubClass/UITextViewWithPlaceholder (0.4.0):
+  - UITextSubClass/UITextViewWithPlaceholder (1.0.2):
     - UITextSubClass/Core
 
 DEPENDENCIES:
@@ -33,7 +33,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   OCMock: a10ea9f0a6e921651f96f78b6faee95ebc813b92
-  UITextSubClass: 0a42dee1162254da9452328fc1c9a1f952241788
+  UITextSubClass: 1e3564aba85ee603dbd78fbd652fc02ab857e579
 
 PODFILE CHECKSUM: 00bb5ab45458383f5e2e5063ebc541d66add4f95
 
