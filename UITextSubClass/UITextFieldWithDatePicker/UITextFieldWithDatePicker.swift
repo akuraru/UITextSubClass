@@ -105,7 +105,7 @@ public class UITextFieldWithDatePicker: UITextField, UITextFieldDelegate {
     }
 
     public func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        if UI_USER_INTERFACE_IDIOM() == .pad {
+        if UIDevice.current.userInterfaceIdiom == .pad {
             let popoverController = UIViewController()
             popoverController.view.addSubview(pickerView)
             popoverController.view.addSubview(toolbar)
